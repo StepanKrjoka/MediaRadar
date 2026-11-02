@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T14:26:42+00:00",
+ "updated": "2026-11-02T14:30:40+00:00",
  "feeds": [
   {
    "name": "OilPrice",
@@ -7,7 +7,7 @@
    "ok": true,
    "error": null,
    "items": 15,
-   "seconds": 0.8
+   "seconds": 0.3
   },
   {
    "name": "Rigzone",
@@ -15,7 +15,7 @@
    "ok": true,
    "error": null,
    "items": 8,
-   "seconds": 0.5
+   "seconds": 0.1
   },
   {
    "name": "Offshore Energy",
@@ -23,7 +23,7 @@
    "ok": true,
    "error": null,
    "items": 8,
-   "seconds": 0.8
+   "seconds": 0.5
   },
   {
    "name": "Energy Voice",
@@ -39,7 +39,7 @@
    "ok": true,
    "error": null,
    "items": 10,
-   "seconds": 0.4
+   "seconds": 0.2
   },
   {
    "name": "CleanTechnica",
@@ -47,7 +47,7 @@
    "ok": true,
    "error": null,
    "items": 5,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "name": "gCaptain",
@@ -55,7 +55,7 @@
    "ok": true,
    "error": null,
    "items": 12,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "name": "Splash247",
@@ -63,7 +63,7 @@
    "ok": true,
    "error": null,
    "items": 10,
-   "seconds": 1.0
+   "seconds": 0.5
   },
   {
    "name": "FreightWaves",
@@ -71,7 +71,7 @@
    "ok": true,
    "error": null,
    "items": 16,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "name": "Google News: нафта й пальне",
@@ -79,7 +79,7 @@
    "ok": true,
    "error": null,
    "items": 100,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "name": "Google News: газ і LNG",
@@ -95,7 +95,7 @@
    "ok": true,
    "error": null,
    "items": 100,
-   "seconds": 0.8
+   "seconds": 1.1
   },
   {
    "name": "Google News: судноплавство й фрахт",
@@ -103,7 +103,7 @@
    "ok": true,
    "error": null,
    "items": 100,
-   "seconds": 0.7
+   "seconds": 1.0
   },
   {
    "name": "Google News: Україна — енергетика (англ.)",
@@ -111,7 +111,7 @@
    "ok": true,
    "error": null,
    "items": 26,
-   "seconds": 0.5
+   "seconds": 0.9
   },
   {
    "name": "Економічна правда",
@@ -119,30 +119,30 @@
    "ok": false,
    "error": "403 Client Error: Forbidden for url: https://www.epravda.com.ua/rss/",
    "items": 0,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "name": "GMK Center",
    "tab": "ukraine",
    "ok": true,
    "error": null,
-   "items": 11,
-   "seconds": 0.7
+   "items": 10,
+   "seconds": 0.4
   },
   {
    "name": "Google News: паливо",
    "tab": "ukraine",
    "ok": true,
    "error": null,
-   "items": 71,
-   "seconds": 0.5
+   "items": 92,
+   "seconds": 0.6
   },
   {
    "name": "Google News: енергетика",
    "tab": "ukraine",
    "ok": true,
    "error": null,
-   "items": 58,
+   "items": 59,
    "seconds": 0.5
   },
   {
@@ -167,7 +167,7 @@
    "ok": true,
    "error": null,
    "items": 0,
-   "seconds": 0.2
+   "seconds": 0.8
   }
  ]
 }
