@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T14:30:40+00:00",
+ "updated": "2026-11-02T14:48:35+00:00",
  "feeds": [
   {
    "name": "OilPrice",
@@ -7,7 +7,7 @@
    "ok": true,
    "error": null,
    "items": 15,
-   "seconds": 0.3
+   "seconds": 0.5
   },
   {
    "name": "Rigzone",
@@ -15,7 +15,7 @@
    "ok": true,
    "error": null,
    "items": 8,
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "name": "Offshore Energy",
@@ -23,7 +23,7 @@
    "ok": true,
    "error": null,
    "items": 8,
-   "seconds": 0.5
+   "seconds": 0.3
   },
   {
    "name": "Energy Voice",
@@ -31,7 +31,7 @@
    "ok": false,
    "error": "403 Client Error: Forbidden for url: https://www.energyvoice.com/feed/",
    "items": 0,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "pv magazine",
@@ -39,7 +39,7 @@
    "ok": true,
    "error": null,
    "items": 10,
-   "seconds": 0.2
+   "seconds": 0.6
   },
   {
    "name": "CleanTechnica",
@@ -55,7 +55,7 @@
    "ok": true,
    "error": null,
    "items": 12,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "Splash247",
@@ -63,15 +63,15 @@
    "ok": true,
    "error": null,
    "items": 10,
-   "seconds": 0.5
+   "seconds": 0.7
   },
   {
    "name": "FreightWaves",
    "tab": "world",
    "ok": true,
    "error": null,
-   "items": 16,
-   "seconds": 0.6
+   "items": 15,
+   "seconds": 0.5
   },
   {
    "name": "Google News: нафта й пальне",
@@ -87,7 +87,7 @@
    "ok": true,
    "error": null,
    "items": 100,
-   "seconds": 0.7
+   "seconds": 0.6
   },
   {
    "name": "Google News: електроенергія й ВДЕ",
@@ -95,7 +95,7 @@
    "ok": true,
    "error": null,
    "items": 100,
-   "seconds": 1.1
+   "seconds": 0.8
   },
   {
    "name": "Google News: судноплавство й фрахт",
@@ -103,15 +103,15 @@
    "ok": true,
    "error": null,
    "items": 100,
-   "seconds": 1.0
+   "seconds": 0.6
   },
   {
    "name": "Google News: Україна — енергетика (англ.)",
    "tab": "world",
    "ok": true,
    "error": null,
-   "items": 26,
-   "seconds": 0.9
+   "items": 27,
+   "seconds": 0.4
   },
   {
    "name": "Економічна правда",
@@ -127,14 +127,14 @@
    "ok": true,
    "error": null,
    "items": 10,
-   "seconds": 0.4
+   "seconds": 0.6
   },
   {
    "name": "Google News: паливо",
    "tab": "ukraine",
    "ok": true,
    "error": null,
-   "items": 92,
+   "items": 93,
    "seconds": 0.6
   },
   {
@@ -142,7 +142,7 @@
    "tab": "ukraine",
    "ok": true,
    "error": null,
-   "items": 59,
+   "items": 58,
    "seconds": 0.5
   },
   {
@@ -150,7 +150,7 @@
    "tab": "ukraine",
    "ok": true,
    "error": null,
-   "items": 43,
+   "items": 42,
    "seconds": 0.6
   },
   {
@@ -158,8 +158,8 @@
    "tab": "ukraine",
    "ok": true,
    "error": null,
-   "items": 38,
-   "seconds": 0.4
+   "items": 39,
+   "seconds": 0.5
   },
   {
    "name": "Діло",
@@ -167,7 +167,7 @@
    "ok": true,
    "error": null,
    "items": 0,
-   "seconds": 0.8
+   "seconds": 0.3
   }
  ]
 }

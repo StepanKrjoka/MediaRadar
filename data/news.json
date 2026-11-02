@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T14:30:40+00:00",
+ "updated": "2026-11-02T14:48:35+00:00",
  "tabs": [
   {
    "id": "world",
@@ -42,6 +42,258 @@
  ],
  "items": [
   {
+   "id": "51b8b762840d41",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTUlFcjNoVWk5Z2YtMXl2NlFvTzM3TmN1RXJUVjN4dUV5MTJMbVVsQUk3Ni0tVkxqcUtNUmFtYWUxMXJnVzhQQkR0Xy1fZVZhWVVsbDl1b3JYYVA1N3pZZzlpTzZMbkpkQ2ctM19iRFI5N0ZLYlhDZmRkcTB6cklrN3ZkLV9EMUNnZWxZTC1ZMkl0elMyNTJ0ODUyYm85X2hpZDdWa0ZJUDdHamVRQ1E?oc=5",
+   "source": "GuruFocus",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:43:37+00:00",
+   "topics": [
+    "oil",
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Cheniere Energy (LNG) Plans 2037 Senior Notes Offering to Refina",
+   "sources": [
+    "GuruFocus"
+   ],
+   "important": false
+  },
+  {
+   "id": "4ccb7ea3d73dad",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5DLWdZdWNEOEJOQm5EZGVOZHZrUUhGcEt6Z3ZhbEJuUWZScjJ2U1FDNUgzMEQ0SkM2dHQzenlXZUpPRF9nQUpsOVRzUktFSzFhNUxycWtEd3d4cVhvN1g4NXdJdXlhd2hyRUloaHc0RmZxa3Utb1hZa2FxS0ZIQQ?oc=5",
+   "source": "Tech Xplore",
+   "via": "Google News: електроенергія й ВДЕ",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:40:10+00:00",
+   "topics": [
+    "renewables"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Robot platform combines AI and rapid imaging to improve perovskite solar cell fabrication",
+   "sources": [
+    "Tech Xplore"
+   ],
+   "important": false
+  },
+  {
+   "id": "1b111bd1407817",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5hQi1xTlh1QmhncjM2cm9vZ19PVldTdUNoVnhDcDlJTzYzQWc0cnV6cVh5MnlHWFJwam5DNmU2R3M0OEFyajd4dXY0eGZ6cy1OVkZ2U0JUZXBOZjJTOEVzMnU3RTBFbnU2?oc=5",
+   "source": "finway.com.ua",
+   "via": "Google News: паливо",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T14:38:13+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Ціни на дизель, А-95 та автогаз в Україні на ранок 2 листопада",
+   "sources": [
+    "finway.com.ua"
+   ],
+   "important": false
+  },
+  {
+   "id": "8dd9dc94efb6b9",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA0U1BEczAtd2FFWEN3ZzNjWi1MY0w3V2xXUHpMOEpwZnJpWmR5LVpTbGg0SnY1b1h6Zi14dnd0Rlo5ZWZxVFJvbmlPZkFBZ1JWekRoYzA1Vk4yWlNrbkI1b0k3U25QVUtvM1FRNWZB?oc=5",
+   "source": "Rubryka",
+   "via": "Google News: логістика",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T14:36:00+00:00",
+   "topics": [],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Гарячі обіди та сендвічі: волонтери за 2 дні нагодували понад 3,6 тисячі пасажирів, які застрягли через затримки поїздів",
+   "sources": [
+    "Rubryka"
+   ],
+   "important": false
+  },
+  {
+   "id": "37d310ca2b6737",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQnlwWUR2WjVybU5uS3Rrb3VxbWNVekhkUG1kWUpyWkFTbU5tZk5tdFF0clVfODYzczhvZGloSGdhVF9ESVY1cjBranVhbXc5eVpIZHBQNHBFaUo0UGJtM0VfRWdpRk1EVVdQd0VhS1NWVnd5YWlQOWMxVW5KRDlMMVlVYXdCdw?oc=5",
+   "source": "AgroPortal.ua",
+   "via": "Google News: логістика",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T14:35:27+00:00",
+   "topics": [
+    "logistics"
+   ],
+   "first_seen": "2026-11-02T14:27:13+00:00",
+   "title": "Дунайські порти потроїли перевалку вантажів",
+   "sources": [
+    "AgroPortal.ua"
+   ],
+   "important": false
+  },
+  {
+   "id": "58b6bf2221979f",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWTl1NTlNZVhwYmJNd3dac1plX3ZZaXdlS2xuSUJIS0Q3NUx5UU04eDBmRzE5NjM5WXNkeVJNVzJOejVnbnJLV0NDTHNRMWhNRzBnWG5QOFE1dE56cjVtNGRwaHJ3T3hSR2FCZHU0RmRfbElKZnJDbkluSkhvUjBRdTM5Yk0xdHIyZVF6RFBmRUZuYmxsTm1TU09yR3EyaFdhbDd2Z0VPd1BJR21QMmfSAbMBQVVfeXFMTUVWdFhyYUduWmg3bGI5YnJoY2RlNGZTaFVEVmhtX2UtNmg1QzdDeVB3SnVURmFyclJQZ0dMNUlJaTVYbmJfQmZfNWtLRDlFU2haX2p1VTZrSHJHUlhzblhzdEFhMlJNcnpvYU8xVWhKT3M0WEdTQjN5a1J4VzQxdE5iTzVBYUtFbHUtSWt0N3hiUml5dEhHN2ZZRF9TUVpOMktwamRsNDIycmFTNHpXUzNZMGc?oc=5",
+   "source": "Al Jazeera",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:30:32+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "How US oil firms profit $130bn from Iran war as household bills surge",
+   "sources": [
+    "Al Jazeera"
+   ],
+   "important": false
+  },
+  {
+   "id": "8fe0b6b5b25f5f",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPU0xWdlRHbkJycm1TNUZVbnpFcFFxS3JOYXhRbDRQLWthbTJkb2x2aDY0LXdZdk1Cdk5vaGNQcnZLVFRLOUp2NlRuUmwwenhIdTE1bFdDYUxWbVhPWmtJQXo2WlJoRHdrdzczclVvdGJ6YkZQek9xLThqMnFVMEFIMWloZDZFZ2tUd2ZyZzJzR0Z0NHdTS1FMM2p5aGYxV1czVFdpbWI4b213MHdzSC1VMkxoVHJJZm9rLXdJNi1hMjJwWndNUW9oMHJ6Qmp3UVhTZXc?oc=5",
+   "source": "Forbes.ua",
+   "via": "Google News: промисловість",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T14:30:03+00:00",
+   "topics": [
+    "logistics",
+    "industry"
+   ],
+   "first_seen": "2026-11-02T14:27:13+00:00",
+   "title": "Крюківський вагонобудівний завод вийшов у прибуток 94,5 млн грн. Як він наростив продаж вантажних вагонів",
+   "sources": [
+    "Forbes.ua"
+   ],
+   "important": false
+  },
+  {
+   "id": "8097c22d8362a0",
+   "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-as-Draft-Proposal-to-End-US-Iran-War-is-Circulated.html",
+   "source": "OilPrice",
+   "via": null,
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:30:00+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Oil Prices Plunge as Draft Proposal to End U.S.-Iran War is Circulated",
+   "sources": [
+    "Crude Oil Prices Today | OilPrice.com",
+    "OilPrice"
+   ],
+   "important": true
+  },
+  {
+   "id": "0ccdb390be976b",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUnhpZVZHQUliUnJIQUJWb3JmbVl6VV9GZ3NJN0M3X0EzZU9pa2N4SEcybGNlakZkcmxyeVNqV0E5LWRxTU1VZUM4Uk9TdGZTS0RJLU1CZ1JVVFBlM0pTcWFPd2U0b1RFTkVyV2oxSzNwZzYzMjBwVmRtbUFvWUowS1RPSEQ3eE1Qa2ZQQVJ5SExsbzVXQTQtNlZYRC1Bbnh2YmpnZ2VGaHZLQlJDRWJRZEZOU2VCZ1hPcENQcTUtYw?oc=5",
+   "source": "WSJ",
+   "via": "Google News: судноплавство й фрахт",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:29:43+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Oil Prices Rise as Middle East, Ukraine-Russia Conflict Fuel Supply Worries",
+   "sources": [
+    "WSJ"
+   ],
+   "important": false
+  },
+  {
+   "id": "e26a4bc45abfd8",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ZMGNldFZCcXRSWnpfV3JKaFc5eV94dE1tTzBBVjRDMVZkX3Z1RFMzajlGY1VWeGNURHBoN0FEYnFoZW1pZGdtbnd1YWxxWmVpZ1owT3c2cUJqOS0xbWJ3aFNaOWpBTFpYWmFkdEN3a3ZQYjJoU1ZTWmJCQkQ4QVU?oc=5",
+   "source": "Finimize",
+   "via": "Google News: судноплавство й фрахт",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:28:42+00:00",
+   "topics": [
+    "logistics"
+   ],
+   "first_seen": "2026-11-02T14:27:13+00:00",
+   "title": "Baltic Dry Index Slides As Freight Rates Cool",
+   "sources": [
+    "Finimize"
+   ],
+   "important": false
+  },
+  {
+   "id": "dd6de7d823d650",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUlJaaVpDZUx2bnpJN0Jydmc4SThIdjBtMFd0Z08tU1NicDV1dlRuSkR2aGxqMzl5QmFUeGxDbWtoN3hlaEVkRWpoWWRjaFJrMld0Sm0wRXY0bVlqVndwMVZGWUdWd3VzMV80RUI1aEVSNThlNFNBTDB3aHBLTkRkcERMTTJrN0NkM1p0YlQzOGZ0MVBIUGR0VV8zYUJjVHpjTkZHaU1IclRnQUlFeEY0SXJLY3BIM3lLb2Yw?oc=5",
+   "source": "24/7 Wall St.",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:28:00+00:00",
+   "topics": [],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Ovintiv Is Quietly Building an AI Advantage That Wall Street May Be Missing",
+   "sources": [
+    "24/7 Wall St."
+   ],
+   "important": false
+  },
+  {
+   "id": "20e2d6555de33f",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSDZnRXRWN3ZkbDNNQUg0REtsNG9LUTA1U0gxV3U0Q1ltTGJFcG40a2FrT0tDOEFQUVlYdWlIRjJkTW1xT3gxZ1dzOGhLQXYyX0RvNmtra2x5MHFQNXlaSTFjUkNzOWRFWHJ6RzBXLWRoOFdlVTlwWHdERGM1d196NEFPc1dGR0l6SEVTQ0NvSmFxVVdrbWc?oc=5",
+   "source": "Latest news from Azerbaijan",
+   "via": "Google News: судноплавство й фрахт",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:27:25+00:00",
+   "topics": [
+    "oil",
+    "logistics"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Oil tanker catches fire after hitting naval mine near Strait of Hormuz",
+   "sources": [
+    "Latest news from Azerbaijan"
+   ],
+   "important": false
+  },
+  {
+   "id": "e241d0045fddce",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaWtmbEJ6bDdNdTBId1lVaW91ejFZMmVMc0FnRFNCa0FzdTR5WFh6Q25DVEdqNUJOeERVOGNOMzlKLTZ3N1lOMTVjWXNSSmRoTGMxdVF3bkU0VEZTOU53Ykd5QndfYWJmd0xmRFBQS3NrM2tOS1VXQVIxZlU2bThEa1pqUVo0MGtiY1FISUd2LWtmT284OUlSZDlSSzNhNHk3Rnc?oc=5",
+   "source": "Anadolu Ajansı",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:27:13+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Oil prices plunge 6% as US-Iran diplomacy eases supply fears",
+   "sources": [
+    "Anadolu Ajansı"
+   ],
+   "important": false
+  },
+  {
+   "id": "0d154ba7ba520f",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSUNsejZQbnFGeWI0eGhKXzQwSGZCZEpuUXNyZkh6T3FUSXJrX1RBUUdjc1AyWjVkY193OXVPbml5dzV1Mkp6Q0RyNlRIOEhrN0pzUnlNYllnMmFOVENnY3hjSVctZmRiRW1ycDd4R2JhNVUyVVlWZHhoYnFrWVZuMExhRHE5YThuMU5PTUh3c3dNQmkxemdON1dUNWstX2tGajhOcUpPeHlpNUNYMlpJ?oc=5",
+   "source": "FXStreet",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:25:23+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:27:13+00:00",
+   "title": "Natural gas: Winter volatility risk builds with tight EU storage – ING",
+   "sources": [
+    "FXStreet"
+   ],
+   "important": false
+  },
+  {
    "id": "3c82155b96a5d0",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTjNrS19uMndPNHRmUDNWUk9saWRvUWctbTlXM05fWTVEekNMR2ZYbk1qZTlRYXBaU1FTT3JZSm9pUFBFUGt3R001d0tQLVk4WGdFX3Znd0ZMQVgzbVQzSTNxT0FPRTcwTnFYdzI1cThhc1k2a1ZoSFkwaTVZcGowNUwtS0o1bzRHWnZaZDBGTGRkc1RULVloOVBRSGZtbFJ2aDhMR3o4b2M?oc=5",
    "source": "Ink World Magazine",
@@ -79,20 +331,20 @@
    "important": false
   },
   {
-   "id": "0d154ba7ba520f",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSUNsejZQbnFGeWI0eGhKXzQwSGZCZEpuUXNyZkh6T3FUSXJrX1RBUUdjc1AyWjVkY193OXVPbml5dzV1Mkp6Q0RyNlRIOEhrN0pzUnlNYllnMmFOVENnY3hjSVctZmRiRW1ycDd4R2JhNVUyVVlWZHhoYnFrWVZuMExhRHE5YThuMU5PTUh3c3dNQmkxemdON1dUNWstX2tGajhOcUpPeHlpNUNYMlpJ?oc=5",
-   "source": "FXStreet",
-   "via": "Google News: газ і LNG",
+   "id": "e9b3a8ad3d8f55",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVkVCZzY4M2xqWDhwb01NRC15Ui1xRTBJQ0x5MjhsUFFjUjUwMHBVMmlOQkRqTURJOFljOUFXUEdUVVVDeGVXU1I0Umt2aFo4TzRHUlJoZEROTVFQdEMzU1RBQWpRY0hIS2oycGtiUlkyNkMxVVhnaFQ4d2paeTdKSXdXUlhIQjN5bm9vMWU5Xzl6NzFPQ2NIZTJEVVV1SEcxcjdCSDE0NGJmQV9DVUtPMUY3T3cyVEVRZGlMcmt0SXZnR2lZ0gHQAUFVX3lxTE5kOW5uRjFoVFVZVTZCdHExY2NCbHo5RHpoc2VqRWNnbXg1UWtIZXZURWpjUFRwOFQ1OEdmVUdxT1hKX284T1ZaMlFiVWxCeVpWMWFCdXhTdVJuc3owM1Z6Zm1nbjZuN3FqWVItTWJKM3hSd0lFYWRaenh1VVNaMDNaZEo2QWFhN2Q0V2FvMXZSdWZKR2pOVElZaklJU1RTQnFoWG9TNE1jeW1iclNxYUdsY3NzWnJ2QndHTTlseVZoZDlWOVN1NUFTSjd6M2JRSFY?oc=5",
+   "source": "FOREX.com",
+   "via": "Google News: нафта й пальне",
    "tab": "world",
    "lang": "en",
-   "published": "2026-11-02T14:23:41+00:00",
+   "published": "2026-11-02T14:22:12+00:00",
    "topics": [
-    "gas"
+    "oil"
    ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Natural gas: Winter volatility risk builds with tight EU storage – ING",
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Nasdaq 100 Forecast: NDX rebounds as oil prices fall and ahead of Apple earnings",
    "sources": [
-    "FXStreet"
+    "FOREX.com"
    ],
    "important": false
   },
@@ -171,6 +423,24 @@
    "important": false
   },
   {
+   "id": "31945468931567",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb3FRSDF2SXFyTjI4eU5aUFdRNHhWdEhiR2hmM3ZNVnF6Mmt2SWpkUXRPR0tEaFBnb3RpY1RjMGJZUlh6RUJmT2U3cVRNcjZlSzd0SnVmSDUwRkpqRVdZTFpuWU9vd2h6S1pBNnUxTWdBNUFyYk5NUk9fZnhHNmszbmVpeDQ5S0tkNk12OXFNUS1SdVRjSFZOb1R4N2NXZw?oc=5",
+   "source": "Yahoo Finance",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:16:38+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Wall Street Futures Rise as Falling Oil Prices Support Rebound After Technology Sell-Off: Dow Jones, S&P, Nasdaq",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "important": false
+  },
+  {
    "id": "0ce91ccaceb7ca",
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTUpfRGwxQnMzRTYyamRibW1tTV9TaHk3dEo4cnM3bG8xTk1RVjJ6TDd5LWNBX2RqMHpkRmF5LXpuRGNoUzdQYUFFemxPOXdfSGNYTVRmbDAyczVGYlZLMlU3U19EUDVEX0tjWElhb3Fja2xnamhGZHd3TVNoUUk4YVJFSGRMWWcxR25RQ2RuM21LVHV6NWJ0X09TQnhRdVRYc1E?oc=5",
    "source": "НафтоРинок",
@@ -189,6 +459,24 @@
    "important": false
   },
   {
+   "id": "87ea8c7c68e6ab",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMHZubF9mbXVoelZjc2ppTUNBbXRGdnpiWjRWVU11elI5RUdjOW03YXJBbTJJNzNCcE9TaDFSRlg5eEJPeDJ2NnV5c2FXdWJxM25RakRYSHVqU3BfVTRuS1JqSURnVkRnbFVqMFdIbVNMQTRwc1g3MnRZSUM0bTRVUWFYV1VvVHFwTkFMZERmeUtfcDhwZFBN?oc=5",
+   "source": "Цензор.НЕТ",
+   "via": "Google News: паливо",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T14:15:00+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Російський новітній Су-57 вибухнув в \"Ахтубінську\", одна з причин – погане пальне, - ГУР",
+   "sources": [
+    "Цензор.НЕТ"
+   ],
+   "important": false
+  },
+  {
    "id": "315d4ce2cd7bc7",
    "url": "https://gmk.center/ua/news/thyssenkrupp-otrimav-novi-umovi-dlya-vodnevogo-proiektu-u-dujsburzi/",
    "source": "GMK Center",
@@ -201,9 +489,27 @@
     "industry"
    ],
    "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Thyssenkrupp отримав нові умови для водневого проєкту у Дуйсбурзі",
+   "title": "Thyssenkrupp отримав нові умови для водневого проєкту в Дуйсбурзі",
    "sources": [
     "GMK Center"
+   ],
+   "important": false
+  },
+  {
+   "id": "63b5448f6902a8",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQX1BEQzBNQkJpRFhMYjJrc1NaQmwyS2FIZ18ySWNPU3lXaHRJcl9YVkxKdkt1eTJpdEE4SGg3dTBKa3djX2hEc0RmVVpxSUVuRHJRTHVBNUJ4MlFpZEZwdDF5S3d6d3Z5U2FIUy0wdjgtM2RjU3d2OUJCQkhnbUdReWtkVUZ0aVg3ZWt4Rk03MVNvRnhwb0Nsc3VZVmltZFhTSW12ckxsVW0?oc=5",
+   "source": "Investing.com",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:14:20+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "US stock index futures jump as oil falls about 6% By Reuters",
+   "sources": [
+    "Investing.com"
    ],
    "important": false
   },
@@ -330,11 +636,48 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "Blackstone-led group buys into Mitsubishi subsidiary that holds LNG Canada stake",
    "sources": [
+    "BNN Bloomberg",
+    "The Spec",
     "Toronto Star",
-    "Winnipeg Free Press",
-    "Yahoo! Finance Canada"
+    "Winnipeg Free Press"
    ],
    "important": true
+  },
+  {
+   "id": "e521ae62bd305e",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZW5XQmRfZkZUWDVmZ1RoTVh5cTlUS1NMVXZTUi1fYW5hQjh2M1BkV0YtbFNHenM3WjNLWnk1M2stNzZ6U002TVVSbTBHczdpMGJOQ2tVUmpoMnZUcFUtYkI5MTd2ZlFMbENlVEVfcUxUUTBVSk0zNUxhSlJuQTlkcUtBZjI3cmxsTTc2Vnp2SnNSR1NzNHBNY2xfaEJOcEhNckUzMkZZcnB5UjlQTHlCSFppMHdMSjA?oc=5",
+   "source": "FXStreet",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:09:42+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:27:13+00:00",
+   "title": "Gold finds relief as Oil tumbles on positive US-Iran headlines",
+   "sources": [
+    "FXStreet"
+   ],
+   "important": false
+  },
+  {
+   "id": "1a45d5ce9d90f9",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbUpWdUpSd3RubXN3d2lEYmF4SklJS2ltYS1HbkZHc3JNbWp4LW1PakczT1lBd0I1TUF1UnczSl9CclV1NTB2SFNYVlRMZGJkTWhwb0EwQ0FlZ1hIbm5maW0xa25zYTRKX0pXTjZRRndQLWFSelFjOEV5MXAwNUg1WkQ0Q1ZhZXkyTGdreThqSGlhdldSS0NYRmt5cFpIVEJlTjZxTEFhdW9iR05NODJwWkFKeGtGbnMwcl9hRDJfdE4?oc=5",
+   "source": "The Business Standard",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:09:32+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Summit says upcoming LNG terminal maintenance is pre-planned, not emergency work",
+   "sources": [
+    "The Business Standard"
+   ],
+   "important": false
   },
   {
    "id": "05e4f5adbb105e",
@@ -462,24 +805,6 @@
    "important": false
   },
   {
-   "id": "e26a4bc45abfd8",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ZMGNldFZCcXRSWnpfV3JKaFc5eV94dE1tTzBBVjRDMVZkX3Z1RFMzajlGY1VWeGNURHBoN0FEYnFoZW1pZGdtbnd1YWxxWmVpZ1owT3c2cUJqOS0xbWJ3aFNaOWpBTFpYWmFkdEN3a3ZQYjJoU1ZTWmJCQkQ4QVU?oc=5",
-   "source": "Finimize",
-   "via": "Google News: судноплавство й фрахт",
-   "tab": "world",
-   "lang": "en",
-   "published": "2026-11-02T14:03:39+00:00",
-   "topics": [
-    "logistics"
-   ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Baltic Dry Index Slides As Freight Rates Cool",
-   "sources": [
-    "Finimize"
-   ],
-   "important": false
-  },
-  {
    "id": "4b59fb86ac58af",
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdURaOGM2WmxYcmoxZFB6UHUya1BibWxnWlItSGdEcTZ6VHFiOVRINFNkcXNkRG9hRGsxLUZPOGlpa28wYVZlUnkxZ0JRN2VNd0p4RHdDNzd1NDhId0JBTG5qYmNybWxCMzMyQmVDUUo1MXk0QmlsNkNBTUdsYzQ5NWxkNnhJemo1eFUtNUFR?oc=5",
    "source": "Yahoo",
@@ -602,6 +927,24 @@
    "important": false
   },
   {
+   "id": "518be9474eb619",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbnVDQzd0LTF3Vi1BMnJDLWpGaHNIMlJVTDNnVmplMzZnVjRxRTZUUTRsQkVvZ21EN3lXMzA4ZDJnOTQwc01ld2tqT1pGZVN6VmpuVWpzLVVMUU1qcDdnRFdEQUZoM0l6Ym9NYnhfWDctWkZnSC1fLUk0RGxtUmd3WU9zLXdhcTdGTkJvcUxaazZKZEliVjl3bVBfZldDajJMOXZtVkx0NVI4YWlwMkVFbXpMR0ZGQW9wOWxEcTM3QThSdk1fb2c?oc=5",
+   "source": "Reuters",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T14:00:28+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:27:13+00:00",
+   "title": "SNAPSHOT US stock index futures jump as oil falls about 6%",
+   "sources": [
+    "Reuters"
+   ],
+   "important": false
+  },
+  {
    "id": "658491cdf532e0",
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZzlhci1uTDB4Umg3bXNGUHJROFBKN0piV1lGZW5EZU5JUWZENWl4ZVlYWWJiOTJ4WWI0anFWeUNwWXRsWmtGRmJLc3hFU0JtOG9nU0s3Y3EzbXJTcFBMNGFPMWdvYjFVNEg2VlpPcU8tbEsyS0NZdm0yeG8taFV0UmE0Q09EcUxIUEJ0SUpOV3M3ZG5IWVdBNWZpSnJRS2c1T2c?oc=5",
    "source": "trillionenergy.com",
@@ -651,9 +994,10 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "B.C. border crossing hours adjusted as shipping industry plans for U.S. time change",
    "sources": [
+    "CBC",
     "Yahoo News Canada"
    ],
-   "important": false
+   "important": true
   },
   {
    "id": "df5bcedc50594e",
@@ -832,24 +1176,6 @@
    "important": false
   },
   {
-   "id": "518be9474eb619",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbnVDQzd0LTF3Vi1BMnJDLWpGaHNIMlJVTDNnVmplMzZnVjRxRTZUUTRsQkVvZ21EN3lXMzA4ZDJnOTQwc01ld2tqT1pGZVN6VmpuVWpzLVVMUU1qcDdnRFdEQUZoM0l6Ym9NYnhfWDctWkZnSC1fLUk0RGxtUmd3WU9zLXdhcTdGTkJvcUxaazZKZEliVjl3bVBfZldDajJMOXZtVkx0NVI4YWlwMkVFbXpMR0ZGQW9wOWxEcTM3QThSdk1fb2c?oc=5",
-   "source": "Reuters",
-   "via": "Google News: нафта й пальне",
-   "tab": "world",
-   "lang": "en",
-   "published": "2026-11-02T13:53:53+00:00",
-   "topics": [
-    "oil"
-   ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "SNAPSHOT US stock index futures jump as oil falls about 6%",
-   "sources": [
-    "Reuters"
-   ],
-   "important": false
-  },
-  {
    "id": "d5689f88a75e16",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXJJV2djTGd6bzJvRXRCNm02emlybHJ0SjFYOXk5eEZiUmVWa1FTTHZ5MnFuSlNVLTQ0dVJ1MC1ReXFDN21LZExIUmxERlJLc2RUcEdQWkZwS1ozYm5OcW56TUVMZjZDMnZjbE8tajFkXzBOSmo5bXJGUjM4OWZ6Sm01NDZlc0duNlFOSENOSTEyNEtoQlNlWElmcjFoYzZfYjNuTUZ1eDR3ZVFPZklGbGt4VmJ2dGx1NFE?oc=5",
    "source": "TradingView",
@@ -863,8 +1189,8 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "US stock index futures jump as oil falls about 6%",
    "sources": [
-    "TradingView",
-    "WSAU"
+    "Central Oregon Daily",
+    "TradingView"
    ],
    "important": true
   },
@@ -1023,9 +1349,10 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "Armenia introduces interest rate subsidies for storage systems",
    "sources": [
-    "pv magazine"
+    "pv magazine",
+    "pv magazine Global"
    ],
-   "important": false
+   "important": true
   },
   {
    "id": "248ad6b48dc5b2",
@@ -1280,6 +1607,24 @@
    "important": false
   },
   {
+   "id": "a5d1147b274445",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWDE2QWRQeVl4TFBRMXUtRlpyRGFRc05YOHlRa3FxaE1KMktLUDdkSHVqUUI3SEFFVkl1Q1R5Q1lWZWt4d204WWM1ZzhfbElfTDAwZjlLRDR5Slk0MmYwOU5sRkJRMGl0RlAzaW5BUzhEcjVlY1lUNjFraUo0bGE5U2VPU3ZlMmptdkVKRklHN1JlcWUtd011a050SVQtX01YVElDWlAtS2stS0JfTUZFQV9yNE1zRk96Tkhsdkx2cHNjQWc?oc=5",
+   "source": "RailFreight.com",
+   "via": "Google News: судноплавство й фрахт",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T13:35:31+00:00",
+   "topics": [
+    "logistics"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "German wagon keepers urge parliament to reverse rail freight funding cuts",
+   "sources": [
+    "RailFreight.com"
+   ],
+   "important": false
+  },
+  {
    "id": "89eceb799633fd",
    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQaG1KMER4S2U0SGFLdHRMTS1lazVjT2pvRWUtVjU3V2xmUldBZmdXRXJXMkdKQldmNFF3bUpXOTV5WVRMcDhNRWxXY2wwb3pGTE9lU0ozM2VlRGNuS2Z1MElUMllpLTUyYmlmWWt3X0hUWkNvV2JZUmJEd3hEdlQyNWcwOURjemU4Y29oOA?oc=5",
    "source": "Yahoo Finance",
@@ -1459,6 +1804,24 @@
    "important": false
   },
   {
+   "id": "ff7417edfccf79",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQd3BKWHNoWC1aVlJ0Tm9SNnloak10a2JUam1BYlBjdER4b3NNeUZkeXNTOHRab2huSVFCa1hER3hjcVBkV1FhMDc5LVI2elpucE1iZHBzLUdHQVU2T0VsZHNLcG8wbFUwOUNCZzY4eXBra2Zsa0I0akUyYW9pSVRrNC1McERLWk81Q1kzTnFqdXpjeU9ZS2dfTjNzeEpoOHlSNF8zSTVsS3Z5UHRuRERTLW1QQjVPRGJYZWVaZjA1X1kzQmN2bTVWUA?oc=5",
+   "source": "Robinhood",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T13:28:20+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "November 3, 2026: Brent crude oil price on Nov 3, 2026 at 5:00 PM EST Commodities Prediction Market",
+   "sources": [
+    "Robinhood"
+   ],
+   "important": false
+  },
+  {
    "id": "52cf2b15226310",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOOHVKNzhLclhuQnU2QnV1eGw1VDJoRVVla2lJWU9Rc0dPYXMzbkwxdmt4U1FNSTIxUndSVkM2MVJENnRscnI0V2ZCTDJsR0U3U3YteFZLUzBkZjJMc3liV0huaWIxaDJ6cldTV1ppZjJ0aU5TanVxTXpYelhPQUJuUUVienhVd0wtOHdVc0k3VWVBSGJiTGNJZkd2SlA?oc=5",
    "source": "Racurs.ua",
@@ -1491,6 +1854,24 @@
    "title": "Iran: Tanker on fire after hitting mine in Hormuz",
    "sources": [
     "Breakingthenews.net"
+   ],
+   "important": false
+  },
+  {
+   "id": "a99d532248b842",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQenBsNV9SZUVHNVZZa3U2dW1VMnBOVE1RMUFrSHc5RlMwQ2JmYmFTWFY5bVl6SnVmR0d4c1VBV2ZxZEdSOUVnWVdNSWFqczBraWNQNzdlYnJYaHB6SnkxQWM2T1ZObVpNQkd5SnRGU2dLTHo4U0pxVU9OMXo1cUJiR19NNVd6NTg2UUZOTlViTnJ4S0trUnRRNDdqenM?oc=5",
+   "source": "Yahoo Finance",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T13:27:00+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Stock Market Today: Futures Rise After Friday’s Sell-Off as Oil Prices Tumble; Investors Brace for More Big-Tech Earnings",
+   "sources": [
+    "Yahoo Finance"
    ],
    "important": false
   },
@@ -1544,24 +1925,6 @@
    "title": "Mexico trims paperwork for drilling oil and gas wells",
    "sources": [
     "BNamericas"
-   ],
-   "important": false
-  },
-  {
-   "id": "56f1a26044c5de",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQaktlVVFIUFEzZm84dmhjTDBJXzlWMV8zN0VWTnhNQ0xaR0pnY2VCOEIybk5KRWY2YTJoZkd3R1BSNEh0dDlBRGdocmlGTHpIekE4RG5GZzJRZHkxSTAzeEFsVW9VUnlnbDJpcXNkVUMxMVduOXQtOXp3NWpzaUIwdXVOV05xY0RwX0JGaWxHajFRY2Q3d0lTN3BQb1UxY0JkQjRZQXBJSVd2dlJOT1RoYzFUT0hXZzZWMjBvUDZJZXItbm1lWFBxNldIODkyNnM1eGJLNHRZLVYyb25YaEYyQmhPSllxY0RFbjVCUmV3?oc=5",
-   "source": "Central Oregon Daily",
-   "via": "Google News: нафта й пальне",
-   "tab": "world",
-   "lang": "en",
-   "published": "2026-11-02T13:24:06+00:00",
-   "topics": [
-    "oil"
-   ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Oil drops more than 4% on talks aimed at ending US-Iran war",
-   "sources": [
-    "Central Oregon Daily"
    ],
    "important": false
   },
@@ -1621,6 +1984,24 @@
    "important": false
   },
   {
+   "id": "5ae202445587a5",
+   "url": "https://gcaptain.com/goldman-hikes-oil-forecasts-on-substantial-risks-to-supply/",
+   "source": "gCaptain",
+   "via": null,
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T13:20:51+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Goldman Hikes Oil Forecasts on ‘Substantial’ Risks to Supply",
+   "sources": [
+    "gCaptain"
+   ],
+   "important": false
+  },
+  {
    "id": "05bd0e9cef3cea",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWkdpemRHSDlMT2FBTU5Yb01RRXFEZDZLV1Z6RF9FUjBRVlBxeW1kV0g1Q3B1RWVoTFNhX2RTdnRUVEF6ZG9LZW12VXNxMkkxaGM1ak1xVmpZZmV6SXhLcE1aM1ozeHpWMjBydVFfZnNTQTZESTlGMzZsamMzSmpVZTF0eHBaWWdtVGVNYzRiQllFbHlUU1ktczFDejBKOEltN2xraFd5Rm51MFkwQWhjbU9B?oc=5",
    "source": "The Globe and Mail",
@@ -1653,6 +2034,24 @@
    "title": "Середні ціни на пальне в Україні 2 листопада збільшилися",
    "sources": [
     "finway.com.ua"
+   ],
+   "important": false
+  },
+  {
+   "id": "f6812edc9d9876",
+   "url": "https://gcaptain.com/uae-to-protect-energy-infrastructure-invest-in-new-export-routes-to-prepare-for-iran-war-minister-says/",
+   "source": "gCaptain",
+   "via": null,
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T13:18:50+00:00",
+   "topics": [
+    "logistics"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "UAE to Protect Energy Infrastructure, Invest in New Export Routes to Prepare for Iran War, Minister Says",
+   "sources": [
+    "gCaptain"
    ],
    "important": false
   },
@@ -1840,6 +2239,25 @@
    "important": false
   },
   {
+   "id": "6cc6038ed7efc5",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQUnpxc1VnSHIyYkgzRXhpS1JmeU9aWEdISUtSYUlNVU1vOGI1MVpQeC1VVVJ3UU11SkxoXzYwbjZadkY2Z2prWllwa1hBa3VNZnpKT2QzRlVMU1hOazNrdmpjaHlWQl8yN2ZmZ3RpYmZvWFFSaHFRTTRhRVkxRlBOVzNPczR4c0cxZjBFb3B5RDlKb0ZlNTRqdE82Tl92czFZRlAtdy1UZl9yOHZ4SGJ6ZmJwNnlyak1ZMjRnVmlrNWRCUXIyeFVZYnNGTmpFYXduZm9tNnBDTHdnM1Z5VVluNWg4bXljeDBrMjJpUHNIWQ?oc=5",
+   "source": "The Lufkin Daily News",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T13:10:43+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Oil drops more than 4% on talks aimed at ending US-Iran war",
+   "sources": [
+    "Central Oregon Daily",
+    "The Lufkin Daily News"
+   ],
+   "important": true
+  },
+  {
    "id": "b9347c3d6f485b",
    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE93ajZ4UXJtRVF2Q3oyaVo5QkZjQjhIUllTRHpJemdVSzBETkdMamJWd19wSDlGamloX2YwTEVkS0tnS3VRNnl2QkVGZDJOR0dlSGl1LUtyOFJITzFwcEhtUV9JaFc0WktIeVpta19vQnBPZw?oc=5",
    "source": "Energy Intelligence",
@@ -1869,7 +2287,7 @@
     "oil"
    ],
    "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Дизпаливо і бензин дорожчають. Які ціни на АЗС у понеділок",
+   "title": "Дизпаливо і бензин дорожчають. Які ціни на АЗС у понеділок?",
    "sources": [
     "Цензор.НЕТ"
    ],
@@ -1981,6 +2399,24 @@
    "title": "UNDP plans to establish 75 solar-powered greenhouses in five provinces in Afghanistan",
    "sources": [
     "Hortidaily"
+   ],
+   "important": false
+  },
+  {
+   "id": "239be519afc902",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9JWmxOR2pJdWdoTlZwMWxEZHAtWG9QZHhKSjJtUkhrN29wdWt5UXpMQmNnTmRyQkJmMkJuQlZCN3Z2WTVTN0hUeEIwWG9CR3FSTWxSMVgwS1FyTkk4Z0JtMlU1ai1mZXZM?oc=5",
+   "source": "Ukr.net",
+   "via": "Google News: логістика",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T13:05:12+00:00",
+   "topics": [
+    "logistics"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Укрзалізниця підвищила тарифи на оренду зерновозів та цистерн з листопада",
+   "sources": [
+    "Ukr.net"
    ],
    "important": false
   },
@@ -2141,25 +2577,6 @@
    "title": "Oil prices fall sharply in early trading overseas",
    "sources": [
     "TheTrucker.com"
-   ],
-   "important": false
-  },
-  {
-   "id": "8fe0b6b5b25f5f",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPU0xWdlRHbkJycm1TNUZVbnpFcFFxS3JOYXhRbDRQLWthbTJkb2x2aDY0LXdZdk1Cdk5vaGNQcnZLVFRLOUp2NlRuUmwwenhIdTE1bFdDYUxWbVhPWmtJQXo2WlJoRHdrdzczclVvdGJ6YkZQek9xLThqMnFVMEFIMWloZDZFZ2tUd2ZyZzJzR0Z0NHdTS1FMM2p5aGYxV1czVFdpbWI4b213MHdzSC1VMkxoVHJJZm9rLXdJNi1hMjJwWndNUW9oMHJ6Qmp3UVhTZXc?oc=5",
-   "source": "Forbes.ua",
-   "via": "Google News: промисловість",
-   "tab": "ukraine",
-   "lang": "uk",
-   "published": "2026-11-02T13:00:40+00:00",
-   "topics": [
-    "logistics",
-    "industry"
-   ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Крюківський вагонобудівний завод вийшов у прибуток 94,5 млн грн. Як він наростив продаж вантажних вагонів",
-   "sources": [
-    "Forbes.ua"
    ],
    "important": false
   },
@@ -2366,6 +2783,24 @@
    "important": false
   },
   {
+   "id": "0bb36680bbaba0",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQ1RZTVd1aDNIMnZBRWlfckFLbFpTUmZDVmlvbHV0OEF6VkZGRzhYODQ4UDYxd09MdF9kUDQ1MXFHZnBjZWdzQk5yaFpwcnZRQ01YR2NjdXB4Z29OSXZYcXk3VTBTMlVwaUFvUmpRX1M1T0dsYVBWX1BUaE5RR0lCR1hhVkQzY052ZzVfeTE3OU9sY3c?oc=5",
+   "source": "Yahoo Finance",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T12:50:00+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Oil Enters November With OPEC+ Holding Steady and Five Producers Set to Report",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "important": false
+  },
+  {
    "id": "2637e244cd47f0",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNY3pjNVZfUzBKS2ljMm1xZUJCTkdwNkZoZFVsRDQ0MjJKbUdXczVhanhhQ0Q2ejVxdzN0OXB0R3NiMEJsdHVYWEM2V2FBeEpKTU1mUzlvdURTR1p5Q3NMZkpqVzhLN0lSY2piSnNqOG5uY1VpR2lJRklEWHNWRHcyRHVXbzFXWVJIX2ZuaFJWcTN5UmNwcS1RWjAta0M1NzFqQlNCNDVZcWIyQkJD?oc=5",
    "source": "ChemAnalyst",
@@ -2415,12 +2850,9 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "US futures rebound from huge sell-off last week as oil prices retreat sharply",
    "sources": [
-    "Boston Herald",
-    "Marietta Daily Journal",
-    "Star Beacon",
-    "The Killeen Daily Herald"
+    "Star Beacon"
    ],
-   "important": true
+   "important": false
   },
   {
    "id": "74beb1f75bacdb",
@@ -2692,20 +3124,20 @@
    "important": false
   },
   {
-   "id": "e521ae62bd305e",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZW5XQmRfZkZUWDVmZ1RoTVh5cTlUS1NMVXZTUi1fYW5hQjh2M1BkV0YtbFNHenM3WjNLWnk1M2stNzZ6U002TVVSbTBHczdpMGJOQ2tVUmpoMnZUcFUtYkI5MTd2ZlFMbENlVEVfcUxUUTBVSk0zNUxhSlJuQTlkcUtBZjI3cmxsTTc2Vnp2SnNSR1NzNHBNY2xfaEJOcEhNckUzMkZZcnB5UjlQTHlCSFppMHdMSjA?oc=5",
-   "source": "FXStreet",
-   "via": "Google News: нафта й пальне",
+   "id": "d72c8fda3f9366",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdVFwclhzSHMwRUw2cjFSaUc0TmdnZG9LOTN2a1JIdXk0WHd6T2g5ZGJOZlJJZ2JxTC14WTd4WWFKdmM2c1pxOG5CYkNGTUNfcDBaRERDbXVZLVB6NmZsanVBN20zT3RieFZCMXExZHRuX05pa3NKQUJUd0lmWmFNeFZKeVlDWXNSMmN1eG9SNnFzN1d3VGdkOWI3dWszbU5RMEhtZjRLS0x2UdIBqgFBVV95cUxNdVFwclhzSHMwRUw2cjFSaUc0TmdnZG9LOTN2a1JIdXk0WHd6T2g5ZGJOZlJJZ2JxTC14WTd4WWFKdmM2c1pxOG5CYkNGTUNfcDBaRERDbXVZLVB6NmZsanVBN20zT3RieFZCMXExZHRuX05pa3NKQUJUd0lmWmFNeFZKeVlDWXNSMmN1eG9SNnFzN1d3VGdkOWI3dWszbU5RMEhtZjRLS0x2UQ?oc=5",
+   "source": "South China Morning Post",
+   "via": "Google News: електроенергія й ВДЕ",
    "tab": "world",
    "lang": "en",
-   "published": "2026-11-02T12:35:08+00:00",
+   "published": "2026-11-02T12:35:42+00:00",
    "topics": [
-    "oil"
+    "renewables"
    ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Gold finds relief from Oil’s decline as traders await key US economic data",
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Laos banks on wind energy to power renewables push",
    "sources": [
-    "FXStreet"
+    "South China Morning Post"
    ],
    "important": false
   },
@@ -3068,6 +3500,25 @@
    "important": false
   },
   {
+   "id": "24678c4a282a0c",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWF9heVJmWGJxcDJPX3VpMjhhTC1vYXlaakRQc2hTMzhUVEQzaUVDX09LdlFLYzU3MGFlYldfY050ZnhGRmVta3Y4YW9GbWpfankzd1FTSjBfX2tOQ016RUtJQXpmRlJYLXR4NkUxbXVyaXdTeXBacy1fS05Ea29uMjZkN0ZhRkZCeDBlc0ZkZGs4VGc?oc=5",
+   "source": "Vietnam.vn",
+   "via": "Google News: промисловість",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T12:17:01+00:00",
+   "topics": [
+    "oil",
+    "industry"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Нафтопереробний завод Dung Quat отримує майже 25 000 мільярдів донгів прибутку, з яких понад 58 000 мільярдів донгів зберігається на банківських рахунках.",
+   "sources": [
+    "Vietnam.vn"
+   ],
+   "important": false
+  },
+  {
    "id": "325448a09e5b71",
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcmtHQllXYy15NHYxVzJtOE5ITnhwOHNvdjN3R1lzdVlFanYxd1BkWE5VMHJUZHRnRVhBanM2LU44SHl0MEJQNDB2dW9ZbkVEZGdOZndCcWFocVFLMGdmaGItRHlIRlpzbERuSlRSckdub21vR2xCUE9BUVRlVml0YlFiczNNd2J6ZDFXam1FSVh6UV9DRkI1LTZ3?oc=5",
    "source": "TheStreet",
@@ -3101,6 +3552,24 @@
    "title": "Indian-American Sharad Tak Secures Approval For $8.2 Billion Texas LNG Port",
    "sources": [
     "indica News"
+   ],
+   "important": false
+  },
+  {
+   "id": "197c7ed1d09b13",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYjJpYVZhM2VXMjhwWHNMc2o3bVFZVnFjd19tcW9xTDlqMlZFdGdUZ3QxZUgtTXFGOTBKdC1KSkI5eU9OaURfY0pGenctWk1aOWtoRkJyQTNyRWMxWE9QQTc0Q19JZmd6T2s4UTZVTmlwaE85SUR6Ulh1ZU80SWQ2Vm9mTm54a2N2OEJnQWpidnlHUDFNY1FjcnZ4REt2dw?oc=5",
+   "source": "Yahoo Finance",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T12:15:54+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Earnings To Watch: Saudi Arabian Oil Co (SAU:2222) Q3 2026 -- GF Value Sees 28% Upside",
+   "sources": [
+    "Yahoo Finance"
    ],
    "important": false
   },
@@ -3358,6 +3827,22 @@
    "important": false
   },
   {
+   "id": "bee2416eeb78ab",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORm9XYjF2eG8xSGpZcEx4OV9SWV9wZ3k3Vjc5bk1zdlJYVzdNNERjWnFYUmdvNmJFR182M0Z5Ym5BdmlnQUNmNFZNWmxiUDhxRUQ3M1I5dVFvcnAtbUktWkNhTmxZUGlnaEF6SmxnNGZDVVVrbW0zTEs4MEY5cFFxUFNGVk1FS1RhaGRzd2NnRmNQdXFVdlBzQlNKNzA5amU4?oc=5",
+   "source": "Recharge News",
+   "via": "Google News: електроенергія й ВДЕ",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T12:04:04+00:00",
+   "topics": [],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "What India must do to get its wind industry moving",
+   "sources": [
+    "Recharge News"
+   ],
+   "important": false
+  },
+  {
    "id": "c315b4c42b0001",
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcXpCa1U3TXNzb29lMlJrcldmeWJkQnVkTDJzSFJGVFBNY2VVVFU4NHRtenpqNVpOeW5VcUhMUEFUSkd5bXhZWmoyeUtXaC1XSDVaY1BBUTh0LWdpOHJHT2pOeWNlTC1oRDg2ZVhXbXdzMjlBNkNYclJEWmRhZDA5TExkSHpNc3ZzVmpNbE9abDBmQWl0RHc?oc=5",
    "source": "PV Tech",
@@ -3570,6 +4055,24 @@
    "important": false
   },
   {
+   "id": "2e075d51bf7ea9",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOajhfNlN1YWFHS2lsSGtDQ2ZoZlA3RGh6ZWlnWTNFd1hfOWN5TTg2NWNURWlDNDNrM2VTd0JWMEt0NlE5TzRJdE42RnYwc0MzbzRmbXZMNHZ3MWhkVVRtcUF1ZDFDTnJxbGo2RE9jUHM1azNxRmxzeTFxN0c4V2RjWWRObzFkbmhEa3Y4dFRyckd0bmZIZHo1c3NGVkdZeEg3TGRF?oc=5",
+   "source": "Utah Public Radio",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T12:00:00+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Can sustainability help ski resorts manage higher diesel costs? It's complicated",
+   "sources": [
+    "Utah Public Radio"
+   ],
+   "important": false
+  },
+  {
    "id": "55ba5020b1d761",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQclF0ODhjMjdyM1c3UzFRZEUtcWJ3MkNxa0tEem9obXZrS2Y3T2JaSHJLODZHaE5pZ1dvYXRsTDZuTS1Vc0t5ZTFTUWpuZDF6OEpuUVhQeDdOV2t1dmlYRDhfNTdNYlJ0aG9IQzdSWGdtWnJCOV9sYWdiMmdXc2FHR2lZRDRySTd6c2xraGU2SDNGb3ZidjhvNERTZkVadFoySXliOUw5Sm1Zbkw2dE5N?oc=5",
    "source": "DredgeWire",
@@ -3661,6 +4164,24 @@
    "important": false
   },
   {
+   "id": "60b6f3b8e3843a",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQnRKMnJkdDhhZktsZHZxWjZaRUJFYXhxaGtiVVh5UjJ2TUVjcV9RdkZtNGxZbmNlZXFZa0ZKdTZPV0dfMXB2U0ttR2RlX2c1ZlJjYU51aHViM0ZIcE51Qm5NX2JXc2U2dlBIZlNOb2VaeW9nTDB2MDRiRGZHT19VakhxMkRvUUpsYXFqMy1rY2lHNUtySXEzVTktY2s0WWM?oc=5",
+   "source": "The Irrawaddy",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T11:56:46+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Business | Regime, Thailand Discuss Russian LNG Supply Route via Dawei",
+   "sources": [
+    "The Irrawaddy"
+   ],
+   "important": false
+  },
+  {
    "id": "dbc8854a6880bf",
    "url": "https://offshore-energy.biz/2026/11/02/gas-flows-from-southeast-asian-offshore-field-21-months-after-fid",
    "source": "Offshore Energy",
@@ -3715,6 +4236,24 @@
    "important": false
   },
   {
+   "id": "49525ff596b61e",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeF9idlBEcVVqS1UxQWNRekJwb2h5TkRaNG0wQ19EcE1MY09zV2xLMzN5RkhLQTI4WkJnUXR6Q2txeDdlZHAzcVFaQ1R0MnVOQ0gzYk9mazlzZVJna29ldjBNbnlWODJPVFMtb0M4ZEpVOEFzd2FVSWwxeE5ramRtakRRME5qY2ZJM25fdVZTOHpKcXFhajdtd21aMU9DcDg?oc=5",
+   "source": "Renewable Energy Magazine",
+   "via": "Google News: електроенергія й ВДЕ",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T11:54:21+00:00",
+   "topics": [
+    "renewables"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "NORD/LB closes 74 million euro financing for MSE and Envalue?s 97.5 MWp northern Italy solar park",
+   "sources": [
+    "Renewable Energy Magazine"
+   ],
+   "important": false
+  },
+  {
    "id": "33351bc42e9f01",
    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdjlWdU1EeXZKeW5aMkdTQ25UQzR4TUFKSnBWc0NMeXliYUdPOHNBdFljWndWWW5ZZ2lWSV9TelNyaHJ5QVQydmRhLXFXeF9UaVFIQlo1Ti12V09GOGl0UWU0WFdGeU54UkpUNl85dHgxRTNPX1Q0TE91S0pYM0ZueG8xWThOQQ?oc=5",
    "source": "Yahoo Finance",
@@ -3728,10 +4267,9 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "Buy CVX and XOM Amid Solid Q3 Earnings and Surging Crude Oil Prices",
    "sources": [
-    "Yahoo Finance",
-    "Zacks Investment Research"
+    "Yahoo Finance"
    ],
-   "important": true
+   "important": false
   },
   {
    "id": "623a91be1b33c6",
@@ -3770,6 +4308,24 @@
    "important": false
   },
   {
+   "id": "e855067f489990",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObWxMMmhJLTlocHlWOEtxY3BtTmdaNWo4WURpbHViOGwwM2hxX2F3c21Ta0lrQ0pOajJEUlpodlBLaVJmdUhFQzlyRWRnZ1l2dmd5RmU0WWtWVEQyS25qWDMwLUVmR1I0dHZuYlFET0l3RnhTemVpY09NVl9nM3dVN1pKVF85dlk?oc=5",
+   "source": "The Cool Down",
+   "via": "Google News: електроенергія й ВДЕ",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T11:51:00+00:00",
+   "topics": [
+    "power"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Tesla's Powerwall 3 now tells heat pumps to store extra heat when electricity is cheap",
+   "sources": [
+    "The Cool Down"
+   ],
+   "important": false
+  },
+  {
    "id": "4169bdc6a3e37e",
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZmk5ay1rLUx4aURIYmtJVlFHeWl1VXBhelo0Xzk2U0t3VEhZbDFidEp3aVEwTnp1YVBmMGw0UktRaDdkdGQ0RWltWUhldzFIOXZXb3BRVHZQNUhTcnBwWHJaX25veW5MM1dqQzNOMjhYUmRsYXNHVllpeFNiOW1ERGk2aEpNbHFVTFJhOWxPTVNOZXdtdnhDbm1qRUhmMmc?oc=5",
    "source": "Reuters",
@@ -3783,9 +4339,10 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "Canada futures gain as oil retreat cools inflation fears",
    "sources": [
+    "Kitco",
     "Reuters"
    ],
-   "important": false
+   "important": true
   },
   {
    "id": "c729cd522ca36f",
@@ -3879,6 +4436,24 @@
    "important": false
   },
   {
+   "id": "5fc8a1ad2873be",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbzdleW0taUxPbDk1SnkyR0NOdG9rSDdrcFNmTHB6bkRuYkw1UFViMlg2eGFpLXlhRXpNTVpDeGExc1JudUx5RzFoenFlSkxBR25jZ2VucXdLN0hqZHNpRlNyYWZ4LVV0aS13a3lBbk9pODA2VmtLaUF4NlVUTHBUekRhR2dJa3JCeUxTMHVEMW9PaGpVb1RSaU1OMnFFanBNSDlsTg?oc=5",
+   "source": "BusinessGreen",
+   "via": "Google News: електроенергія й ВДЕ",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T11:44:28+00:00",
+   "topics": [
+    "renewables"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "'UK's largest' cathedral solar panel project to launch in Winchester",
+   "sources": [
+    "BusinessGreen"
+   ],
+   "important": false
+  },
+  {
    "id": "c651118d69150f",
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNd2pPczNwQlkyUTZRX2wwUkZTd3J6emxUTFh6VmxTLTJhc29PSmszNEpOR1N1X2doYll1U0FWUXVvcVJwLUZqMjNKZHJFcVNaZHF3cUxTUW5BR3duQnFqS3FBYTRNWDJxVldBbDNxMy1xR1IyZ0dBRFp5SlBMWW9uZ18zeHZhdnNVSWJ2RGJ3a1ltZjh4OXZXbTlmMDZjTXRWWU55eDZ3R1oyOVlNcmVUeUFYVHR4d0ZzY1JqbEhudmc?oc=5",
    "source": "WFMJ",
@@ -3929,6 +4504,24 @@
    "title": "У Росії під час запуску двигунів вибухнув новітній Су-57 через неякісне пальне, — ГУР",
    "sources": [
     "DSNews"
+   ],
+   "important": false
+  },
+  {
+   "id": "a6e7aa6e34a4e0",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRFZfR0lwNUJaSndyNUlFOGhaUHAydFdaek1ZVm5rZVNQOWgxWFRPTzM3NHpFd1pYU0lHQ3FHUUk5SHFnbFNqMUY5d3dSWEZERVdSUm5rWmVxeFVfUl9BS0JSNjRWWVlEWmdnaS1rSkpNZ1VPcTNUSXExMmU5cWZLS0ZoNGZfR0lyeGVvNNIBkgFBVV95cUxQRUNoaHRLX3owNTZjenJISzZmc2xCY1lHWlNralVtYXlsb21sSTdxX3VrMGRJTGVXMWowMm5Sc0VtUGpVbGRPY2ZfWVZYZjJFQzFDYjNWSGJsbFg1bUtnekZLX2xrTjd0amlGNWxTbW9BbWdBUTZzQUNZOEJIV3JSY3VOTUZmMlR3X1VtZTlQaWhaUQ?oc=5",
+   "source": "Останній Бастіон",
+   "via": "Google News: промисловість",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T11:41:01+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Україна за три дні уразила 10% нафтопереробки росії – OSINT",
+   "sources": [
+    "Останній Бастіон"
    ],
    "important": false
   },
@@ -4362,24 +4955,6 @@
    "important": false
   },
   {
-   "id": "8b44789fa031b0",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYnBKb0h3MVhPcmVpa2lVT0NaZTllU3dhMU1OeWxuUm1TcS1iUzh6ck5DNUJzTmxZRlJvSnJ1SlVTVXoyU3pNWENyTk1VRHVSbW1CVXFPOVQxTlpPemlBSUZwX1lqY1pIbUpDZHFNelhsWWFQMWVMbnZqcy1LcXI0ZWJXaDVwQVN3emdmbWxEMW51YzVFWFJUd0libTVQd1oxRGpGdE9uQ3JJcHN5UEFadVZOMXk1blU?oc=5",
-   "source": "marketscreener.com",
-   "via": "Google News: газ і LNG",
-   "tab": "world",
-   "lang": "en",
-   "published": "2026-11-02T11:20:14+00:00",
-   "topics": [
-    "gas"
-   ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Russia's LNG exports for January-October rise 13.4% year-on-year",
-   "sources": [
-    "marketscreener.com"
-   ],
-   "important": false
-  },
-  {
    "id": "c6a752534cc57f",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTkk1LXdxbDhGTUtXTV9zNXBYS19vVHpXLTFPeWhCVHJab0ptQ0hBYjZ2WnRFbXdyUkQwdUVJWWZFcjR2WWx1dENBcVFxVHRudU01VXNVNjhxMXd0SEtaaUVHa1puWTJzSGFkWXp3amRZOG5VeTVieDRKdThOcndvQUdmVkl3RkVfTFJZNXhJN3A1YlRIemp1eS1lQS1LalNiVlVUakFjSXRVeW1ReUE5ZzQ3eUdwU0ozWVI2XzNB?oc=5",
    "source": "Delo.ua",
@@ -4436,6 +5011,25 @@
    "important": false
   },
   {
+   "id": "ee3ff1cb7f93de",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQYWgxTjV1N3pvcHd4NVBKQkdyZUlLYzRGTHQzamJmdDhQZnVCbU1oS1k1OFIyaVR1SDZXQ0hrdFE4YmdNSlVSUnpwVnFiNWVkMUttSWQtZjBoYkFvZnBSOUY4VEdWSnZkUExod3ZjUlZ0M0JCTVEtOVNnMmlKNnpQeE5GOHRKV243Qmh6Sy05VzBoVXBDWHViOUM2T3FTMnJtQkVCNjhBM3J0WV9kRDF6TzFKclpCS0N2VUx5cE12Q04xUmZVN0dLLUtmV2E1dw?oc=5",
+   "source": "TradingView",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T11:16:43+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Russia's LNG exports for January-October rise 13.4% year-on-year",
+   "sources": [
+    "TradingView",
+    "marketscreener.com"
+   ],
+   "important": true
+  },
+  {
    "id": "fc0263161f902d",
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQdEc5TzhWZlRmZkJZRFF5QXZ5SHE3dWs3T0tNcktuaVdqZ3BUdjFBQnF5RnFCN0wzd19NRmlFX25jMnUtNmFlVmNESVFsd0dFVXJEd1lOR2k4TnRhc0I2WlV4WUJHbHRNZE8wbTVPS2wwYTAzUFRodnhWTkYwQ0FfY0RsYw?oc=5",
    "source": "TaiyangNews",
@@ -4472,18 +5066,36 @@
    "important": false
   },
   {
+   "id": "168ce4ef9d483a",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObnF4LVhiZWhncC1hQ1ZiX2U3bC04YlQ2U2hYQTZvYXlma1k3Yl9YRHBrdFFFaE5ZTTV2RHliTDNiZ0NqRXdtZC1qaGdjeGNYLU43ODRUcHUzWW9xZEt3QVdCcnNEMGpVVUhTR0xLaEpXeFFhcWNtSkJBZFQ3OTRzUWl6aHFpaFp1NlZJNFltZm50ckFCU19z?oc=5",
+   "source": "Yahoo Finance",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T11:14:05+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Chevron rides a diesel crunch to its biggest ever refining profit",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "important": false
+  },
+  {
    "id": "3008c216cbd3b5",
    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWXV0TmJGSFpOWnNlNXZZeXp0dnhHR1hRZGZkMnRQclM3Um1TX0tJTFBYaFlSX0l0QW1EaTBvYUJlLWNrMFBpNHZZanNzVnhKbWpYMG9OeXlxSFFWSnBhYUZFX2lWcjg5aFJaeHFselpIbEVsMnFnRkV2YUc4b0RxTFJySlpoMUVRRkdXa3dQTmlpdHJtbFZUTF9pYXJFeEh3SHF5eDJrcXgydjhIWWJIdnJDdXBxWHhXWFJCaTFmZlVvWnZNemdyZXNZNmVVT3c5akMwR19MV3Z2elBod1VTcTlTNNIB_AFBVV95cUxNWFRsVHlQVDVHWEk4QVUxeTEyVnN6d3lEQXUxYmVMTzQ3aDRzODdvSC14UjU4VUlkYkFVVXhaRXVUb1NfQjhVdm1VMF9kTDVzLWNRUnFOd2stTzJzLUtMcGlwYy1VdDJFeGlIVWtuX3dPbEdpUlBoNFNmelJxQk1uaHd0bkw3Q010RDJ3U2tPNGQxeGsyUjh4b0hHYkhBTFhOSUk2VlhBbEdqRnphSGxhenZuS3g3OXZZdFMwdG45UGJXTmp6VXhHWGdlMVVieEdTU2oyRUUtSmV3SU1zYzZ0M0JGa3BLTi1wLVVjZ2M1YUdZRVJaWUhkVTRhc3Q?oc=5",
    "source": "УНІАН",
    "via": "Google News: паливо",
    "tab": "ukraine",
    "lang": "uk",
-   "published": "2026-11-02T11:13:29+00:00",
+   "published": "2026-11-02T11:13:00+00:00",
    "topics": [
     "oil"
    ],
    "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Ціни на пальне у США напередодні виборів наблизилися до історичного максимуму",
+   "title": "Трамп б’є рекорди Байдена: ціни на пальне у США наблизились до історичного максимуму, - FT",
    "sources": [
     "УНІАН"
    ],
@@ -4504,6 +5116,22 @@
    "title": "\"Укрзалізниця\" може отримати інвестиції з Туреччини для оновлення локомотивів",
    "sources": [
     "Delo.ua"
+   ],
+   "important": false
+  },
+  {
+   "id": "091423eec3ead5",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMGpnbE1nS2lhQjZUckN0djRaaWl0T1dFbDg2Z2g0TjYwVWhxSWJ4bUM0OWxPcEtWbC1fNGliM0hrUUpJMUhQLUpqMFVIckp1MElPdmJVUHp3RUJLYnlIOTZ0NTU4SHRmclJld1J2dVpRRVFNRHJMeExPQzBkcnFTS0xVZWRpSUZ4bnJPMVV5WDZEV3hf?oc=5",
+   "source": "Energy Global",
+   "via": "Google News: електроенергія й ВДЕ",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T11:12:37+00:00",
+   "topics": [],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Vattenfall opens first hybrid park in Germany",
+   "sources": [
+    "Energy Global"
    ],
    "important": false
   },
@@ -4612,24 +5240,6 @@
    "title": "Скільки коштуватиме передача електроенергії: НКРЕКУ запропонувала тариф «Укренерго»",
    "sources": [
     "Dengi.ua"
-   ],
-   "important": false
-  },
-  {
-   "id": "f9ff123b1c69ff",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVTNlNFBrVW0yaEdjX3pxemdtalAwTGNzZDB6eXZOMjZtdHBKN2Z3Yk5qdXZSNGEyWWNhS2VxclNYbHJCRS1Pd3lLYnJITlg4TlVwS0JHRVNRRkN3ZVFpTGpYN3lqTzlEbnIyT3ltNjZjcTBzOE9UalRBa1k0c0gxR0FOWFVGUWFZc0ZZZnRmNnZHclM1STNxQVZwQkFIMThWUGRUZ1dEc0o?oc=5",
-   "source": "Moomoo",
-   "via": "Google News: газ і LNG",
-   "tab": "world",
-   "lang": "en",
-   "published": "2026-11-02T11:00:57+00:00",
-   "topics": [
-    "gas"
-   ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "ENN Natural Gas Posts Lower Attributable Profit in Q3; Revenue Up",
-   "sources": [
-    "Moomoo"
    ],
    "important": false
   },
@@ -4829,24 +5439,6 @@
    "important": false
   },
   {
-   "id": "56f62c373f7c96",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBwXzhjSWFjZnVwcGpYTzFLdE56T1Vfc016YTh4M2wxMUVwNWhYTVAzVWFqYkVMQW9fbFJXV29mTkczQXBUWE5EbFJRNjY3cExFN0d4Qi1uYVBIZ05yOWhkVlVoMzZER2tSaWdGOU5GSUNtRGM?oc=5",
-   "source": "Ukr.net",
-   "via": "Google News: паливо",
-   "tab": "ukraine",
-   "lang": "uk",
-   "published": "2026-11-02T10:52:44+00:00",
-   "topics": [
-    "oil"
-   ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Найсучасніший російський Су-57, який згорів в Ахтубінську, міг вибухнути через погане пальне, – ГУР",
-   "sources": [
-    "Ukr.net"
-   ],
-   "important": false
-  },
-  {
    "id": "2abf7749ac027c",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPR2gxb2JSMV9VZXlGRDVzbkp5WEh0bDdkTlJ2bC1YTzQybDdlbUJVMHJBMnFVQk5iQ2dCdlJ4Q3F1X2tpNGU5S2RkZndYMjhWbEp3S0Y4MzFvMGFkNjBKSVk1elVBTnVCZEF5YmNXMmwxRV9kZnUtZ0s4eV9tQ1BiTVJ6bEkwZjA1YnliZ20wRW5ZcFJuNVk2M1M0aFZMdEwzeEVtSEw5Wklfb0xZQi1VaE13QU5TQXNScEZUU25POE5uVGotcW16MGVLQTZUdUhBWjFtM2Vkb1cyZFRQMzBWVA?oc=5",
    "source": "Investing.com",
@@ -4992,6 +5584,24 @@
    "important": false
   },
   {
+   "id": "181f73cdbcfa60",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaXg5N2hBZHlZbGhMUHczd3RYVmFmUXJUREliZGk1VjhfbWs1UHZvRkR1YmdzakZFQlIxY01xdzlaallnZUJiZ1RNc1pLbHZMYTZ5YlBWQWlJVm00LVNkYW9hWW1EbDVPRC1PdGo1Qy1IcV8zX2lTcTZNcVVyWmxfSWpkVjhBNzBrV1dvcjU1dF9PdXBQeVZETlhGa3VsNGNKTDJwcHEtRzM?oc=5",
+   "source": "Yahoo Finance",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T10:49:29+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "US Elections, Crude, Earnings Churn Asian Stock Markets",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "important": false
+  },
+  {
    "id": "838c9985a7db6f",
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYTh4RU9Ca3pXUHdDLTlFQmF6QzhLSF9tdjdobWhPeDN2Nl8zbHhzTm9kck1LQlJkSkRTU3M2Slh2VTUwVDhKak1ULTdrYlRFMTRhZTZuN0xCTkR1VzBIbDUwMEdoYUtlV2dxQW9oV0dPZmJ4bHlDMzhBNV9OQlViSFo3Rlg3ejB3aV9ScDVYY2lRUjB6UTNhWUxvQ0lpNThtU3dRVFROVUFyZE15UlRpeVQ4dktoRDhvcldoX24tdi1ISi13aWZEZ29TQkpBaGpHREE?oc=5",
    "source": "www.marketscreener.com",
@@ -5024,6 +5634,24 @@
    "title": "Watch Jeff Currie Sees Permanent 'Regime Shift' in Oil Market",
    "sources": [
     "Bloomberg"
+   ],
+   "important": false
+  },
+  {
+   "id": "15eedacd12e8f4",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5zNGR0MF9RYzRqMEZrM2pNeHUyY19CTDFJMzE3R0l3S1o3cVVCSFFUMDFyT2RXQ3pQd3lzZnptN241QTJ3SnBZUnp1TGc5dlhFdUhkNC1nZEFKaWVVbzY0Y1lWT2NyZDFaX09LaGgzZ2tyTzIyUkFR?oc=5",
+   "source": "Ukr.net",
+   "via": "Google News: паливо",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T10:47:09+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Найсучасніший російський Су-57, який згорів в Ахтубінську, міг вибухнути через погане пальне, – ГУР",
+   "sources": [
+    "Ukr.net"
    ],
    "important": false
   },
@@ -5221,9 +5849,28 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "EUR/USD, Oil Forecast: Two trades to watch",
    "sources": [
-    "FOREX.com"
+    "FOREX.com",
+    "StoneX"
    ],
-   "important": false
+   "important": true
+  },
+  {
+   "id": "bde695aaadd207",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNQlhqTGJmTWFEaG9QdGIxeXotd25WamVvX1B2NmxONENmSEVfeGh5X0pJRWxsNm1ndk5COTEtb01oeXdEa3RLYV9aTG9ZQUxDRE1ZeFNyUnJqWEhZaEdTSGNxM20wdVc4V044MzY3cWFtVzB3Y3V4Wkd4Yjl0QzFpa2hNMjgtWU9IanlVbWdrUDdnQll3ZURCaHotNWVNME9UX29PNVhCTVdnTHE4N1RLTFhhU3VuNW16bUxzSlNzcDlsV0g1RHJzRkVuZw?oc=5",
+   "source": "Energy News Network",
+   "via": "Google News: електроенергія й ВДЕ",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T10:41:26+00:00",
+   "topics": [
+    "renewables"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Exclusive: Copperbelt Energy on building 136MW of solar without a sovereign guarantee",
+   "sources": [
+    "Energy News Network"
+   ],
+   "important": true
   },
   {
    "id": "62de5e4d9cc56a",
@@ -5278,6 +5925,24 @@
    "important": false
   },
   {
+   "id": "fdf3c18b02f53c",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQTlodFlLR2ZBVV9vSng5U0VtNWpJT2FHQ0x2bGFQSHpRRDE1cmVUUzA1TkZLQkVwVmI5LW84dGJJUlFQaGtmRjRFQ2IwbEh6cmNyRXlCVTk3VVgtX0sxS19XLTVJZTU5eTRZVzE2X21aRmwtc3VfRnpHandINHlTY0tWM01OUkJ6eGhqM0k5ZkNEU3BUZmNpX0JvUzk1NndpakpISmp4aFBWdEhjdGtQN3hEcXR4Zw?oc=5",
+   "source": "The National Law Review",
+   "via": "Google News: судноплавство й фрахт",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T10:38:05+00:00",
+   "topics": [
+    "logistics"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "WiseTech Global and World Freight Company connect ATC Aviation GSSA network to CargoWise AirlineConnect",
+   "sources": [
+    "The National Law Review"
+   ],
+   "important": false
+  },
+  {
    "id": "e1030b01598e74",
    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNXFSMzdyTGt2V3NVRU1LOWIzM244aks2X1dJcTNkcmFldXYwMVBDN2lGc0owV2tWOTdZSFZKcXl1bWVWQk10UmVqanRGRUNESFdNN0hIX3NtdWdFeGNnSFk3V3FFV0JHQ3JzOGtIUXcwZGdERE5EUFlMdzB2MnF1X0xxZDRvdkdZQWJv0gGQAUFVX3lxTFBVR3Z6dWhOU3NDX1o2UVI2VUVBVXZfSGtWSjQxbnJKbkFTekdkUFc5TWhVM253UjBLUUI3ZUZwSE04QnRwQVotWnBEUXZkS2doOS11c0NMZWEyWTNwTi0xU2stazZvcFhDSUtWeUxreld1QV9WZFE5ZUpKNV9fa18wcEdxd3hMN0s1dXFlazlqYg?oc=5",
    "source": "24 Канал",
@@ -5308,6 +5973,24 @@
    "title": "COMMENTARY: Small island states don’t need sympathy at COP31. We need investment",
    "sources": [
     "Reuters"
+   ],
+   "important": false
+  },
+  {
+   "id": "211abb024e522c",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1peEsyaUVxY2lHcE5wMWpSQ2cxZF85dUtQVkJYNDdsak53a2YzU1Q5SGZZcnpMbThGeGlaOC01aVNZWkpUcElaV2lzMTE0ZVRJR2k0LURHZ211RHcyMEVxWk9Zam1ZSmcwY2JHa1N1Um9iWDZvRERiRS1DZV9MVms?oc=5",
+   "source": "Yahoo Finance UK",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T10:32:31+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Oil Prices Slide Nearly 4% as Iran Peace Negotiations Raise Hopes of Easing Supply Disruptions",
+   "sources": [
+    "Yahoo Finance UK"
    ],
    "important": false
   },
@@ -5400,6 +6083,24 @@
    "title": "JP Morgan doubles down on VLCCs with fresh Hanwha deal",
    "sources": [
     "Splash247"
+   ],
+   "important": false
+  },
+  {
+   "id": "ce774455f3c8fc",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMVZGX0pCTjVYVjlRb1ltSHBlSFljSGMzRlZvczd2emotV0FJUWUySlRTd3lFRVpzN05VN2l0aWVWb01iUGZkd3NSNE1Rc2xzTHdXOVBiZnZUQ2VCM1FxY212endEdEJqNnBwclMzUVVxVEtfemJRNVZvVk9jejE4MTlhOUlER3JPNXMycWdEQ1BqcTN1MjB4cnJsTEw5QkxYS21qem1VR0J4dEZYcW9aVV9Pbw?oc=5",
+   "source": "EnergyNow",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T10:29:57+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Alaska LNG Needs More Offtake Commitments Before Final Investment Decision, CEO Says",
+   "sources": [
+    "EnergyNow"
    ],
    "important": false
   },
@@ -5551,6 +6252,24 @@
    "important": false
   },
   {
+   "id": "46226a63da9da5",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZTFkbzFjTC16VjBnNUo3N2YxRU41dWtzRU56THg5dkFmWkxxaHpjb0hOWmdZWmdSODIzU2hiTjFLVXVsVXR4VUlPR3ZnUEdKRkpiRTJnV09ROEswVEJ6RDhpQ3VKNU9IRjZyT3NkZjMyM0w2UkpUemlSVmpyalRFa0dUczV6a2JBMmdreXE3QWM0T296alIw?oc=5",
+   "source": "Yahoo Finance",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T10:23:24+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "US Stock Futures Rise Ahead of Apple Earnings as Binance Hack, Oil Prices and Midterm Elections Take Focus: Dow Jones, S&P, Nasdaq, Wall Street",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "important": false
+  },
+  {
    "id": "de339440c45979",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSHNzS2h2OGx2a2VDclJSdmY2RFljTUEzMzUxNjFTN21OLWZfaTZmTzl3T1pWZ0RwRGx1Q184cEU1aVNHZFZzcVQ0YzN0YkdOOG1nUDNlUUpmVDh3MDVjR3AtaXlUYTJPOUFUTGoxT0l4UUZCYlhFZ0gxT3lLUVlLUFVUTE40bHZQcl9pNldGWHRfdmctdkIyTjdiUlJmeGhReXNVWWFwODAtNVYwTXJiQlFB?oc=5",
    "source": "Connected to India",
@@ -5693,6 +6412,24 @@
    "title": "Türkiye selects contractors for 7 wind power projects under YEKA | Daily Sabah",
    "sources": [
     "Daily Sabah"
+   ],
+   "important": false
+  },
+  {
+   "id": "bcfb67cc5672f4",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNklHLU1PUlItYjlOUTlBVlBHbUNHZzVWTTR2Y0ZZWFlFMm9QbUU2V19GS2tDTHRiQ3JEQUlFbENNamJuZmMydlJLSTc0aHBVUEMyeUQ4RDlnQ3dLbGRHWWZtdDNmYThaQ0ZnSTBtVVBkTEI1b0pFTDhKcmFDamFhZUdhNzRJcTN1cGxaaExTQ2NZNlEweVB0RWhNemswRXpLTHktZy1WTVppUQ?oc=5",
+   "source": "Fruitnet",
+   "via": "Google News: судноплавство й фрахт",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T10:20:01+00:00",
+   "topics": [
+    "logistics"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "DP World adds new shipping link to China-Africa corridor",
+   "sources": [
+    "Fruitnet"
    ],
    "important": false
   },
@@ -5948,6 +6685,24 @@
    "title": "Copper Recovers as Easing Tech Rout, Lower Oil Calm Growth Fears",
    "sources": [
     "Bloomberg"
+   ],
+   "important": false
+  },
+  {
+   "id": "629947a24e088b",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNM0IwbGJwa0xMck5XY1U0TWd4dG9YTU1QUzJPS2lRbEwwblp1R1ZrbUtPZjh4eGp2dmI0UEpvZ0ZTSGloWGxMd21qX09vajhtZU5uQ1N4T3hEM3VTZlJlbUl5SVh6bDhKLURaeFhBQmJBUkoxMWtGT2NtZnZ4NXZBMVJvUVh1SmwxeHRDNGJpRjFxa0Z6NEc5Tm1BUGZGeUZTRVRlVzhhbmhsXzlzd2ZfZHpWel9OQXVzYkdyeGdOc3cxSEM2TEphUVpHSVVBV09JbzFIazVpX1c5YlRHWl8zTzlQX2R3dTVUVVRYWDdhQWF0d9IB9wFBVV95cUxOZGQwRTZJZk1Oekl5YnhTU1I1bHZDQ055RUtNNkVZS0pEcnB4ZWl4dGhoc3dUQlVFS3ZZU2V5UUZGdVZHZW9RSnk5c0xQbjdHUXU0Q2lIcFU1d25NalRJNFFTYkdyVURwb1ZzSGcxWEwzaG0wa0k5VHV4eURaZS00RzIzcmR4QVdkZUwtcnBENXpsd1ZjTi0yeElIN0ZiTnIybkNYR1NXQ2FiRGhFT3M4WHNPQ2hNRXlhbURvTXRyTHZMOUhsVVlEcDc3a1dSRkdNamVwZDFvaXU5SVJ0UFJFMmJsOHRyY3lUVnpnSWYzX0YwNTlkUlJF?oc=5",
+   "source": "Telegraph India",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T10:12:07+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Trump-backed US consortium eyes $4.4 billion investment in Pakistan's first LNG storage project: Report",
+   "sources": [
+    "Telegraph India"
    ],
    "important": false
   },
@@ -6455,6 +7210,24 @@
    "important": false
   },
   {
+   "id": "b87bccb7a9d696",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNSkFSZVlCRGg3cEZmUktJTUJWTVlfQmNMODgzbVh2NVA4NmZxR0txUmhpLVBtTmNPM2htanFucURpeUlZSnBidG5UT0pVQW95TTFQUXdoZzVqNlhmT2loY0QtV0F0ejR5c1lVRklqeXVKbGJXU2QzY0NDYk84alNYQWp4am8wTWFCclViTTFEYlhDSUtwSV9rUDM3X0YyNHhYZVM0dnJDQjg5YWJSN1dMYXBvbkJ1U09RZFpLZGZVNWNwZHUxVXF2UzZWTk9vcld6dFdGU214QjFxMERpMFZwQ2Q1c1ptUEtLYS01dzg0WXl4U2c?oc=5",
+   "source": "KTVN",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T09:46:47+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Global shares are mixed and US futures advance, while oil prices fall nearly 4% | National News | 2news.com",
+   "sources": [
+    "KTVN"
+   ],
+   "important": false
+  },
+  {
    "id": "219a1b7df3bd2d",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDhqdC01SjdpUDY0Z21WLXgxQVdxS0xHV0tzcEZXaDRiZWZpUEdjVjZ4Z1pJZ1VUT0dXNzRPNjVORkllQVMybjdJdGd5OXkzWjNzWVpYcWt1OTJTOGFGVm9jOWxXMG93aVhKVFhTOUs4dVdLWWNNZUV4dWRGZnBKYjcwaUhFRE9lRDhiRXhjQ0drcTRGbXdlOGMyTEpiTS1ZQXY3cGprV3hwNnp6NDdTemN0eFgwVUcyZ2xlMmVQRQ?oc=5",
    "source": "НашКиїв.UA",
@@ -6845,10 +7618,9 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "Знеструмлення на ранок 2 листопада фіксують в 9 областях, - Укренерго",
    "sources": [
-    "DSNews",
-    "Ukr.net"
+    "DSNews"
    ],
-   "important": true
+   "important": false
   },
   {
    "id": "d82fc41397c7cb",
@@ -7032,6 +7804,24 @@
    "important": false
   },
   {
+   "id": "d2bee54804310e",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOERUVnFQT0NZd0VnajV1Y0NuWUF3SlNWWWhvMGNybWtuaWtNZEhHeGRmQVFFZDVmYmdocFJCWTMzOUNHSWVpZUdja252bEZDa3Bnc2NGTEVuWjdkYklZN1hFQ0tkamZFT1Z1NlczV0tBN2Y3NVVIMlRqNko0V2FzX2lXcVhFTDdxeURLeC1nNGs2VXRwU3hhM0N2WEN5cDF1dWcw?oc=5",
+   "source": "Yahoo Finance",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T09:19:24+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Asian shares mixed as oil prices ease",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "important": false
+  },
+  {
    "id": "aaeb7c64b42116",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdDNMWHNxRzhMSTl6Sng4RnIxOUlpWmJwZnFJcklwRVpQR1BZbDFMTDI1cHpYdGhzOFA1bXVQTEYyc1JwWXQ2WW1fUXBRekVRaUNTVFhVXzZEdUFfMUt0Y0xFWml6U0R2NWlTeTZmMHdSZGE4cUFOLURic19sa19QRmowdTJONjBJMXF5SXFxa01vakMyaDduMjlSeS0?oc=5",
    "source": "Splash247",
@@ -7104,6 +7894,24 @@
    "important": false
   },
   {
+   "id": "ddcfde2071c7c1",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc043cHk1ZjIxLWc2RVJUX2p1NnRHMmpRamNpNkVJNTBkNjliR1Z4amtCdkdVUzkzUnBRQ2ZpWFhHdGRUUWtybzFieTY2ek9qazdPaG5Ec0d3akx6a24wMlYzaDdnbjZrbmNVdTdZdXZSYlhGTVFUOHJoTGZhQ1RJR2tyaDNGckF0OWM0QW1ta2lVbnFoOFE?oc=5",
+   "source": "EnergyNow.com",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T09:16:31+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "RANKED: The Top Crude Oil Producers in 2025 – Visual Capitalist – See How Countries Rank",
+   "sources": [
+    "EnergyNow.com"
+   ],
+   "important": false
+  },
+  {
    "id": "069bdd3c7bf272",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON21zLWx2NWJwV2pkY0Q2RUNheWNKQmxPaVA2c2t5azYxcGRFT1BVRU1zbkw4UTBVMEsyaHVpU3lUWXVIWFljVnhqc2tjLWh6Q29BLXdVaWczeWIxTEY0NDhCWXdmTHdET0pzVHRmR0liM21KVEhJM3Y3c1J6b3dZLXA3V3FabTVaTUdXZlk4VkhDRHdTemVpNEhrWGRwQQ?oc=5",
    "source": "Port Technology",
@@ -7118,6 +7926,24 @@
    "title": "DP World launches new China-Africa shipping service",
    "sources": [
     "Port Technology"
+   ],
+   "important": false
+  },
+  {
+   "id": "a337a611a36001",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcG4wUUlLUHhZUjRjMWdiLS1vXzlLdENWMVV1UVRBaDM3d2ptc0o5TkNXbUpzcmdkd2V0TlBYSm8wdFI1X2FfTVRudng2aGxHQXIwdGlIMS1HWU5pRzBwbXRMd25uNlpDeDk3ZDROdXVnVjlxRGxlcHRDMGMwYmRHQWppQVFUbUZ3ZllWSXN0SmJYTWZ2NUhjVHh5c0g?oc=5",
+   "source": "EnergyNow",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T09:15:23+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "LIQUEFACTION MODULE ARRIVES! Woodfibre LNG Brings Facility’s “Heart” Onshore as New Module Arrives",
+   "sources": [
+    "EnergyNow"
    ],
    "important": false
   },
@@ -7369,6 +8195,24 @@
    "important": false
   },
   {
+   "id": "24d88196309ef4",
+   "url": "https://news.google.com/rss/articles/CBMi7gdBVV95cUxPNUV6RGZnTUNIWTRVT0NjTWJka3BwQlNxRU5TWlZCa0FadHdTbmt0TG1vdUlRYk5icHN6MnA1c2l2TDE1alJPdWk4M2V2WTYydWtONzk4Mk9HbU5FRC1sZWxBUDl0c094c1ZYWUhmcFE2ZDdPTTdJLVB3SndGTHFGejhyOHZacDVJcHNzbXhuZVRPdnJkUGlmTlRvNDFJcWRidzBzY3FJTHBDRzc3NVNOZTdJWXNUZ3E5V3E5VFliWVJxZjkyODc2UHZGdkFlS1o4ZHp4c1FLLS1oWkl6TC0zMHlKTUtIcWlnNHVIOFBsSURRcVljay1LWTJqc2M4d3pScW9kOWV6NWFEc1JVdzdDeEZFcmVMbFZ1Q3RkNkhoV0JIZ2FkT3FfdTJQLXNvbDJPYXdvQTV1Mno3SmE5T1lGR2pMVU01RGgxMFlPVnppbUxNMzhZLTBTdlRVazNEN2psQW4tZWJuRjF6aGlRaldocDljTFVXTDhmUVY1MTNaRlRRYzVxTG92Y2pHMWd5ekF3YnNVX0I4T0tpWF91ODRXNmt5X0wtVThsYVluVTFmd1FaTWlrbDEyNHhmU1RBZ3ljRzBXOEI2Zm9aMTJta2cwSk1TUnBxOVFWcXNzdFY2TF9fTmFsbmxScDFBa3otRmQ2SF80cDVUVTJQMzF3TFR2OHFQNjVzQmRxbmxPOU1uczVIdlB0aGF1UXl4c21mM0JnSEU1clhENTlhbENodHRlQm9qMWNUZkd4VFpkeWdzU3c2d0tsWkxxRktxUkdGNEJCMmJ3MmRnb0VWbXNCbnZEMloyZ0lFelpXT2M1S3RGNVNjS0V4amRZSER4VzlURFZtWnFsUFdWYUJkWjB2ZTNibXF0YzZUay1abFdGVGJVem4yZTNhU3ZCSzU1VEJTVXN4dkxCWXluZkROYnkwM2hNMW9lNlZfVnpZN1prNWFweUZnYWtfTVdLTmxTQS1RNWpDQ3hTaElDd0xnNWt5VUlBeGViRTlBR2tPT085d3FvdGZqZzBCcVVLSHVWcUs2M3M4ckZIMmZTWVBlc1ZXYzJXUGo4WGVTVHlNcWNrMUR2VmRDRWNNaVJpQlBua08zU2duWENrLTVmYU5MTXNHYVZ6LWY0YTVmQjJtd2hCSkxaclFJMEdDVXU2bV9aZnlLU2xoWHJYZ2hnT2VCcG9PS0h6NDlkZDRNWHhWcmJjV1FrM3oycHhCQjRBU3RWWjFSbkpxNGJRV1JKSG9uNXhsZklfb3pYUjRmZlpTcVExbzdyNDlCRDBBQ29QMXpuN3MycHA5ZXgwN2pSbVBiMEVUemlnazNHQXJpX2dUTFRwYlh3?oc=5",
+   "source": "MadeinVilnius.lt",
+   "via": "Google News: промисловість",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T09:00:00+00:00",
+   "topics": [
+    "industry"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "У Вільнюсі відбудовують завод з переробки сміття після торішньої пожежі: роботи триватимуть чотири місяці",
+   "sources": [
+    "MadeinVilnius.lt"
+   ],
+   "important": false
+  },
+  {
    "id": "2c59348a2213b0",
    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQMzNfZTA1Y1IwLU5oQ3FDQ1NJSjZTeFVidVo4VmROaUgxYU50azZBcU9vTEZCbUl5MkdaNTZ1LWR2STB3TXNGd3VwNU4td0dUamtIRHFOS0V0Y1d1MlpfWVo1VVhfSDlQb2sxQllYV3V3SmlyZmMyVnZlR2RQVi05WUduR1QyT1dBNjk0RFBzZC1xMDhwbVEyMDN4Y01Pd3lKOFphZ2tiYWR2eTBKdS1xYjBnejI0OVllMFhSWDJyYVBEXzlBQmNMbTNFTW9CcXZyVmpRVFUyNHQ5SFJsRDFlUGhOLXVWd3dEcDRVaXVncw?oc=5",
    "source": "TradingView",
@@ -7493,17 +8337,35 @@
    "important": false
   },
   {
-   "id": "0fa2b174225094",
-   "url": "https://www.rigzone.com/news/wire/opec_keeps_december_output_targets_unchanged-02-nov-2026-184985-article/?rss=true",
-   "source": "Rigzone",
-   "via": null,
+   "id": "722c18f50991f6",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcVdJUl85MlZOXzVaWWI5ZjJoZVJNYmVRc09LLVRuU3FlckE2SjhkVVdndFVENWdlalVwNXBGU2Y0VTdsZWVIU1lKRTk5VXpRQ2dJM2xNQ3k5ZzdaRDJVUXpPS2M0Vjd4VVY0T0RfY2dfZVJVMTlxNlkxSGM1eFJhTzRNaHpMdFJrcWhWZ2hpR1F2Y2poUjdkV2JHVTBpMHM?oc=5",
+   "source": "Yahoo Finance",
+   "via": "Google News: нафта й пальне",
    "tab": "world",
    "lang": "en",
-   "published": "2026-11-02T08:51:04+00:00",
+   "published": "2026-11-02T08:54:08+00:00",
    "topics": [
     "oil"
    ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "FTSE 100 today: Stocks fall as crude slide drags oil majors lower",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "important": false
+  },
+  {
+   "id": "5269879c00edec",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOY2VXaXk5TU9HUFc3dmoxOTdRV09uc01XQ3dCRVY4a2MxZHZCUjFsTXpmc1F1VmpNT2IxWDdXQ3Y2ZVNHNE5YVGl3dXo5MG12LWJ0WE9DSjgyNl9Fc2hJRWFmYTNzUXZsa29xY19BMDd3VC1mLVY0TWpRNXpqTW5VaGJ4NzNjdmEwOGstRzd4ME5hYVdJcUROdlMyekdYRmtQZkM5cGQzMk9DQQ?oc=5",
+   "source": "Rigzone",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T08:51:00+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
    "title": "OPEC Keeps December Output Targets Unchanged",
    "sources": [
     "Rigzone"
@@ -7525,6 +8387,24 @@
    "title": "Ціни на пальне 2 листопада: скільки коштує бензин, дизель та автогаз | Новини Дніпра | Дніпро Оперативний",
    "sources": [
     "Дніпро Оперативний"
+   ],
+   "important": false
+  },
+  {
+   "id": "9c5cc9a5c13c5e",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNczNOSTdkbVFwS3NveHIxWXlsVFZ5eERMY3A3WkQzRnNqMHNEUXpVdHZpSmlKbE5Tb0dxbWZPMnY2WDNkVEljejdfSlIzT051RVB5VlpXdXpIZTJ4cXMtWlUxa3FVcjZrdnFaRjBaUi00WmdlRVN5QzlQb0JpWm8tN3RqQXE1TUNQbVZLSXhKbw?oc=5",
+   "source": "The Cool Down",
+   "via": "Google News: електроенергія й ВДЕ",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T08:49:00+00:00",
+   "topics": [
+    "renewables"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Denmark homeowner banks up to 4 days of solar heat with a three-sided greenhouse",
+   "sources": [
+    "The Cool Down"
    ],
    "important": false
   },
@@ -7726,6 +8606,25 @@
    "important": false
   },
   {
+   "id": "72b8e770de8f4c",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNE1fMzFiSjhrOFpJV21kajdMYkJEd20zcGM4Sm0yREpWU09IZnBwX0VyUk9LTWlHYWhDYXZCOS04eng0d1lPdVlKX2pZUjFwYzAwZkM4NWlDazVaSUFfRHlLaTczenpiZTdrb0lXd09XZTRiWHpNVGYxcDRjaHhoZ3JvcVFtb1VZM29raVc4RE9kUXBZWVdkbmktRU5FbV9hb1Fweg?oc=5",
+   "source": "EnergyNow.com",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T08:31:49+00:00",
+   "topics": [
+    "oil",
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Alternative Routes for Middle East Oil and Gas Due to Hormuz Disruption",
+   "sources": [
+    "EnergyNow.com"
+   ],
+   "important": false
+  },
+  {
    "id": "52ed588df6713c",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaklmX1d0ZTNFeTJ3MjNWSDNxMXhweGNOZm5pVnhDb2lfUWQyRzNld1ZVYkx5QTE0dWYtZmdUa1MtY2ZRVDN3bWlWVlEzdHVjb000Z0pSNXdZSDhWT3V3Vms5MWdWZzlwOUJBZEg5YW5aRWNFLTR6Nm8xdnZDUkJObmNvTmVaQ3h3OHNWRnZRNHhjV2d2R3FqWUtSbElKWlZaNEtlNTkwTnQwQWRU0gGsAUFVX3lxTE1qSWZfV3RlM0V5MncyM1ZIM3ExeHB4Y05mbmlWeENvaV9RZDJHM2V3VlViTHlBMTR1Zi1mZ1RrUy1jZlFUM3dtaVZWUTN0dWNvTTRnSlI1d1lIOFZPdXdWazkxZ1ZnOXA5QkFkSDlhblpFY0UtNHo2bzF2dkNSQk5uY29OZVpDeHc4c1ZGdlE0eGNXZ3ZHcWpZS1JsSUpaVlo0S2U1OTBOdDBBZFQ?oc=5",
    "source": "BurgasMedia",
@@ -7740,24 +8639,6 @@
    "title": "19-річний водій врізався в стіну АЗС біля Несебра",
    "sources": [
     "BurgasMedia"
-   ],
-   "important": false
-  },
-  {
-   "id": "37d310ca2b6737",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQnlwWUR2WjVybU5uS3Rrb3VxbWNVekhkUG1kWUpyWkFTbU5tZk5tdFF0clVfODYzczhvZGloSGdhVF9ESVY1cjBranVhbXc5eVpIZHBQNHBFaUo0UGJtM0VfRWdpRk1EVVdQd0VhS1NWVnd5YWlQOWMxVW5KRDlMMVlVYXdCdw?oc=5",
-   "source": "AgroPortal.ua",
-   "via": "Google News: логістика",
-   "tab": "ukraine",
-   "lang": "uk",
-   "published": "2026-11-02T08:30:00+00:00",
-   "topics": [
-    "logistics"
-   ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Дунайські порти потроїли перевалку вантажів",
-   "sources": [
-    "AgroPortal.ua"
    ],
    "important": false
   },
@@ -8210,6 +9091,24 @@
    "important": false
   },
   {
+   "id": "4edaf6fcedb0ce",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPa2xLMjhXRkJMN2M0RW9ubGdDQkpzSkdyTl9YZldfclpReDZMZGZpOXJ6MjBybi0weEdvbGNYa0tPXzF2NVcyZUZoSmhyWk1iUWcwQWppa2s2OEJzYzJ5dlVNaVJNUUNMWi1rTWZWb0ZlRGlBbFN1OWJQZVhGOFdTVlkxUlZXbG5YZ29fWVJ6bTV6YVNnMWNPUHotcGNsWEVnb2JvRGhBZ3ZqbnUxWkJ4WnptOEh3bjhLM2EwN3NpQzZMdzZoZzY0QkZOcFJTYTQxVnY1cE81NU4?oc=5",
+   "source": "EnergyNow",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T08:04:02+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Canada and the United States: Two Different NATURAL GAS Industries, One Stronger Integrated System - Special Report",
+   "sources": [
+    "EnergyNow"
+   ],
+   "important": false
+  },
+  {
    "id": "5ca4d239030303",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMURFRDN1S05jUklpV245aGdLUGtGMDEzb1JIbUJTTGw1UFV6aXZpWURsdXJyNVM2enNwU2NCd2RNa0xzR2RqR3gtY2ZKenB1VWJOWHJ6OXptV2ZmREc5cmQ0UHZSVVFfM0NDaUtiaEVSRjBaand0Sl80VE5oMnlZTktROWlzWEdfZFcwNjBFSnZpLW45SGRpMGd2OA?oc=5",
    "source": "Renewables Now",
@@ -8421,9 +9320,10 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "Рашисти били по будинках, АЗС і торговельному центру: на Харківщині постраждали 19 людей",
    "sources": [
-    "057.ua"
+    "057.ua",
+    "Ukr.net"
    ],
-   "important": false
+   "important": true
   },
   {
    "id": "e26525a91577b5",
@@ -8655,6 +9555,24 @@
    "important": false
   },
   {
+   "id": "54c3410f214354",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVlVJVXVxVlZtbUw4enVvWFJpamZnRExVNkhtQzRsMFljOENrQUE0R0tvQjRfYk9ZWm1hR2lkaGp1cWE3bWZMdGVkeDFEQks2MThHMEV2a3FlRmhySDZkX3ctanFYZU14UzFPaW5oYlIwb2NkcmlVUVFzZ2I5b01jbWxxS1hqaHJrdGc?oc=5",
+   "source": "Yahoo Finance",
+   "via": "Google News: нафта й пальне",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T07:33:00+00:00",
+   "topics": [
+    "oil"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Oil prices fall as report of US diplomatic efforts eases Iran fears",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "important": false
+  },
+  {
    "id": "b5774ff5440ff9",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTG42UXBsR182RldoX3p3TnV6dE5sbllsMXU4OVc0Qk5vZlNKQi1WcXNUOWlPNUJBZ2Q1T2V5Q2tTMjA0dnJOQXZodkFVYkI0YnUwbl95NlhOQ1ktOGdmRjd0WGhackFQSl9ZbkFWZ1VyRjdzSDZuQ001d0x2VlJGY0RxUmdwa2pLWTVVb0lCZW5RTmhJaEV4NUMwbFRxaHVtN2pxNHo0VWhtLUt1eXc?oc=5",
    "source": "НафтоРинок",
@@ -8831,6 +9749,61 @@
    "important": false
   },
   {
+   "id": "11b7487b9cd3cc",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTWJtTnh3bU5mM01HZ29WQ3ZiSk5qcEpJbVZJLWpqam01WlVBZTMxck5jRXlHWjVDbmpySEp4TlVoenR2OGc2c3FNY2xCRGpQXzRjdW9oRlVVVjd0NEdGQ3ZyWFZzakw4ZDhsblQ0am53S1Y0ZUpDek1WSTdGQ1BzRmpjamhaUQ?oc=5",
+   "source": "SEEDS",
+   "via": "Google News: логістика",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T07:17:04+00:00",
+   "topics": [
+    "logistics"
+   ],
+   "first_seen": "2026-11-02T14:27:13+00:00",
+   "title": "Порти Дунайського кластера збільшили перевалку втричі – Новини АПК | Головні фермерські новини України",
+   "sources": [
+    "SEEDS"
+   ],
+   "important": false
+  },
+  {
+   "id": "b365402371042d",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQckNVRk56Y0UwcFhqSWI4S1ljb21NMXJ6LVpBRUd2aGxXaURQMjZEMGRtaVRldUtXb2dFaEFRcDdsZUZjXzhQRjlMVHhIUWJFUzA2cEsxd1EzVWtLSkNNOURwWXVZVm04WEYxSmVoUVRSNTI0UXN6X05ER1NaRGJNWmxPSlJXZ25ZWG0zcVNzQW5FQWVOREE?oc=5",
+   "source": "Breakingthenews.net",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T07:16:00+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Blackstone-led group to buy 49.9% of LNG Canada",
+   "sources": [
+    "Breakingthenews.net"
+   ],
+   "important": false
+  },
+  {
+   "id": "4058ed92d60bb6",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNY3JRTzJwSTViNkJUazFWTXhFSHc3N3U2VU9QRUg2NW1JZzJCV056Y0JXZzl2Unp1LURrNHg3TnRfWjczNm41WThwZXgySlFRRVY4ZTFPSUl2VWQ3VDFxQmRFazlndk1kTm8zcV9YYzcybjZaN2dJQ0ROQklsaHZBaDBhb3BPZGhzdU0xU3gyWkMxMGdXWGNnS09YVUlaR09Jc0RKTUE0YTZrYkhCMkVtMjJnekN4RktY?oc=5",
+   "source": "www.marketscreener.com",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T07:14:24+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "ENN Natural Gas Posts Lower Attributable Profit in Q3; Revenue Up",
+   "sources": [
+    "Moomoo",
+    "www.marketscreener.com"
+   ],
+   "important": true
+  },
+  {
    "id": "75e1805d4acd2d",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVFkwYTE3SlRZZG5ZMl8ybF83UGo5Vi0tQUZFdkxnNURCaFVRZ1oteTAwZTRqTE5tNzZhbExHY3Z4Wm1Idk1DWUxCWFlCZWN1dkE5SVdNd0hGVkJRV2JPVkZhNVNDbllhQVN6c1JSV1R6dmkxUkszdWRMdTdqa2ZiaFpURkpnaVVPSHFoVExlQU9UaVRIM3NlU01hbFRYMktMWmhveFRHNjJVRjQ?oc=5",
    "source": "LNG Prime",
@@ -8955,6 +9928,24 @@
     "Апостроф"
    ],
    "important": true
+  },
+  {
+   "id": "ca8c6fec4bb1d3",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOTFVHN1RQSEdzdWZtM251aU5FU1JGX0FJOHo3OTduRWxCZlhfTkFwRUlUUkQ2RGZYUFJhYXlLbS1vbnU0U1l5STN1bTk4Y2dUdUwxbDlxektZNnduazA4eUtsU1ZhZXRCenVsNHdaazkwV3FoSXVuU2xsVW1uNWJidUZVM0p0N1ZDTThqS2ZGSkNKQVFuekZRSlB0RkxqRkVRV0M1TTZLUXA4d3cydlFhTFhmb1BwVXc2b2UtOTFEdTBiME11dS1RN1hLdE9jY2xXNUlNZlVkN2VrTGdSQ0E?oc=5",
+   "source": "EnergyNow",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T07:05:37+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "MILESTONE: LNG Canada Ships 100th LNG Cargo, Marking Major Milestone in Canada’s Emergence as a Global Energy Exporter",
+   "sources": [
+    "EnergyNow"
+   ],
+   "important": false
   },
   {
    "id": "96b28ac541c443",
@@ -9170,9 +10161,10 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "Venture Global starts commercial operations at Plaquemines LNG",
    "sources": [
-    "Offshore Technology"
+    "Offshore Technology",
+    "TradingView"
    ],
-   "important": false
+   "important": true
   },
   {
    "id": "e3a0d2cc453e92",
@@ -9498,6 +10490,24 @@
    "important": false
   },
   {
+   "id": "04e4056cfdba13",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNazZxSFpxdW9GdUZQc0FTanJJSzFzNm5aLURZWkd5elp5RG9RRGszTU9Sc0xocXp5dldXNm1CbjR2NEZyZndpVTRyWEhxZDlOUDZTeHVVRFBVMjdsYlRIUmg0M252MjVNb3BWRVl2aEMxd0VnUWZoWEM2Y3Blamk0SGZMcHRXN3JjbTdKbUNZVzluT1JMWnpMVDZwZVpPOGoyYUhkd2ItdHRNM05CLUdyV3k1Q3h6TVFYOVUyWWVEdW0zV2Z2UG9CNlB2RV9xN3M?oc=5",
+   "source": "marketscreener.com",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T05:59:22+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Blackstone leads $3.1 billion deal to acquire LNG Canada stake, Bloomberg News says",
+   "sources": [
+    "marketscreener.com"
+   ],
+   "important": false
+  },
+  {
    "id": "4c6366bdaf2229",
    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNM1BER2dmUE1SUVktS2NVWi02dEJjNkFpZk1oZ2kyd0pqQjg1ZFVsQlZvbGpkSHRFaVJsZGFyckxyUW5neWNmd1dOQ09ONERGbTlaOGhmNElCZW53VzRZR3VlbW1hWEE2cDJKNWRKMVdkbFZlYmNBV2N2MFllNXBKMS1XMExxeGJ1WUpraXpUbw?oc=5",
    "source": "ЗМІСТ",
@@ -9548,6 +10558,24 @@
    "title": "Rivington Energy wins planning nod for 27-MW solar park in England",
    "sources": [
     "Renewables Now"
+   ],
+   "important": false
+  },
+  {
+   "id": "86cd42806162c6",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY09RanJRNHlDb2JCT0FvQnhqbmpTZEQ5OUczRWFyelZJRE5fdjNPVk5yU3pvdVRtYVY5ZkdxMzltUEdJS0ZvUHI2WmFnUzVKUTVsVEVrRW9UdHhfZ2JZZDJETUZPR3BTT1dLa1pCQW92VERNME9KczdhbDJrTF91MmpnLVN6czliREpZb2xmekZKb0hTRkxGLVdob3dFS0hRaWVrWl9kOGs1a3RYSUI1MEZkY1Y?oc=5",
+   "source": "Yahoo",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T05:47:00+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Honda generator owner leans toward cheaper Champion for the option to run on natural gas",
+   "sources": [
+    "Yahoo"
    ],
    "important": false
   },
@@ -9658,6 +10686,22 @@
    "important": false
   },
   {
+   "id": "4e688328ead8e0",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMjQyMERjRG9Db2pJSXBqMmRWTGpVWnNIdkhSWlh0U2RTbWNVMUxENWM2dWtqdzdxMW5FRlpCWjQzV1BsYWMzVERrUTRfOUQxRnluaEJoZTZkbDNDWmhwWXVzNUtva1V2VGFGZFFmVnFEZkRCaFgtVGxRT29IYlFxblpFaW11RzN6SFUybHdnWkVmTUlsYnBRQjJOc0pRUFh2amJ3d095T2UzbVh2SWhkOXhwMjU5d9IBuwFBVV95cUxPNzFYOTBkNlN4UXBVRFVaTGtoOGdCclEwUHp3QWUzUzN3R0s3TkE2b19ROTdqN1Y2VzJOUXdBemw1ellVRDVoU254WUoyQ3p4RDdJR0pVR2h2UDlsbXV4eWtwaVc1ZWhoSkpXRW1oTDh1RFBjZ0N5R3Q4RjAzYXI3d1hDZkpzTDNISFVNMjBjbmphTUpscGFoX0JyejZmVEQ1emxZeGREZFdoX0FsUXFsaklKMjladDE1X1NF?oc=5",
+   "source": "Головне в Україні",
+   "via": "Google News: Україна — енергетика (англ.)",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T05:27:00+00:00",
+   "topics": [],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Russian drones strike houses near Kharkiv, injuring 12, including a three-year-old girl",
+   "sources": [
+    "Головне в Україні"
+   ],
+   "important": false
+  },
+  {
    "id": "94968ce0c77c39",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQLWkyVUhTMmlJR0U1MlhzY3FCTG51VDliRkpneU11anRXTFFweWZKMmxtdE9vRXdGMlB4WGl2a1dTUDJmMF85SWg4N1VQMFVRemVzNHNNQ1ZwaDAwVVdaTGJMYmM2NEVMWEJRYXhQVmprN0FDel9UYkxIZFF5NDZGeDA1RFptNlp6QlowVDh2UVZqcjZ2eElKUkZuNzk4M1prWHZmMTNxSTBGYldIdTVqR0V2d3V6d045MG530gHAAUFVX3lxTE5nRVRFcUJ0NFRkY3k1NDJGZ1hxWW9PbV9KMXRlcjBFSU1sYmdQWlI2VWl5UjhoLVp0UEJvSy10YjlkMFE3RzlTeVcxcHZRdVF3a0FjRnVIQ29XOW9NTm1BZ1gwWnZRSndzeU5DOWpBZHZYMXlzTnBuckh1TGtQaWg3Sk1oWFZvNWJPSS1WUE1KVTYxdmcyNHFMSnRyWDZfaDk4RGlFZTBFVnYzV2ZFY2J3NjQtemQxQ0hYU1d1NXBGZQ?oc=5",
    "source": "Укрінформ - актуальні новини України та світу",
@@ -9672,24 +10716,6 @@
    "title": "Графіки відключення світла у понеділок діятимуть у частині областей",
    "sources": [
     "Укрінформ - актуальні новини України та світу"
-   ],
-   "important": false
-  },
-  {
-   "id": "11b7487b9cd3cc",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTWJtTnh3bU5mM01HZ29WQ3ZiSk5qcEpJbVZJLWpqam01WlVBZTMxck5jRXlHWjVDbmpySEp4TlVoenR2OGc2c3FNY2xCRGpQXzRjdW9oRlVVVjd0NEdGQ3ZyWFZzakw4ZDhsblQ0am53S1Y0ZUpDek1WSTdGQ1BzRmpjamhaUQ?oc=5",
-   "source": "SEEDS",
-   "via": "Google News: логістика",
-   "tab": "ukraine",
-   "lang": "uk",
-   "published": "2026-11-02T05:21:46+00:00",
-   "topics": [
-    "logistics"
-   ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Порти Дунайського кластера збільшили перевалку втричі – Новини АПК | Головні фермерські новини України",
-   "sources": [
-    "SEEDS"
    ],
    "important": false
   },
@@ -9776,7 +10802,7 @@
     "oil"
    ],
    "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "U.S. crude falls below $100 amid reports of U.S.-Iran diplomatic efforts",
+   "title": "Crude oil dives to session low on Iran peace talk hopes ahead of midterms",
    "sources": [
     "CNBC"
    ],
@@ -9868,6 +10894,42 @@
     "Ukr.net"
    ],
    "important": true
+  },
+  {
+   "id": "fa680fa9a04231",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQLXVJSXNYakNmbHpoajJHVGxiZ1dxNW5nWWhkU05TaDlPNlROdk9aU2Z4WWJMdjNmNGF4NDhSWEtXYkM1MnROMVM1endVcHN3b1Q3RjFIYWtMY1VhSHNXLUNJcHQ4T0hDVjh5VVlxejdlVU0yb2hVQy1oLXpKd2VZSndUM1d0ZWVBSk92VU50NWVzZHhOYmkyUEozTG5rZTY5bFZET0tOTFNXVXhTNVZYSTF0SFFTVWFTalA2T2gyRHM?oc=5",
+   "source": "TradingView",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T05:00:00+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Weekly Recap: Q3 $10.8B profit and FID to double LNG to 28 mtpa",
+   "sources": [
+    "TradingView"
+   ],
+   "important": false
+  },
+  {
+   "id": "eb04fbde9ff586",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRTVaUTdQTDJKeENqRE5wdVNfWHExMWtNZGFnV1ZXR0RRWTFOMmd3WUFaMUswblZaY3lSUTl5N3g0OW95TmM2RDF3eE1oWW9md0FBelRVbHprbFNBR2YyQmlBRm93dU9kM29rOXQxNTFRZEdieFJOM2l3Q0kxRzc5TTA1dzdpYXpDcm9fYlF1VUN5YWliS3MzLXZOcGhHaVFTU19EYXI1MWNHRFdkMTFGOUljX1dSWFdWcXQ2MmJSaHphS1JlV0lCMGFOMkY?oc=5",
+   "source": "TradingView",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T05:00:00+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Weekly Recap: 9M26 earnings strength and Yamal LNG take-or-pay exposure",
+   "sources": [
+    "TradingView"
+   ],
+   "important": false
   },
   {
    "id": "d022b4cdc71f3d",
@@ -10049,6 +11111,24 @@
    "important": false
   },
   {
+   "id": "31e9ae3284fa3c",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeTB4QkxXX0JUOHBiVEkxNElGLTl5ZE9wVnBqSFktMWcxMUN0d3dnZTl1SXVrb204WVhNUWZxTEJzRnBaZ0gyZ2VUd19uSlBtQnVwS1NVWV9TVEg4V3NGQ09SX0dScWtWcHhuSVgwMkJzRTRTT2t4eVJIRXNmVE90NWlNU25hZ0xCSXRuRUh4OFVEUlY4bGlIOVJ6YWJUYUF4bVR2a3dQOTUyb1NJamc?oc=5",
+   "source": "Upstream Online",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T03:19:03+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Venture Global starts commercial operations at Plaquemines LNG project in Louisiana, US",
+   "sources": [
+    "Upstream Online"
+   ],
+   "important": false
+  },
+  {
    "id": "c08755aadf4e3e",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQ19kandYX3VqbWdfY3Z1dXRjUzE3Wkp4dzJUc0lnSGRjU0ZKMGlGc21Hd01TMllwWml2bXoxYVFMc19pMTU0SFQ3ZVlPaWtaNS1uTmlSRmotamM4ZTJ1WjlndXNmZDhRdnhlRm9XV3lFanl2Q2ZRU29JOHdjelh5NkVBWkRaRDd4MTJPSkdMRklMVzB1T3IxWnotT2k?oc=5",
    "source": "Yahoo Finance",
@@ -10097,6 +11177,25 @@
    "title": "The Red Sea is one of the world's most important trade routes. A growing Saudi-UAE rivalry and rising threats to shipping are making it an increasingly contested region. #dwgeopolitics",
    "sources": [
     "Facebook"
+   ],
+   "important": false
+  },
+  {
+   "id": "2eca0748d0d696",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZTlIWFRKUmU5VnlRY0oyRnhrbTlJNEZScjg1eGk1RXZqbmNlNlRpV0daNjZVVXdqa2h3VVpsTm0zSmFtZV9RUDJIdzJLYVBaN1pBNkZLNUE3LWNwR0tqVm14bVBXdjhRSXVMdG14R2lVX21QdXZMZzY2NF9Ja0kwMFEwSmMyUWllb2RfelFySzZDMkMzNjgtOXZHN3hBSlBl?oc=5",
+   "source": "Vietnam.vn",
+   "via": "Google News: паливо",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-02T02:52:33+00:00",
+   "topics": [
+    "oil",
+    "power"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Ціни на бензин та електроенергію падають одночасно: для стримування інфляції потрібні більш довгострокові рішення.",
+   "sources": [
+    "Vietnam.vn"
    ],
    "important": false
   },
@@ -10225,6 +11324,24 @@
    "title": "Податок на бензин знижено до 0%: Зменшує інфляційний тиск, стимулює бізнес.",
    "sources": [
     "Vietnam.vn"
+   ],
+   "important": false
+  },
+  {
+   "id": "e4891e0ba599bf",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPV2xaenFVVW1TVmtMUmxlNnY4WlFtZURaa3Nid3hyclpYdGx4ZFV3UWoyNFBxSWNBSjZNZHUtcFFCMkJuTEMxNGJLVlNHNV92blZVdmRlcTY1UXRNZ0E3S1MwOHlYUDJhMjJLQk5RbHBYU1VxRklZUUt5eTZFdE5ObTctV0s0bW4welpIQVRySnpjZlB2blpPdnE2eGVSNUF4UXowOFpHT0dGajA2aUM1Z3hFM3Fhdkd0bG5r?oc=5",
+   "source": "Yahoo",
+   "via": "Google News: газ і LNG",
+   "tab": "world",
+   "lang": "en",
+   "published": "2026-11-02T01:21:00+00:00",
+   "topics": [
+    "gas"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "DIYer's natural gas generator conversion comes with a catch: Up to 20% less power",
+   "sources": [
+    "Yahoo"
    ],
    "important": false
   },
@@ -10416,9 +11533,10 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "Oil Prices No Longer Follow Headlines",
    "sources": [
+    "Crude Oil Prices Today | OilPrice.com",
     "OilPrice"
    ],
-   "important": false
+   "important": true
   },
   {
    "id": "9b44c7f9780741",
@@ -10687,6 +11805,22 @@
    "title": "Batteries Beat Norway’s Hydrogen Bulk Carriers on Cost in Two Modeled Routes",
    "sources": [
     "CleanTechnica"
+   ],
+   "important": false
+  },
+  {
+   "id": "26a4e3da87bec7",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9SUm9jc1Yzek9lSUtPenVneDB1RUI1bHBBWWZBLWZwVkdQM0dtX3A3QmJIWlJaTDZPZk9HdlJ4Z3dUVC1HWUxtNWJMTXZld0l6SXplQVlWeWEzUnFVOVZrNkdlN0VTZEhWb1o4?oc=5",
+   "source": "Ukr.net",
+   "via": "Google News: промисловість",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-01T20:32:17+00:00",
+   "topics": [],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Рубіо сумнівається, що угоду про припинення війни вдасться укласти найближчим часом. Читайте на UKR.NET",
+   "sources": [
+    "Ukr.net"
    ],
    "important": false
   },
@@ -11623,17 +12757,17 @@
    "important": false
   },
   {
-   "id": "bf9e6bd0912b1b",
-   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2VzJWcjVYckRFRHFtSkJIckRFV1dTNkw5dFdSSjN5aW1sS1pscEVxWGxWR1luWWp4TFNicnJhbWF6bEo5SFNEYWdNSTdPMmV0TlJuQXlUU1NwUkc2Rlp1RE81SlRzODg?oc=5",
+   "id": "8fbe1f6952c654",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1mLXZoWUxsWExZQWh4d0s5SkpxRjZxTWtCNWt1MlhNcjNIMWFGQnJMNUhqZlNrbmlMcDVWVWl5UnpnZnJoWXVyakFSNi1ENjgwM3dqUDhKcjRtem83bHJaVlFRS2hYbVVWOGRZ?oc=5",
    "source": "Ukr.net",
    "via": "Google News: паливо",
    "tab": "ukraine",
    "lang": "uk",
-   "published": "2026-11-01T15:42:22+00:00",
+   "published": "2026-11-01T15:34:20+00:00",
    "topics": [
     "oil"
    ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
+   "first_seen": "2026-11-02T14:44:33+00:00",
    "title": "На АЗС Ужгорода перевіряють відповідальність продавців пального: чому поліцейські звернули увагу на дітей",
    "sources": [
     "Ukr.net"
@@ -11744,6 +12878,24 @@
    "title": "Польща давно закрила свій завод по двигунам В-46 до Т-72, то ж як там оцінюють їдею переробки цих танків і PT-91 Twardy на важкі БТР",
    "sources": [
     "Defense Express"
+   ],
+   "important": false
+  },
+  {
+   "id": "ece9c1ab2036ad",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1uMEwtS2RVbkhFQXF6WE56ZllZeEZzRDFZbFhaZnFHOGU5dnBCTFFvQmZmNno1WGN0OEpzNE1ack1mNHFqY3k5TXd5MkJHaXZoRkJTS1p4RGF1Y05VZ01RZENnMkNlMmRSS05WRWpfQ1Bwc0lRcjRXU05Taw?oc=5",
+   "source": "Railway Supply",
+   "via": "Google News: промисловість",
+   "tab": "ukraine",
+   "lang": "uk",
+   "published": "2026-11-01T15:03:26+00:00",
+   "topics": [
+    "industry"
+   ],
+   "first_seen": "2026-11-02T14:44:33+00:00",
+   "title": "Завод Wabtec у Contagem виготовив 1000-й локомотив після розширення",
+   "sources": [
+    "Railway Supply"
    ],
    "important": false
   },
@@ -11868,9 +13020,10 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "Російські дрони атакували асфальтний завод в Умані",
    "sources": [
-    "UA.NEWS"
+    "UA.NEWS",
+    "Ukr.net"
    ],
-   "important": false
+   "important": true
   },
   {
    "id": "e29f11d89894dc",
@@ -11956,11 +13109,9 @@
    "first_seen": "2026-11-02T14:27:13+00:00",
    "title": "Україна уразила ракетний завод і два об’єкти ППО рф на 70 млн доларів: Зеленський озвучив деталі",
    "sources": [
-    "Ukr.net",
-    "daily.com.ua",
     "Українські Національні Новини (УНН)"
    ],
-   "important": true
+   "important": false
   },
   {
    "id": "ef6f5a528e1b3a",
@@ -12613,24 +13764,6 @@
    "title": "USA Crude Oil Stocks Drop Week on Week",
    "sources": [
     "Rigzone"
-   ],
-   "important": false
-  },
-  {
-   "id": "c25cd87ff77800",
-   "url": "https://www.freightwaves.com/news/mexico-truckers-halt-protests-demand-action-on-deadly-highway-crime",
-   "source": "FreightWaves",
-   "via": null,
-   "tab": "world",
-   "lang": "en",
-   "published": "2026-10-30T14:33:18+00:00",
-   "topics": [
-    "logistics"
-   ],
-   "first_seen": "2026-11-02T14:27:13+00:00",
-   "title": "Mexico truckers halt protests, demand action on deadly highway crime",
-   "sources": [
-    "FreightWaves"
    ],
    "important": false
   }
