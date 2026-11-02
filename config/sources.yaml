@@ -1,151 +1,205 @@
 # ===========================================================
-#  Radar — налаштування джерел
-#  Додати джерело: допишіть блок у feeds (name, url, tab).
-#  Будь-яке джерело можна вимкнути: enabled: false
+#  MediaRadar — налаштування
+#  Вкладки: Усі новини Україна · Важливе · В тренді Google · Європа · Світ
+#  Новина може бути в кількох вкладках одночасно.
+#
+#  Як писати ключові слова:
+#    «нафт*»  — корінь: нафта, нафтовий, нафтогаз…
+#    «oil»    — ціле слово: не спрацює на «soil»
+#    «оператор гтс» — фраза
+#  Теми визначаються за українським перекладом заголовка,
+#  тож іноземні видання (німецькі, польські тощо) фільтруються так само.
 # ===========================================================
 
-# Скільки годин тримати новини у стрічці
-retention_hours: 72
+retention_hours: 72          # скільки тримати новини у стрічці
+trends_history_days: 7       # скільки тримати тренди Google
 
-# Вкладки за джерелами. Порядок тут = порядок вкладок на сторінці.
-# Окрім них сторінка завжди має вкладки «Усі» та «Важливе».
-tabs:
-  - id: world
-    title: Світ
-  - id: ukraine
-    title: Україна
-  - id: mine
-    title: Мої джерела
+# ---------- Що означає «стосується України» ----------
+ukraine:
+  keywords: [
+    "україн*", "київ*", "києв*", ukrain*, kyiv*, kiev,
+    "нафтогаз*", naftogaz, "укрнафт*", ukrnafta, "укртатнафт*", ukrtatnafta,
+    "оператор гтс", "огтсу", gtsou, "gas tso of ukraine",
+    "укренерго", ukrenergo, "енергоатом*", energoatom, "укргідроенерго", ukrhydroenergo,
+    "центренерго", centrenergo, "дтек", dtek, "окко", okko, wog, upg, "socar україна",
+    "метінвест*", metinvest, "інтерпайп*", interpipe,
+    "арселорміттал кривий ріг", "arcelormittal kryvyi rih", "кривий ріг", "кривого рогу", "kryvyi rih",
+    ferrexpo, "феррекспо", "кернел*", "kernel holding", "мхп", mhp, "нібулон*", nibulon,
+    "укрзалізниц*", ukrzaliznytsia, "укрпошт*", ukrposhta, "нова пошта", "нової пошти", "nova poshta", "nova post",
+    "нкрекп", neurc, "міненерго", "укрпорт*", "ампу", uspa
+  ]
+  # Видання з України: їхні новини вважаються українськими,
+  # якщо в них не йдеться явно про інші країни (див. foreign нижче)
 
-# Теми для фільтра «За темами».
-# Слово із * на кінці — це корінь: «нафт*» знайде «нафта», «нафтовий», «нафтогаз».
-# Слово без * шукається цілим словом: «oil» не спрацює на «soil».
+# ---------- Що означає «про Європу» ----------
+europe:
+  keywords: [
+    "європ*", "єс", "євросоюз*", "єврокоміс*", "європарламент*", "єврозон*", "єцб", "брюссел*",
+    europe*, eu, "european commission", brussels, eurozone, ecb,
+    ttf, ets, cbam, repowereu, "entso*", acer,
+    "польщ*", "польськ*", poland, polish, "німеччин*", "німецьк*", germany, german,
+    "франці*", "французьк*", france, french, "італі*", "італійськ*", italy, italian,
+    "іспані*", "іспанськ*", spain, spanish, "угорщин*", "угорськ*", hungary, hungarian,
+    "словаччин*", "словацьк*", slovakia, slovak, "румуні*", "румунськ*", romania, romanian,
+    "молдов*", moldova, "чехі*", "чеськ*", czech*, "австрі*", "австрійськ*", austria*,
+    "нідерланд*", netherlands, dutch, "бельгі*", belgium, "норвегі*", "норвезьк*", norway, norwegian,
+    "литв*", lithuania*, "латві*", latvia*, "естоні*", estonia*, "болгар*", bulgaria*,
+    "греці*", "грецьк*", greece, greek, "хорвати*", croatia*, "словені*", slovenia*,
+    "данія", "данії", "данську", "данськ*", denmark, danish, "швеці*", "шведськ*", sweden, swedish,
+    "фінлянд*", "фінськ*", finland, finnish, "британі*", "британськ*", britain, british, uk,
+    "ірланді*", ireland, "португалі*", portugal,
+    orlen, mol, omv, rwe, uniper, equinor, engie, edf, enel, iberdrola, totalenergies, eni, repsol,
+    pge, "gaz-system", eustream, transgaz, cez, vattenfall, "ørsted", orsted, "siemens energy",
+    thyssenkrupp, maersk, "deutsche bahn"
+  ]
+
+# ---------- Ознаки іноземної тематики ----------
+# Новина українського видання, де йдеться про інші країни і немає згадки України,
+# йде у «Світ» (і в «Європу», якщо про Європу), а не в «Україну».
+foreign:
+  keywords: [
+    "сша", "американськ*", "китай", "китаю", "китаї", "китайськ*", "індія", "індії", "індійськ*",
+    "японі*", "японськ*", "саудівськ*", "оае", "катар*", "іран*", "ізраїл*", "туреччин*", "турецьк*",
+    "росі*", "російськ*", "рф", "казахстан*", "азербайджан*", "бразилі*", "канад*", "австралі*",
+    "опек*", "brent", "wti", "фрс", "уолл-стріт*", "волл-стріт*", "nasdaq", "s&p",
+    usa, "united states", america*, china, chinese, india, indian, japan*, saudi, iran*, israel*,
+    turkey, turkish, russia*, opec*, fed, "wall street"
+  ]
+
+# ---------- Теми (фільтр «За темами») ----------
 topics:
   - id: oil
     title: Нафта і пальне
-    keywords: [oil, crude, brent, wti, diesel, gasoline, petrol, jet fuel, fuel*, refin*, opec*, "нафт*", "пальн*", "паливн*", "бензин*", "дизел*", "азс", "нпз", "автогаз*", "скраплен*", "укрнафт*", "okko", "wog", "socar"]
+    keywords: [oil, crude, brent, wti, diesel, gasoline, petrol, "jet fuel", fuel*, refin*, opec*, "нафт*", "пальн*", "паливн*", "палив*", "бензин*", "дизел*", "азс", "нпз", "автогаз*", "скраплен*", "мазут*", "керосин*"]
   - id: gas
     title: Газ
-    keywords: [gas, lng, ttf, "henry hub", pipeline*, "газ", "газу", "газом", "газов*", "нафтогаз*", "гтс", "пхг", "оператор гтс", "зпг"]
+    keywords: [gas, lng, ttf, "henry hub", pipeline*, "газ", "газу", "газом", "газі", "газов*", "газопровід*", "газопровод*", "зпг", "пхг", "гтс", "транзит*"]
   - id: power
     title: Електроенергія
-    keywords: [electricity, "power grid", "power price*", "power market", nuclear, coal, utility, utilities, blackout*, "електроенерг*", "енергосистем*", "укренерго", "аес", "тес", "тец", "енергоатом*", "відключен*", "генерац*", "ринок на добу наперед", "рдн", "енергетик*", "дтек", "центренерго", "укргідроенерго"]
+    keywords: [electricity, "power grid", "power price*", "power market", "power plant*", nuclear, coal, utility, utilities, blackout*, outage*, "power cut*", "power supply", "energy infrastructure", "energy sector", "електроенерг*", "електрик*", "енергосистем*", "енергоблок*", "електростанці*", "аес", "тес", "тец", "гес", "атомн*", "вугілл*", "відключен*", "генерац*", "рдн", "енергетик*", "енергопостач*", "енергоринк*"]
   - id: renewables
     title: ВДЕ і накопичення
-    keywords: [solar, "wind farm*", "wind power", "offshore wind", renewable*, "battery storage", bess, hydrogen, biomethane, photovoltaic, "сонячн*", "вітров*", "вде", "накопичувач*", "водн*", "біометан*", "зелен* тариф*", "гарантован* покуп*", "епс", "epc"]
+    keywords: [solar, "wind farm*", "wind power", "offshore wind", renewable*, "battery storage", bess, hydrogen, biomethane, photovoltaic, "сонячн*", "вітров*", "вітроелектр*", "вде", "відновлюван*", "накопичувач*", "воднев*", "водень", "водню", "біометан*", "біогаз*", "зелен* тариф*", "гарантован* покуп*", "сес", "вес"]
   - id: logistics
     title: Логістика
-    keywords: [shipping, freight, container*, tanker*, port, ports, rail*, trucking, logistics, "supply chain", "red sea", "suez", "black sea", "порт", "порти", "портів", "портах", "логіст*", "вантаж*", "залізниц*", "укрзалізниц*", "фрахт*", "контейнер*", "коридор*", "пункт* пропуску", "черг* на кордоні", "перевез*", "суден", "судна"]
+    keywords: [shipping, freight, container*, tanker*, port, ports, rail*, trucking, logistics, "supply chain", "red sea", suez, "black sea", airline*, airport*, aviation, "порт", "порту", "порти", "портів", "портах", "логіст*", "вантаж*", "залізниц*", "фрахт*", "контейнер*", "коридор*", "пункт* пропуску", "перевез*", "перевізник*", "суден", "судна", "суднопл*", "танкер*", "авіа*", "аеропорт*", "кордон*"]
   - id: industry
     title: Промисловість
-    keywords: [steel, metallurg*, "iron ore", mining, manufactur*, chemical*, fertili*, aluminium, aluminum, "металург*", "сталь", "сталі", "руд*", "гмк", "шахт*", "завод*", "виробництв*", "промислов*", "хімі*", "добрив*", "метінвест*", "арселор*", "фероспла*", "цемент*"]
+    keywords: [steel, metallurg*, "iron ore", mining, manufactur*, chemical*, fertili*, aluminium, aluminum, automaker*, "car maker*", "металург*", "сталь", "сталі", "сталев*", "руд*", "гмк", "шахт*", "завод*", "виробництв*", "промислов*", "хімі*", "добрив*", "фероспла*", "цемент*", "автовиробн*", "автопром*", "машинобуд*", "гірничо*"]
 
-# Що позначати як «Важливе», крім новин, які одночасно дали 2+ джерела
+# ---------- Виключення ----------
+# Новини з цими словами не потрапляють у жодну тему (захист від хибних збігів:
+# «Шахтар» — футбол, а не шахти).
+exclude: ["футбол*", "футбольн*", "динамо", "шахтар", "шахтаря", "шахтарем", "матч*", "чемпіонат*", "уєфа", "ліга чемпіонів", "ліга європи", "football", "soccer", "premier league", "champions league", "shakhtar", "dynamo"]
+
+# ---------- «Важливе» ----------
+# Новина про Україну, яку дали 2+ видання одночасно,
+# або в заголовку є маркери терміновості.
 important:
   min_sources: 2
-  keywords: [breaking, exclusive, urgent, "терміново", "блискавка", "ексклюзив*", "опек+ ухвал*", "opec+ agrees", "opec+ agreed", "масован* атак*", "удар* по енергетиц*", "графік* відключень", "аварійн* відключ*"]
+  keywords: [breaking, exclusive, urgent, "терміново", "блискавка", "ексклюзив*", "масован* атак*", "удар* по енергетиц*", "графік* відключень", "аварійн* відключ*", "санкці*"]
 
-# -----------------------------------------------------------
+# ---------- Вкладка «В тренді Google» ----------
+google:
+  trends_rss: "https://trends.google.com/trending/rss?geo=UA"
+  news_rss:
+    - "https://news.google.com/rss?hl=uk&gl=UA&ceid=UA:uk"
+    - "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=uk&gl=UA&ceid=UA:uk"
+
+# ---------- Резервний пошук Google News ----------
+# Для видань без RSS (або коли RSS впав) збирач бере заголовки з Google News
+# за доменом видання. Для великих англомовних медіа до запиту додаються
+# ключові слова тем (gn_terms: en), щоб не тягнути всю стрічку.
+gn_terms:
+  en: "(oil OR gas OR LNG OR fuel OR energy OR power OR electricity OR coal OR nuclear OR solar OR shipping OR freight OR port OR rail OR steel OR mining OR OPEC OR Ukraine)"
+
+# ===========================================================
 #  Джерела
-#  tab:    world | ukraine | mine
-#  lang:   en, de, pl тощо — заголовок перекладається українською; uk — без перекладу
-#  filter: true — брати лише новини, що потрапили хоча б в одну тему
-#          (для загальних видань, де багато нерелевантного)
-#  Google News: будь-який пошуковий запит перетворюється на RSS,
-#  так у стрічку потрапляють заголовки Reuters, Bloomberg, FT та ін.
-# -----------------------------------------------------------
+#    name    — назва у стрічці
+#    site    — домен (для резервного пошуку в Google News)
+#    rss     — адреса RSS; якщо не вказано або не працює → Google News
+#    region  — ua | intl | eu   (ua: видання з України)
+#    lang    — мова заголовків; не uk → заголовок перекладається
+#    filter  — true: лише новини за вашими темами (для загальних медіа)
+#    gn_terms — en: додати тематичні слова до пошуку Google News
+#    enabled: false — тимчасово вимкнути
+# ===========================================================
 feeds:
 
-  # ---------- Світ: галузеві видання ----------
-  - name: OilPrice
-    url: https://oilprice.com/rss/main
-    tab: world
-    lang: en
-  - name: Rigzone
-    url: https://www.rigzone.com/news/rss/rigzone_latest.aspx
-    tab: world
-    lang: en
-  - name: Offshore Energy
-    url: https://www.offshore-energy.biz/feed/
-    tab: world
-    lang: en
-  - name: Energy Voice
-    url: https://www.energyvoice.com/feed/
-    tab: world
-    lang: en
-  - name: pv magazine
-    url: https://www.pv-magazine.com/feed/
-    tab: world
-    lang: en
-  - name: CleanTechnica
-    url: https://cleantechnica.com/feed/
-    tab: world
-    lang: en
-    filter: true
-  - name: gCaptain
-    url: https://gcaptain.com/feed/
-    tab: world
-    lang: en
-  - name: Splash247
-    url: https://splash247.com/feed/
-    tab: world
-    lang: en
-  - name: FreightWaves
-    url: https://www.freightwaves.com/news/feed
-    tab: world
-    lang: en
+  # ---------- Загальноукраїнські ----------
+  - { name: Економічна правда, site: epravda.com.ua, rss: "https://www.epravda.com.ua/rss/", region: ua, lang: uk, filter: true }
+  - { name: НВ Бізнес, site: biz.nv.ua, region: ua, lang: uk, filter: true }
+  - { name: РБК-Україна, site: rbc.ua, rss: "https://www.rbc.ua/static/rss/all.ukr.rss.xml", region: ua, lang: uk, filter: true }
+  - { name: Forbes Україна, site: forbes.ua, region: ua, lang: uk, filter: true }
+  - { name: Діло, site: delo.ua, region: ua, lang: uk, filter: true }
+  - { name: ЛІГА.Бізнес, site: biz.liga.net, region: ua, lang: uk, filter: true }
+  - { name: Інтерфакс-Україна, site: interfax.com.ua, region: ua, lang: uk, filter: true }
+  - { name: УНІАН, site: unian.ua, rss: "https://rss.unian.net/site/news_ukr.rss", region: ua, lang: uk, filter: true }
 
-  # ---------- Світ: Google News (Reuters, Bloomberg, FT, Argus тощо) ----------
-  - name: "Google News: нафта й пальне"
-    url: "https://news.google.com/rss/search?q=(oil+OR+crude+OR+diesel+OR+OPEC)+when:1d&hl=en-US&gl=US&ceid=US:en"
-    tab: world
-    lang: en
-  - name: "Google News: газ і LNG"
-    url: "https://news.google.com/rss/search?q=(LNG+OR+%22natural+gas%22+OR+TTF)+when:1d&hl=en-US&gl=US&ceid=US:en"
-    tab: world
-    lang: en
-  - name: "Google News: електроенергія й ВДЕ"
-    url: "https://news.google.com/rss/search?q=(%22power+prices%22+OR+%22power+grid%22+OR+solar+OR+%22wind+power%22)+when:1d&hl=en-US&gl=US&ceid=US:en"
-    tab: world
-    lang: en
-  - name: "Google News: судноплавство й фрахт"
-    url: "https://news.google.com/rss/search?q=(shipping+OR+freight+OR+tanker+OR+%22container+rates%22)+when:1d&hl=en-US&gl=US&ceid=US:en"
-    tab: world
-    lang: en
-  - name: "Google News: Україна — енергетика (англ.)"
-    url: "https://news.google.com/rss/search?q=Ukraine+(energy+OR+gas+OR+power+OR+fuel+OR+grain+corridor)+when:1d&hl=en-US&gl=US&ceid=US:en"
-    tab: world
-    lang: en
+  # ---------- Профільні українські ----------
+  - { name: Enkorr, site: enkorr.ua, rss: "https://enkorr.ua/rss", region: ua, lang: uk }
+  - { name: Нафтогазовий огляд, site: oilreview.kiev.ua, rss: "http://oilreview.kiev.ua/feed/", region: ua, lang: uk }
+  - { name: Rail Insider, site: railinsider.com.ua, rss: "https://www.railinsider.com.ua/feed/", region: ua, lang: uk }
+  - { name: GMK Center, site: gmk.center, rss: "https://gmk.center/ua/feed/", region: ua, lang: uk }
+  - { name: ЦТС, site: cfts.org.ua, rss: "https://cfts.org.ua/rss", region: ua, lang: uk }
+  - { name: Avianews, site: avianews.com, region: ua, lang: uk }
+  - { name: Порти України, site: ports.ua, rss: "https://ports.ua/feed/", region: ua, lang: uk }
+  - { name: Укравтопром, site: ukrautoprom.com.ua, rss: "https://ukrautoprom.com.ua/feed/", region: ua, lang: uk }
+  - { name: Нафторинок, site: nefterynok.info, region: ua, lang: uk }
+  - { name: Енергобізнес, site: e-b.com.ua, region: ua, lang: uk }
+  - { name: ExPro, site: expro.com.ua, rss: "https://expro.com.ua/rss", region: ua, lang: uk }
 
-  # ---------- Україна ----------
-  - name: Економічна правда
-    url: https://www.epravda.com.ua/rss/
-    tab: ukraine
-    lang: uk
-    filter: true
-  - name: GMK Center
-    url: https://gmk.center/ua/feed/
-    tab: ukraine
-    lang: uk
-  - name: "Google News: паливо"
-    url: "https://news.google.com/rss/search?q=(%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5+OR+%D0%90%D0%97%D0%A1+OR+%D0%B4%D0%B8%D0%B7%D0%B5%D0%BB%D1%8C+OR+%D0%B1%D0%B5%D0%BD%D0%B7%D0%B8%D0%BD)+when:1d&hl=uk&gl=UA&ceid=UA:uk"
-    tab: ukraine
-    lang: uk
-  - name: "Google News: енергетика"
-    url: "https://news.google.com/rss/search?q=(%D0%A3%D0%BA%D1%80%D0%B5%D0%BD%D0%B5%D1%80%D0%B3%D0%BE+OR+%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B5%D1%80%D0%B3%D1%96%D1%8F+OR+%D0%9D%D0%B0%D1%84%D1%82%D0%BE%D0%B3%D0%B0%D0%B7+OR+%D0%92%D0%94%D0%95)+when:1d&hl=uk&gl=UA&ceid=UA:uk"
-    tab: ukraine
-    lang: uk
-  - name: "Google News: логістика"
-    url: "https://news.google.com/rss/search?q=(%D0%A3%D0%BA%D1%80%D0%B7%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%B8%D1%86%D1%8F+OR+%D0%BF%D0%BE%D1%80%D1%82%D0%B8+OR+%D0%BB%D0%BE%D0%B3%D1%96%D1%81%D1%82%D0%B8%D0%BA%D0%B0+OR+%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%BE%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%B7%D0%B5%D0%BD%D0%BD%D1%8F)+when:1d&hl=uk&gl=UA&ceid=UA:uk"
-    tab: ukraine
-    lang: uk
-  - name: "Google News: промисловість"
-    url: "https://news.google.com/rss/search?q=(%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D1%83%D1%80%D0%B3%D1%96%D1%8F+OR+%D0%93%D0%9C%D0%9A+OR+%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D0%BB%D0%BE%D0%B2%D1%96%D1%81%D1%82%D1%8C+OR+%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4)+when:1d&hl=uk&gl=UA&ceid=UA:uk"
-    tab: ukraine
-    lang: uk
+  # ---------- Міжнародні ----------
+  - { name: Reuters, site: reuters.com, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: Bloomberg, site: bloomberg.com, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: WSJ, site: wsj.com, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: BBC, site: bbc.com, rss: "https://feeds.bbci.co.uk/news/business/rss.xml", region: intl, lang: en, filter: true }
+  - { name: OilPrice, site: oilprice.com, rss: "https://oilprice.com/rss/main", region: intl, lang: en }
+  - { name: Trading Economics, site: tradingeconomics.com, rss: "https://tradingeconomics.com/rss/news.aspx", region: intl, lang: en, filter: true }
+  - { name: CNN, site: cnn.com, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: Fox Business, site: foxbusiness.com, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: The Guardian, site: theguardian.com, rss: "https://www.theguardian.com/business/rss", region: intl, lang: en, filter: true }
+  - { name: The New York Times, site: nytimes.com, rss: "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml", region: intl, lang: en, filter: true }
+  - { name: Al Jazeera, site: aljazeera.com, rss: "https://www.aljazeera.com/xml/rss/all.xml", region: intl, lang: en, filter: true }
+  - { name: Defence Blog, site: defence-blog.com, rss: "https://defence-blog.com/feed/", region: intl, lang: en, filter: true }
+  - { name: Argus Media, site: argusmedia.com, region: intl, lang: en }
+  - { name: Times of India, site: timesofindia.indiatimes.com, rss: "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms", region: intl, lang: en, filter: true }
+  - { name: Washington Post, site: washingtonpost.com, rss: "https://feeds.washingtonpost.com/rss/business", region: intl, lang: en, filter: true }
+  - { name: Forbes, site: forbes.com, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: Financial Times, site: ft.com, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: CNBC, site: cnbc.com, rss: "https://www.cnbc.com/id/19836768/device/rss/rss.html", region: intl, lang: en, filter: true }
+  - { name: NDTV, site: ndtv.com, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: ABC News, site: abcnews.go.com, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: Deutsche Welle, site: dw.com, rss: "https://rss.dw.com/rdf/rss-en-bus", region: intl, lang: en, filter: true }
+  - { name: ABC Australia, site: abc.net.au, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: The Economist, site: economist.com, rss: "https://www.economist.com/business/rss.xml", region: intl, lang: en, filter: true }
+  - { name: Caixin Global, site: caixinglobal.com, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: Yicai Global, site: yicaiglobal.com, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: Shanghai Daily, site: shine.cn, region: intl, lang: en, filter: true, gn_terms: en }
+  - { name: Xinhua, site: english.news.cn, region: intl, lang: en, filter: true, gn_terms: en }
 
-  # ---------- Мої джерела (приклад — замініть на свій список) ----------
-  - name: Діло
-    url: "https://news.google.com/rss/search?q=site:dilo.ua+when:2d&hl=uk&gl=UA&ceid=UA:uk"
-    tab: mine
-    lang: uk
+  # ---------- Європа ----------
+  - { name: Euronews, site: euronews.com, rss: "https://www.euronews.com/rss?level=vertical&name=business", region: eu, lang: en, filter: true }
+  - { name: The European, site: the-european.eu, rss: "https://the-european.eu/feed/", region: eu, lang: en, filter: true }
+  - { name: European Business Magazine, site: europeanbusinessmagazine.com, rss: "https://europeanbusinessmagazine.com/feed/", region: eu, lang: en, filter: true }
+  - { name: EU Business News, site: eubusinessnews.com, rss: "https://www.eubusinessnews.com/feed/", region: eu, lang: en, filter: true }
+  - { name: Handelsblatt, site: handelsblatt.com, rss: "https://www.handelsblatt.com/contentexport/feed/schlagzeilen", region: eu, lang: de, filter: true }
+  - { name: WirtschaftsWoche, site: wiwo.de, rss: "https://www.wiwo.de/contentexport/feed/rss/schlagzeilen", region: eu, lang: de, filter: true }
+  - { name: Les Echos, site: lesechos.fr, region: eu, lang: fr, filter: true }
+  - { name: La Tribune, site: latribune.fr, region: eu, lang: fr, filter: true }
+  - { name: Il Sole 24 Ore, site: ilsole24ore.com, rss: "https://www.ilsole24ore.com/rss/economia.xml", region: eu, lang: it, filter: true }
+  - { name: Rzeczpospolita, site: rp.pl, region: eu, lang: pl, filter: true }
+  - { name: Dziennik Gazeta Prawna, site: gazetaprawna.pl, region: eu, lang: pl, filter: true }
+  - { name: Puls Biznesu, site: pb.pl, region: eu, lang: pl, filter: true }
+  - { name: Világgazdaság, site: vg.hu, rss: "https://www.vg.hu/feed/", region: eu, lang: hu, filter: true }
+  - { name: Portfolio.hu, site: portfolio.hu, rss: "https://www.portfolio.hu/rss/all.xml", region: eu, lang: hu, filter: true }
+  - { name: HVG, site: hvg.hu, rss: "https://hvg.hu/rss", region: eu, lang: hu, filter: true }
+  - { name: Budapest Business Journal, site: bbj.hu, region: eu, lang: en, filter: true }
+  - { name: The Budapest Times, site: budapesttimes.hu, rss: "https://www.budapesttimes.hu/feed/", region: eu, lang: en, filter: true }
+  - { name: SME, site: sme.sk, region: eu, lang: sk, filter: true }
+  - { name: Trend, site: trend.sk, region: eu, lang: sk, filter: true }
+  - { name: Forbes Slovensko, site: forbes.sk, region: eu, lang: sk, filter: true }
+  - { name: Ziarul Financiar, site: zf.ro, rss: "https://www.zf.ro/rss", region: eu, lang: ro, filter: true }
+  - { name: Bursa, site: bursa.ro, region: eu, lang: ro, filter: true }
+  - { name: Economistul, site: economistul.ro, region: eu, lang: ro, filter: true }
+  - { name: Forbes România, site: forbes.ro, region: eu, lang: ro, filter: true }
