@@ -1,0 +1,173 @@
+{
+ "updated": "2026-11-02T14:26:42+00:00",
+ "feeds": [
+  {
+   "name": "OilPrice",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 15,
+   "seconds": 0.8
+  },
+  {
+   "name": "Rigzone",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 8,
+   "seconds": 0.5
+  },
+  {
+   "name": "Offshore Energy",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 8,
+   "seconds": 0.8
+  },
+  {
+   "name": "Energy Voice",
+   "tab": "world",
+   "ok": false,
+   "error": "403 Client Error: Forbidden for url: https://www.energyvoice.com/feed/",
+   "items": 0,
+   "seconds": 0.1
+  },
+  {
+   "name": "pv magazine",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 10,
+   "seconds": 0.4
+  },
+  {
+   "name": "CleanTechnica",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 5,
+   "seconds": 0.3
+  },
+  {
+   "name": "gCaptain",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 12,
+   "seconds": 0.2
+  },
+  {
+   "name": "Splash247",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 10,
+   "seconds": 1.0
+  },
+  {
+   "name": "FreightWaves",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 16,
+   "seconds": 0.5
+  },
+  {
+   "name": "Google News: нафта й пальне",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 100,
+   "seconds": 0.6
+  },
+  {
+   "name": "Google News: газ і LNG",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 100,
+   "seconds": 0.7
+  },
+  {
+   "name": "Google News: електроенергія й ВДЕ",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 100,
+   "seconds": 0.8
+  },
+  {
+   "name": "Google News: судноплавство й фрахт",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 100,
+   "seconds": 0.7
+  },
+  {
+   "name": "Google News: Україна — енергетика (англ.)",
+   "tab": "world",
+   "ok": true,
+   "error": null,
+   "items": 26,
+   "seconds": 0.5
+  },
+  {
+   "name": "Економічна правда",
+   "tab": "ukraine",
+   "ok": false,
+   "error": "403 Client Error: Forbidden for url: https://www.epravda.com.ua/rss/",
+   "items": 0,
+   "seconds": 0.2
+  },
+  {
+   "name": "GMK Center",
+   "tab": "ukraine",
+   "ok": true,
+   "error": null,
+   "items": 11,
+   "seconds": 0.7
+  },
+  {
+   "name": "Google News: паливо",
+   "tab": "ukraine",
+   "ok": true,
+   "error": null,
+   "items": 71,
+   "seconds": 0.5
+  },
+  {
+   "name": "Google News: енергетика",
+   "tab": "ukraine",
+   "ok": true,
+   "error": null,
+   "items": 58,
+   "seconds": 0.5
+  },
+  {
+   "name": "Google News: логістика",
+   "tab": "ukraine",
+   "ok": true,
+   "error": null,
+   "items": 43,
+   "seconds": 0.6
+  },
+  {
+   "name": "Google News: промисловість",
+   "tab": "ukraine",
+   "ok": true,
+   "error": null,
+   "items": 38,
+   "seconds": 0.4
+  },
+  {
+   "name": "Діло",
+   "tab": "mine",
+   "ok": true,
+   "error": null,
+   "items": 0,
+   "seconds": 0.2
+  }
+ ]
+}
