@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Radar — енергетика, паливо, логістика</title>
+<title>MediaRadar — енергетика, паливо, логістика</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -98,7 +98,7 @@ details summary{cursor:pointer}
 <div class="wrap">
   <header>
     <div class="top">
-      <div class="brand"><span class="dot"></span>Radar</div>
+      <div class="brand"><span class="dot"></span>MediaRadar</div>
       <div class="sub">енергетика · паливо · логістика · промисловість</div>
       <div class="meta" id="meta">завантаження…</div>
     </div>
@@ -205,14 +205,14 @@ details summary{cursor:pointer}
     const b = $("fresh");
     b.textContent = `↑ ${n} ${plural(n, "нова новина", "нові новини", "нових новин")} — показати`;
     b.classList.add("show");
-    document.title = `(${n}) Radar`;
+    document.title = `(${n}) MediaRadar`;
   }
   $("fresh").onclick = () => { if (pending) apply(pending); window.scrollTo({ top:0, behavior:"smooth" }); };
 
   function apply(d){
     data = d; pending = null;
     $("fresh").classList.remove("show");
-    document.title = "Radar — енергетика, паливо, логістика";
+    document.title = "MediaRadar — енергетика, паливо, логістика";
     items = d.items;
     const t = Date.now();
     for (const i of items){
