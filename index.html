@@ -2,115 +2,188 @@
 <html lang="uk">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121315" media="(prefers-color-scheme: dark)">
 <title>MediaRadar — енергетика, паливо, логістика</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" id="favicon" type="image/svg+xml" href="favicon.svg">
 <style>
 :root{
-  --bg:#f6f4ef; --panel:#ffffff; --ink:#1b1d1f; --muted:#6b6f75; --faint:#9aa0a6;
-  --line:#e4e0d6; --accent:#c2410c; --accent-soft:#fdeee5; --new:#2563eb;
-  --chip:#efece4; --chip-on:#1b1d1f; --chip-on-ink:#fff; --imp:#b91c1c; --imp-soft:#fde8e8;
+  --steel:#f6f4ef;      /* фон */
+  --plate:#ffffff;      /* поверхня стрічки */
+  --ink:#1b1d1f;        /* текст */
+  --slate:#6b6f75;      /* другорядний текст */
+  --rule:#e4e0d6;       /* лінії */
+  --signal:#c62a1f;     /* сигнальний червоний: точка, «Важливо» */
+  --signal-soft:#fde8e6;
+  --cable:#2563eb;      /* нове, активне */
+  --cable-soft:#e3ebfb;
+  --bar:#d8d2c4;        /* стовпчики пульсу */
+  --chip:#efece4;
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --bg:#121315; --panel:#1a1c1f; --ink:#e9e7e2; --muted:#9a9ea5; --faint:#6c7077;
-    --line:#2a2d31; --accent:#fb923c; --accent-soft:#2d1d12; --new:#60a5fa;
-    --chip:#24272b; --chip-on:#e9e7e2; --chip-on-ink:#121315; --imp:#f87171; --imp-soft:#3a1717;
+    --steel:#121315; --plate:#1a1c1f; --ink:#e9e7e2; --slate:#9a9ea5; --rule:#2a2d31;
+    --signal:#f8635a; --signal-soft:#3a1717; --cable:#60a5fa; --cable-soft:#1b2a3f;
+    --bar:#3a3c40; --chip:#24272b;
   }
 }
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--bg);color:var(--ink)}
-body{font:15px/1.45 "Golos Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--steel);color:var(--ink);font:16px/1.45 "Golos Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
 a{color:inherit}
-.wrap{max-width:920px;margin:0 auto;padding:0 16px 64px}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--cable);outline-offset:2px;border-radius:4px}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
 
-header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin:0 -16px;padding:14px 16px 0}
-.top{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-.brand{font-weight:700;font-size:22px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
-.dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:ping 2.4s infinite}
-@keyframes ping{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 60%,transparent)}80%,100%{box-shadow:0 0 0 9px transparent}}
-.sub{color:var(--muted);font-size:13px}
-.meta{margin-left:auto;font:12px "JetBrains Mono",monospace;color:var(--muted)}
-.meta b{color:var(--ink);font-weight:500}
+/* ---------- шапка ---------- */
+.bar{position:sticky;top:0;z-index:10;background:var(--steel);border-bottom:1px solid var(--rule)}
+.head{display:flex;align-items:center;gap:16px;padding:14px 0 10px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:23px;letter-spacing:-.03em;text-decoration:none}
+.live{width:10px;height:10px;border-radius:50%;background:var(--signal);animation:blink 1.8s steps(1) infinite}
+@keyframes blink{50%{opacity:.18}}
+.upd{margin-left:auto;font-size:13px;color:var(--slate);text-align:right;line-height:1.3}
+.upd b{color:var(--ink);font-weight:600}
+.upd.stale b{color:var(--signal)}
 
-.tabs{display:flex;gap:2px;margin-top:12px;overflow-x:auto;scrollbar-width:none}
+.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin:0 -4px}
 .tabs::-webkit-scrollbar{display:none}
-.tab{appearance:none;border:0;background:none;color:var(--muted);font:500 14px "Golos Text",sans-serif;padding:8px 12px 10px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap}
+.tab{appearance:none;border:0;background:none;padding:9px 10px 11px;font-size:15px;font-weight:500;color:var(--slate);cursor:pointer;white-space:nowrap;position:relative}
 .tab:hover{color:var(--ink)}
-.tab.on{color:var(--ink);border-bottom-color:var(--accent)}
-.tab .n{font:11px "JetBrains Mono",monospace;color:var(--faint);margin-left:4px}
-.tab.imp.on{border-bottom-color:var(--imp)}
+.tab .n{font-size:12px;margin-left:5px;color:var(--slate);opacity:.8}
+.tab.on{color:var(--ink);font-weight:600}
+.tab.on::after{content:"";position:absolute;left:10px;right:10px;bottom:-1px;height:3px;border-radius:3px 3px 0 0;background:var(--ink)}
+.tab[data-v=important].on::after{background:var(--signal)}
+.tab .short{display:none}
 
-.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:14px 0 6px}
+/* ---------- пульс за 24 год ---------- */
+.pulse{margin:18px 0 6px}
+.pulse-top{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;color:var(--slate);margin-bottom:6px}
+.pulse-top b{color:var(--ink);font-weight:600}
+.clear-hour{appearance:none;border:0;background:none;color:var(--cable);cursor:pointer;font-size:13px;padding:0}
+.bars{display:grid;grid-template-columns:repeat(24,1fr);gap:3px;height:54px;align-items:end}
+.b{appearance:none;border:0;padding:0;background:none;height:100%;display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer;border-radius:2px}
+.b i{display:block;background:var(--bar);border-radius:2px 2px 0 0;min-height:2px}
+.b i.hot{background:var(--signal);border-radius:0}
+.b:hover i{background:var(--slate)} .b:hover i.hot{background:var(--signal)}
+.b.sel i{background:var(--cable)} .b.sel i.hot{background:var(--signal)}
+.b.dim{opacity:.35}
+.hours{display:grid;grid-template-columns:repeat(24,1fr);gap:3px;font-size:11px;color:var(--slate);margin-top:4px}
+.hours span{text-align:left;white-space:nowrap;overflow:visible}
+
+/* ---------- фільтри ---------- */
+.filters{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:12px 0 4px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{appearance:none;border:1px solid transparent;background:var(--chip);color:var(--ink);font:13px "Golos Text",sans-serif;padding:5px 11px;border-radius:999px;cursor:pointer}
-.chip:hover{border-color:var(--line)}
-.chip.on{background:var(--chip-on);color:var(--chip-on-ink)}
-.tools{display:flex;gap:8px;align-items:center;margin-left:auto;flex-wrap:wrap}
-input[type=search]{font:14px "Golos Text",sans-serif;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 10px;width:190px}
-label.tg{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted);cursor:pointer;user-select:none}
-.btn{appearance:none;border:1px solid var(--line);background:var(--panel);color:var(--muted);font:13px "Golos Text",sans-serif;padding:5px 10px;border-radius:8px;cursor:pointer}
-.btn:hover{color:var(--ink)}
+.chip{appearance:none;border:1px solid transparent;background:var(--chip);padding:5px 12px;border-radius:999px;font-size:14px;cursor:pointer}
+.chip:hover{border-color:var(--rule)}
+.chip.on{background:var(--ink);color:var(--steel)}
+.tools{display:flex;gap:10px 16px;align-items:center;flex-wrap:wrap}
+.search{font:15px "Golos Text",sans-serif;background:var(--plate);color:var(--ink);border:1px solid var(--rule);border-radius:8px;padding:7px 11px;width:200px}
+.tg{display:flex;gap:6px;align-items:center;font-size:14px;color:var(--slate);cursor:pointer;user-select:none;white-space:nowrap}
+.tg input{accent-color:var(--cable)}
+.link{appearance:none;border:0;background:none;color:var(--cable);cursor:pointer;font-size:14px;padding:0;white-space:nowrap}
 
-.fresh{display:none;margin:10px 0;width:100%;border:0;border-radius:8px;background:var(--accent-soft);color:var(--accent);font:600 14px "Golos Text",sans-serif;padding:9px;cursor:pointer}
+.fresh{display:none;position:sticky;top:104px;z-index:9;margin:10px auto 0;width:max-content;max-width:100%;border:0;border-radius:999px;background:var(--cable);color:#fff;font-weight:600;font-size:14px;padding:8px 16px;cursor:pointer;box-shadow:0 4px 14px rgba(20,25,30,.18)}
 .fresh.show{display:block}
 
-.day{font:600 12px "Golos Text",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:22px 0 6px}
-.list{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.item{position:relative;display:grid;grid-template-columns:52px 1fr auto;gap:4px 12px;padding:11px 12px 11px 16px;border-top:1px solid var(--line)}
+/* ---------- стрічка ---------- */
+.day{font-size:14px;font-weight:600;color:var(--slate);margin:26px 0 8px}
+.day:first-child{margin-top:16px}
+.list{background:var(--plate);border:1px solid var(--rule);border-radius:10px}
+.item{position:relative;display:grid;grid-template-columns:50px 1fr 28px;gap:0 12px;padding:12px 10px 12px 16px;border-top:1px solid var(--rule)}
 .item:first-child{border-top:0}
-.item.new::before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:3px;border-radius:0 3px 3px 0;background:var(--new)}
-.item.read .title{color:var(--muted)}
-.time{font:13px "JetBrains Mono",monospace;color:var(--muted);padding-top:2px}
-.body{min-width:0}
-.title{font-weight:500;font-size:15.5px;line-height:1.38;text-decoration:none;display:block}
+.item.new::before{content:"";position:absolute;left:-1px;top:10px;bottom:10px;width:3px;border-radius:0 3px 3px 0;background:var(--cable)}
+.item.imp::before{background:var(--signal)}
+.time{font-size:14px;color:var(--slate);padding-top:2px}
+.title{display:block;font-size:17px;line-height:1.35;font-weight:500;text-decoration:none;text-wrap:pretty}
 .title:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
-.info{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:4px;font-size:12.5px;color:var(--muted)}
-.src{font-weight:600;color:var(--ink);opacity:.8}
-.via{color:var(--faint)}
-.tag{color:var(--muted)}
-.tag::before{content:"#";opacity:.5}
-.badge{font:600 11px "Golos Text",sans-serif;text-transform:uppercase;letter-spacing:.05em;color:var(--imp);background:var(--imp-soft);padding:1px 6px;border-radius:4px}
-.multi{cursor:help;border-bottom:1px dotted var(--faint)}
-.tr{font-size:11px;color:var(--faint)}
-.x{appearance:none;border:0;background:none;color:var(--faint);cursor:pointer;font-size:15px;padding:2px 6px;border-radius:6px;opacity:0;transition:opacity .15s}
-.item:hover .x,.x:focus{opacity:1}
-@media (hover:none){.x{opacity:.6}}
-.x:hover{color:var(--ink);background:var(--chip)}
-.empty{padding:40px 16px;text-align:center;color:var(--muted)}
+.item.read .title{color:var(--slate);font-weight:400}
+.meta{display:flex;flex-wrap:wrap;gap:3px 12px;margin-top:5px;font-size:13px;color:var(--slate)}
+.src{color:var(--ink);font-weight:600}
+.hot-l{color:var(--signal);font-weight:700}
+.ua-l{color:var(--cable);font-weight:600}
+.more{border-bottom:1px dotted currentColor;cursor:help}
+.x{appearance:none;border:0;background:none;color:var(--slate);cursor:pointer;width:28px;height:28px;border-radius:6px;font-size:14px;opacity:0;align-self:start}
+.item:hover .x,.x:focus-visible{opacity:1}
+.x:hover{background:var(--chip);color:var(--ink)}
+@media (hover:none){.x{opacity:.55}}
+.empty{padding:44px 20px;text-align:center;color:var(--slate)}
 
-footer{margin-top:28px;font-size:13px;color:var(--muted)}
-details summary{cursor:pointer}
-.st{display:grid;grid-template-columns:1fr auto;gap:2px 16px;margin-top:8px;font:12px "JetBrains Mono",monospace}
-.st .bad{color:var(--imp)}
-.help{margin-top:10px;line-height:1.6}
+/* ---------- вкладка Google ---------- */
+.g-sec{margin-top:22px}
+.g-h{font-size:19px;font-weight:700;letter-spacing:-.01em;margin:0 0 4px}
+.g-sub{font-size:14px;color:var(--slate);margin:0 0 12px;max-width:62ch}
+.trends{display:grid;gap:10px}
+.trend{background:var(--plate);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;display:grid;grid-template-columns:96px 1fr;gap:4px 16px}
+.trend.past{opacity:.72}
+.vol{font-size:22px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.vol small{display:block;font-size:12px;font-weight:500;color:var(--slate);letter-spacing:0;margin-top:3px}
+.q{font-size:18px;font-weight:600;line-height:1.3}
+.q .orig{display:block;font-size:13px;font-weight:400;color:var(--slate)}
+.when{font-size:13px;color:var(--slate);margin-top:2px}
+.when .now{color:var(--signal);font-weight:600}
+.tnews{grid-column:2;margin:8px 0 0;padding:0;list-style:none;display:grid;gap:5px;font-size:14px}
+.tnews a{text-decoration:none}
+.tnews a:hover{text-decoration:underline}
+.tnews span{color:var(--slate)}
 
-@media (max-width:640px){
-  .meta{margin-left:0;width:100%}
-  .tools{margin-left:0;width:100%}
-  input[type=search]{flex:1;width:auto}
-  .item{grid-template-columns:44px 1fr auto;padding-left:12px}
+/* ---------- підвал ---------- */
+footer{margin:34px 0 0;padding-bottom:40px;font-size:14px;color:var(--slate)}
+details summary{cursor:pointer;color:var(--ink)}
+.st{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 16px;margin-top:10px;font-size:13px;max-width:560px}
+.st .bad{color:var(--signal)}
+.st .via{color:var(--slate)}
+.help{margin-top:14px;line-height:1.6;max-width:70ch}
+
+/* ---------- мобільний: вкладки внизу, як у застосунку ---------- */
+@media (max-width:700px){
+  body{font-size:15px}
+  .head{padding:12px 0 10px}
+  .tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;margin:0;gap:0;background:var(--plate);border-top:1px solid var(--rule);padding:0 0 env(safe-area-inset-bottom)}
+  .tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;padding:9px 2px 10px;font-size:12.5px}
+  .tab .full{display:none}.tab .short{display:inline}
+  .tab .n{margin:0;font-size:11px}
+  .tab.on::after{top:-1px;bottom:auto;left:22%;right:22%;border-radius:0 0 3px 3px}
+  .filters{gap:10px}
+  .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px;width:calc(100% + 32px)}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{white-space:nowrap}
+  .tools{margin-left:0;width:100%;flex-wrap:wrap}
+  .search{flex:1;min-width:0;width:auto}
+  .item{grid-template-columns:42px 1fr 24px;gap:0 10px;padding:12px 6px 12px 12px}
+  .title{font-size:16px}
+  .fresh{top:64px}
+  .trend{grid-template-columns:1fr}
+  .tnews{grid-column:1}
+  footer{padding-bottom:110px}
+  .hours span:nth-child(odd){visibility:hidden}
 }
+@media (prefers-reduced-motion:reduce){.live{animation:none}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="top">
-      <div class="brand"><span class="dot"></span>MediaRadar</div>
-      <div class="sub">енергетика · паливо · логістика · промисловість</div>
-      <div class="meta" id="meta">завантаження…</div>
+<div class="bar">
+  <div class="wrap">
+    <div class="head">
+      <a class="logo" href="./"><span class="live" aria-hidden="true"></span>MediaRadar</a>
+      <div class="upd" id="upd">Завантаження…</div>
     </div>
-    <nav class="tabs" id="tabs"></nav>
-  </header>
+    <nav class="tabs" id="tabs" aria-label="Розділи"></nav>
+  </div>
+</div>
 
-  <div class="controls">
+<div class="wrap">
+  <section class="pulse" id="pulse" aria-label="Кількість новин за останні 24 години"></section>
+
+  <div class="filters">
     <div class="chips" id="chips"></div>
-    <div class="tools">
-      <input type="search" id="q" placeholder="Пошук у заголовках">
+    <div class="tools" id="tools">
+      <input class="search" type="search" id="q" placeholder="Пошук у заголовках" aria-label="Пошук у заголовках">
       <label class="tg"><input type="checkbox" id="hideRead"> Сховати прочитані</label>
-      <button class="btn" id="markAll" title="Позначити все видиме як прочитане">✓ Усе прочитано</button>
+      <button class="link" id="markAll">Позначити все прочитаним</button>
     </div>
   </div>
 
@@ -123,55 +196,56 @@ details summary{cursor:pointer}
       <div class="st" id="st"></div>
     </details>
     <div class="help">
-      Смужкою зліва позначено новини, яких ви ще не бачили. «Важливо» — подію дали кілька джерел одночасно
-      або заголовок містить маркери терміновості. ✕ — сховати новину. Наведіть мишку на перекладений
-      заголовок, щоб побачити оригінал. Сторінка сама перевіряє оновлення щохвилини.
-      <button class="btn" id="unhide" style="margin-left:6px">Повернути приховані</button>
+      Синя смужка зліва — новини, яких ви ще не бачили, червона — нові й важливі.
+      «Важливо» з'являється, коли новину про Україну дали два видання й більше або в заголовку є маркери терміновості.
+      Стовпчики вгорі показують, скільки новин виходило щогодини за добу; натисніть стовпчик, щоб побачити лише цю годину.
+      Наведіть мишку на перекладений заголовок, щоб побачити оригінал. Сторінка перевіряє оновлення щохвилини.
+      <button class="link" id="unhide">Повернути приховані новини</button>
     </div>
   </footer>
 </div>
 
 <script>
 (() => {
-  const TZ = "Europe/Kyiv";
-  const POLL_MS = 60_000;
-  const KEEP_DAYS = 6;
+  const TZ = "Europe/Kyiv", POLL_MS = 60_000, KEEP_DAYS = 6;
+  const SHORT = { ukraine:"Україна", important:"Важливе", google:"Google", europe:"Європа", world:"Світ" };
 
-  // ---------- сховище (браузер) ----------
+  // ---------- збережене в браузері ----------
   const store = {
-    get(k, d){ try{ const v = localStorage.getItem("radar."+k); return v ? JSON.parse(v) : d; }catch{ return d; } },
-    set(k, v){ try{ localStorage.setItem("radar."+k, JSON.stringify(v)); }catch{} }
+    get(k, d){ try{ const v = localStorage.getItem("radar." + k); return v ? JSON.parse(v) : d; }catch{ return d; } },
+    set(k, v){ try{ localStorage.setItem("radar." + k, JSON.stringify(v)); }catch{} }
   };
-  const prune = (m) => { const lim = Date.now() - KEEP_DAYS*864e5; for (const k in m) if (m[k] < lim) delete m[k]; return m; };
-  const seen   = prune(store.get("seen", {}));
-  const read   = prune(store.get("read", {}));
-  const hidden = prune(store.get("hidden", {}));
-  const prefs  = Object.assign({ view:"all", topics:[], hideRead:false }, store.get("prefs", {}));
-  const save = () => { store.set("seen", seen); store.set("read", read); store.set("hidden", hidden); store.set("prefs", prefs); };
+  const prune = (m) => { const lim = Date.now() - KEEP_DAYS * 864e5; for (const k in m) if (m[k] < lim) delete m[k]; return m; };
+  const seen = prune(store.get("seen", {})), read = prune(store.get("read", {})), hidden = prune(store.get("hidden", {}));
+  const prefs = Object.assign({ view:"ukraine", topics:[], hideRead:false }, store.get("prefs2", {}));
+  const save = () => { store.set("seen", seen); store.set("read", read); store.set("hidden", hidden); store.set("prefs2", prefs); };
 
-  // ---------- стан ----------
-  let data = null, items = [], pending = null;
-  const newIds = new Set();      // нові для цієї сесії — смужка тримається до перезавантаження
+  let data = null, items = [], pending = null, hour = null;
+  const newIds = new Set();
   const $ = (id) => document.getElementById(id);
-
-  const fmtTime = new Intl.DateTimeFormat("uk-UA", { timeZone:TZ, hour:"2-digit", minute:"2-digit" });
-  const fmtDay  = new Intl.DateTimeFormat("uk-UA", { timeZone:TZ, day:"numeric", month:"long", weekday:"long" });
-  const dayKey  = (d) => new Intl.DateTimeFormat("en-CA", { timeZone:TZ }).format(d);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
 
+  const fTime = new Intl.DateTimeFormat("uk-UA", { timeZone:TZ, hour:"2-digit", minute:"2-digit" });
+  const fDay  = new Intl.DateTimeFormat("uk-UA", { timeZone:TZ, day:"numeric", month:"long" });
+  const fWeek = new Intl.DateTimeFormat("uk-UA", { timeZone:TZ, weekday:"long" });
+  const fHour = new Intl.DateTimeFormat("en-GB", { timeZone:TZ, hour:"2-digit", hour12:false });
+  const dKey  = (d) => new Intl.DateTimeFormat("en-CA", { timeZone:TZ }).format(d);
   function dayLabel(d){
-    const k = dayKey(d), today = dayKey(new Date()), yest = dayKey(new Date(Date.now()-864e5));
-    if (k === today) return "Сьогодні";
-    if (k === yest) return "Вчора";
-    return fmtDay.format(d);
+    const k = dKey(d);
+    if (k === dKey(new Date())) return "Сьогодні, " + fDay.format(d);
+    if (k === dKey(new Date(Date.now() - 864e5))) return "Вчора, " + fDay.format(d);
+    const w = fWeek.format(d);
+    return w[0].toUpperCase() + w.slice(1) + ", " + fDay.format(d);
   }
   function ago(iso){
     const m = Math.round((Date.now() - new Date(iso)) / 6e4);
     if (m < 1) return "щойно";
     if (m < 60) return m + " хв тому";
-    const h = Math.floor(m/60);
-    return h + " год " + (m%60) + " хв тому";
+    const h = Math.floor(m / 60);
+    return h < 24 ? `${h} год ${m % 60} хв тому` : `${Math.floor(h / 24)} дн тому`;
   }
+  function plural(n, a, b, c){ const m10 = n % 10, m100 = n % 100; return (m10 === 1 && m100 !== 11) ? a : (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) ? b : c; }
+  const topicName = (id) => (data?.topics || []).find(t => t.id === id)?.title || id;
 
   // ---------- завантаження ----------
   async function load(first){
@@ -179,15 +253,14 @@ details summary{cursor:pointer}
       const r = await fetch("data/news.json?t=" + Date.now(), { cache:"no-store" });
       if (!r.ok) throw new Error(r.status);
       const d = await r.json();
-      if (first){ apply(d); }
-      else if (d.updated !== data?.updated){
+      if (first || !data) apply(d);
+      else if (d.updated !== data.updated){
         const known = new Set(items.map(i => i.id));
         const added = d.items.filter(i => !known.has(i.id) && !hidden[i.id]).length;
-        if (added > 0 && window.scrollY > 200){ pending = d; showFresh(added); }
-        else apply(d);
+        if (added && window.scrollY > 240){ pending = d; showFresh(added); } else apply(d);
       }
-    }catch(e){
-      if (first) $("feed").innerHTML = '<div class="list"><div class="empty">Даних ще немає. Запустіть оновлення в GitHub Actions — перша стрічка з’явиться за 1–2 хв.</div></div>';
+    }catch{
+      if (first) $("feed").innerHTML = '<div class="list"><div class="empty">Даних ще немає. Запустіть «Оновлення стрічки» у вкладці Actions на GitHub — стрічка з\'явиться за 1–2 хвилини.</div></div>';
     }
     loadStatus();
   }
@@ -195,142 +268,224 @@ details summary{cursor:pointer}
     try{
       const s = await (await fetch("data/status.json?t=" + Date.now(), { cache:"no-store" })).json();
       const ok = s.feeds.filter(f => f.ok).length;
-      $("stSum").textContent = `Стан джерел: ${ok} з ${s.feeds.length} працюють`;
-      $("st").innerHTML = s.feeds.map(f =>
-        `<span class="${f.ok ? "" : "bad"}">${f.ok ? "✓" : "✗"} ${esc(f.name)}</span><span class="${f.ok ? "" : "bad"}">${f.ok ? f.items + " нов." : esc(f.error || "помилка")}</span>`
-      ).join("");
+      $("stSum").textContent = `Стан джерел: працюють ${ok} з ${s.feeds.length}`;
+      $("st").innerHTML = s.feeds.map(f => {
+        const how = !f.ok ? esc(f.error || "не відповідає") : f.method === "google" ? `${f.items} · через Google News` : `${f.items}`;
+        return `<span class="${f.ok ? "" : "bad"}">${f.ok ? "✓" : "✗"} ${esc(f.name)}</span><span class="${f.ok ? "via" : "bad"}">${how}</span>`;
+      }).join("");
     }catch{}
   }
   function showFresh(n){
-    const b = $("fresh");
-    b.textContent = `↑ ${n} ${plural(n, "нова новина", "нові новини", "нових новин")} — показати`;
-    b.classList.add("show");
+    $("fresh").textContent = `Ще ${n} ${plural(n, "нова новина", "нові новини", "нових новин")} — показати`;
+    $("fresh").classList.add("show");
     document.title = `(${n}) MediaRadar`;
   }
   $("fresh").onclick = () => { if (pending) apply(pending); window.scrollTo({ top:0, behavior:"smooth" }); };
 
   function apply(d){
-    data = d; pending = null;
+    data = d; pending = null; items = d.items || [];
     $("fresh").classList.remove("show");
     document.title = "MediaRadar — енергетика, паливо, логістика";
-    items = d.items;
     const t = Date.now();
-    for (const i of items){
-      if (!seen[i.id]){ newIds.add(i.id); seen[i.id] = t; }
-    }
-    save();
-    renderNav(); render();
+    for (const i of items) if (!seen[i.id]){ newIds.add(i.id); seen[i.id] = t; }
+    save(); renderAll();
   }
 
-  // ---------- навігація ----------
-  function views(){
-    const v = [{ id:"all", title:"Усі" }, ...(data.tabs || []), { id:"important", title:"Важливе" }];
-    return v;
+  // ---------- відбір ----------
+  const inTab = (i, v) => (i.tabs || []).includes(v);
+  const byTopic = (x) => !prefs.topics.length || (x.topics || []).some(t => prefs.topics.includes(t));
+  function base(){
+    const q = $("q").value.trim().toLowerCase();
+    return items.filter(i =>
+      !hidden[i.id] && inTab(i, prefs.view) && byTopic(i) &&
+      (!prefs.hideRead || !read[i.id]) &&
+      (!q || (i.title + " " + (i.orig_shown || "") + " " + i.source).toLowerCase().includes(q)));
   }
-  function inView(i, v){
-    if (v === "all") return true;
-    if (v === "important") return i.important;
-    return i.tab === v;
+  const hourOf = (iso) => Math.floor((Date.now() - new Date(iso)) / 36e5);   // 0 = остання година
+  function visible(){ const b = base(); return hour === null ? b : b.filter(i => hourOf(i.published) === hour); }
+
+  // ---------- малювання ----------
+  function renderAll(){ renderHead(); renderTabs(); renderChips(); render(); }
+
+  function renderHead(){
+    if (!data) return;
+    const mins = (Date.now() - new Date(data.updated)) / 6e4;
+    $("upd").className = "upd" + (mins > 45 ? " stale" : "");
+    $("upd").innerHTML = `Оновлено <b>${fTime.format(new Date(data.updated))}</b><br>${ago(data.updated)}`;
   }
-  function renderNav(){
+  function renderTabs(){
     const vis = items.filter(i => !hidden[i.id]);
-    if (!views().some(v => v.id === prefs.view)) prefs.view = "all";
-    $("tabs").innerHTML = views().map(v => {
-      const n = vis.filter(i => inView(i, v.id)).length;
-      return `<button class="tab ${v.id === "important" ? "imp" : ""} ${prefs.view === v.id ? "on" : ""}" data-v="${esc(v.id)}">${esc(v.title)}<span class="n">${n}</span></button>`;
+    const g = data.google || { trends:[], news:[] };
+    const tabs = data.tabs || [];
+    if (!tabs.some(t => t.id === prefs.view)) prefs.view = tabs[0]?.id || "ukraine";
+    $("tabs").innerHTML = tabs.map(t => {
+      const n = t.id === "google" ? g.trends.filter(x => isNow(x)).length + g.news.length : vis.filter(i => inTab(i, t.id)).length;
+      return `<button class="tab ${prefs.view === t.id ? "on" : ""}" data-v="${esc(t.id)}" ${prefs.view === t.id ? 'aria-current="page"' : ""}>
+        <span class="full">${esc(t.title)}</span><span class="short">${esc(SHORT[t.id] || t.title)}</span><span class="n">${n}</span></button>`;
     }).join("");
+  }
+  function renderChips(){
     const topics = data.topics || [];
     prefs.topics = prefs.topics.filter(t => topics.some(x => x.id === t));
-    $("chips").innerHTML =
-      `<button class="chip ${prefs.topics.length ? "" : "on"}" data-t="">Усі теми</button>` +
+    $("chips").innerHTML = `<button class="chip ${prefs.topics.length ? "" : "on"}" data-t="">Усі теми</button>` +
       topics.map(t => `<button class="chip ${prefs.topics.includes(t.id) ? "on" : ""}" data-t="${esc(t.id)}">${esc(t.title)}</button>`).join("");
     $("hideRead").checked = prefs.hideRead;
-    const upd = new Date(data.updated);
-    $("meta").innerHTML = `Оновлено <b>${fmtTime.format(upd)}</b> · ${ago(data.updated)}`;
   }
-  $("tabs").onclick = (e) => { const b = e.target.closest(".tab"); if (!b) return; prefs.view = b.dataset.v; save(); renderNav(); render(); };
-  $("chips").onclick = (e) => {
-    const b = e.target.closest(".chip"); if (!b) return;
-    const t = b.dataset.t;
-    if (!t) prefs.topics = [];
-    else prefs.topics = prefs.topics.includes(t) ? prefs.topics.filter(x => x !== t) : [...prefs.topics, t];
-    save(); renderNav(); render();
-  };
-  $("hideRead").onchange = (e) => { prefs.hideRead = e.target.checked; save(); render(); };
-  $("q").oninput = () => render();
-  $("markAll").onclick = () => { const t = Date.now(); for (const i of visible()) read[i.id] = t; save(); render(); };
-  $("unhide").onclick = () => { for (const k in hidden) delete hidden[k]; save(); renderNav(); render(); };
 
-  // ---------- стрічка ----------
-  function visible(){
-    const q = $("q").value.trim().toLowerCase();
-    const topicName = Object.fromEntries((data?.topics || []).map(t => [t.id, t.title]));
-    return items.filter(i =>
-      !hidden[i.id] &&
-      inView(i, prefs.view) &&
-      (!prefs.topics.length || i.topics.some(t => prefs.topics.includes(t))) &&
-      (!prefs.hideRead || !read[i.id]) &&
-      (!q || (i.title + " " + (i.title_orig || "") + " " + i.source).toLowerCase().includes(q))
-    );
+  function renderPulse(list){
+    const el = $("pulse");
+    if (prefs.view === "google"){ el.innerHTML = ""; el.hidden = true; return; }
+    el.hidden = false;
+    const all = new Array(24).fill(0), hot = new Array(24).fill(0);
+    for (const i of list){ const h = hourOf(i.published); if (h >= 0 && h < 24){ all[h]++; if (i.important) hot[h]++; } }
+    const max = Math.max(4, ...all);
+    const total = all.reduce((a, b) => a + b, 0);
+    const bars = [], labels = [];
+    for (let k = 23; k >= 0; k--){
+      const start = new Date(Date.now() - (k + 1) * 36e5);
+      const label = `${fHour.format(start)}:00–${fHour.format(new Date(start.getTime() + 36e5))}:00`;
+      const hPct = all[k] / max * 100, hotPct = hot[k] / max * 100;
+      bars.push(`<button class="b ${hour === k ? "sel" : ""} ${hour !== null && hour !== k ? "dim" : ""}" data-h="${k}"
+        title="${label}: ${all[k]} ${plural(all[k], "новина", "новини", "новин")}${hot[k] ? `, важливих ${hot[k]}` : ""}"
+        aria-label="${label}, ${all[k]} новин"><i style="height:${hPct - hotPct}%"></i>${hot[k] ? `<i class="hot" style="height:${hotPct}%"></i>` : ""}</button>`);
+      labels.push(`<span>${k % 3 === 0 || k === 23 ? fHour.format(start) : ""}</span>`);
+    }
+    const sel = hour === null ? "" : `<button class="clear-hour" id="clearHour">Показати всю добу</button>`;
+    el.innerHTML = `<div class="pulse-top"><span><b>${total}</b> ${plural(total, "новина", "новини", "новин")} за добу</span>${sel}</div>
+      <div class="bars">${bars.join("")}</div><div class="hours">${labels.join("")}</div>`;
   }
+
   function render(){
     if (!data) return;
+    const isG = prefs.view === "google";
+    $("tools").style.display = isG ? "none" : "";
+    if (isG){ renderPulse([]); renderGoogle(); return; }
+    renderPulse(base());
     const list = visible();
-    const topicName = Object.fromEntries((data.topics || []).map(t => [t.id, t.title]));
     if (!list.length){
-      $("feed").innerHTML = '<div class="list"><div class="empty">Немає новин за цими фільтрами.</div></div>';
+      const why = hour !== null ? "За цю годину новин немає." : prefs.topics.length || $("q").value ? "За цими фільтрами новин немає. Зніміть частину фільтрів." : "Новин поки немає.";
+      $("feed").innerHTML = `<div class="list"><div class="empty">${why}</div></div>`;
       return;
     }
     let html = "", cur = null;
     for (const i of list){
-      const d = new Date(i.published);
-      const lbl = dayLabel(d);
-      if (lbl !== cur){
-        if (cur !== null) html += "</div>";
-        html += `<div class="day">${esc(lbl)}</div><div class="list">`;
-        cur = lbl;
-      }
+      const d = new Date(i.published), lbl = dayLabel(d);
+      if (lbl !== cur){ html += (cur === null ? "" : "</div>") + `<div class="day">${esc(lbl)}</div><div class="list">`; cur = lbl; }
       const others = (i.sources || []).filter(s => s !== i.source);
-      html += `
-        <article class="item ${newIds.has(i.id) ? "new" : ""} ${read[i.id] ? "read" : ""}" data-id="${esc(i.id)}">
-          <div class="time">${fmtTime.format(d)}</div>
-          <div class="body">
-            <a class="title" href="${esc(i.url)}" target="_blank" rel="noopener" ${i.title_orig ? `title="${esc(i.title_orig)}"` : ""}>${esc(i.title)}</a>
-            <div class="info">
-              ${i.important ? '<span class="badge">Важливо</span>' : ""}
-              <span class="src">${esc(i.source)}</span>
-              ${others.length ? `<span class="multi" title="${esc(others.join(", "))}">+${others.length} ${plural(others.length, "джерело", "джерела", "джерел")}</span>` : ""}
-              ${i.title_orig ? '<span class="tr">переклад</span>' : ""}
-              ${i.topics.map(t => `<span class="tag">${esc(topicName[t] || t)}</span>`).join("")}
-            </div>
+      const isNew = newIds.has(i.id) && !read[i.id];
+      html += `<article class="item ${isNew ? "new" : ""} ${isNew && i.important ? "imp" : ""} ${read[i.id] ? "read" : ""}" data-id="${esc(i.id)}">
+        <div class="time">${fTime.format(d)}</div>
+        <div>
+          <a class="title" href="${esc(i.url)}" target="_blank" rel="noopener" ${i.orig_shown ? `title="Оригінал: ${esc(i.orig_shown)}"` : ""}>${esc(i.title)}</a>
+          <div class="meta">
+            ${i.important && prefs.view !== "important" ? '<span class="hot-l">Важливо</span>' : ""}
+            <span class="src">${esc(i.source)}</span>
+            ${others.length ? `<span class="more" title="${esc(others.join(", "))}">ще ${others.length} ${plural(others.length, "видання", "видання", "видань")}</span>` : ""}
+            ${prefs.view === "europe" && i.ua ? '<span class="ua-l">Україна</span>' : ""}
+            ${(i.topics || []).map(t => `<span>${esc(topicName(t))}</span>`).join("")}
+            ${i.orig_shown ? "<span>переклад</span>" : ""}
           </div>
-          <button class="x" title="Сховати новину" aria-label="Сховати">✕</button>
-        </article>`;
+        </div>
+        <button class="x" title="Сховати новину" aria-label="Сховати новину">✕</button>
+      </article>`;
     }
-    html += "</div>";
-    $("feed").innerHTML = html;
+    $("feed").innerHTML = html + "</div>";
   }
-  $("feed").addEventListener("click", (e) => {
-    const art = e.target.closest(".item"); if (!art) return;
-    const id = art.dataset.id;
-    if (e.target.closest(".x")){ hidden[id] = Date.now(); save(); renderNav(); render(); return; }
-    if (e.target.closest(".title")){ read[id] = Date.now(); save(); art.classList.add("read"); }
-  });
-  $("feed").addEventListener("auxclick", (e) => {
-    const a = e.target.closest(".title"); if (!a) return;
-    const id = a.closest(".item").dataset.id; read[id] = Date.now(); save(); a.closest(".item").classList.add("read");
-  });
 
-  function plural(n, one, few, many){
-    const m10 = n % 10, m100 = n % 100;
-    if (m10 === 1 && m100 !== 11) return one;
-    if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return few;
-    return many;
+  const isNow = (t) => Date.now() - new Date(t.last_seen) < 3 * 36e5;
+  function renderGoogle(){
+    const g = data.google || { trends:[], news:[] };
+    const trends = g.trends.filter(byTopic), news = g.news.filter(byTopic);
+    const nowT = trends.filter(isNow), past = trends.filter(t => !isNow(t));
+    const trendCard = (t, live) => `
+      <div class="trend ${live ? "" : "past"}">
+        <div class="vol">${esc(t.traffic || "—")}<small>пошуків</small></div>
+        <div>
+          <div class="q">${esc(t.query_uk || t.query)}${t.query_uk && t.query_uk !== t.query ? `<span class="orig">${esc(t.query)}</span>` : ""}</div>
+          <div class="when">${live ? '<span class="now">У тренді зараз</span>' : "Востаннє в тренді " + ago(t.last_seen)} · ${(t.topics || []).map(topicName).join(", ")}</div>
+        </div>
+        ${t.news?.length ? `<ul class="tnews">${t.news.map(n => `<li><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a> <span>${esc(n.source)}</span></li>`).join("")}</ul>` : ""}
+      </div>`;
+    let html = `<section class="g-sec">
+      <h2 class="g-h">Що шукають в Україні</h2>
+      <p class="g-sub">Запити з Google Trends, що стрімко ростуть і стосуються ваших тем. Якщо зараз таких немає, нижче — ті, що були в тренді протягом тижня.</p>
+      <div class="trends">${nowT.map(t => trendCard(t, true)).join("") || (past.length ? "" : '<div class="list"><div class="empty">Цього тижня ваші теми не потрапляли в тренди пошуку.</div></div>')}
+      ${past.map(t => trendCard(t, false)).join("")}</div></section>
+      <section class="g-sec">
+      <h2 class="g-h">Що Google ставить у топ</h2>
+      <p class="g-sub">Головні та ділові новини Google News для України за останню добу, лише за вашими темами.</p>`;
+    if (!news.length) html += '<div class="list"><div class="empty">Зараз у топі Google News немає новин за вашими темами.</div></div>';
+    else {
+      html += '<div class="list">' + news.map(n => `
+        <article class="item ${read[n.id] ? "read" : ""}" data-id="${esc(n.id)}">
+          <div class="time">${fTime.format(new Date(n.published))}</div>
+          <div><a class="title" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
+            <div class="meta"><span class="src">${esc(n.source)}</span>${(n.topics || []).map(t => `<span>${esc(topicName(t))}</span>`).join("")}</div></div>
+          <span></span>
+        </article>`).join("") + "</div>";
+    }
+    $("feed").innerHTML = html + "</section>";
   }
+
+  // ---------- дії ----------
+  $("tabs").onclick = (e) => {
+    const b = e.target.closest(".tab"); if (!b) return;
+    prefs.view = b.dataset.v; hour = null; save(); renderTabs(); render();
+    window.scrollTo({ top:0 });
+  };
+  $("chips").onclick = (e) => {
+    const b = e.target.closest(".chip"); if (!b) return;
+    const t = b.dataset.t;
+    prefs.topics = !t ? [] : prefs.topics.includes(t) ? prefs.topics.filter(x => x !== t) : [...prefs.topics, t];
+    save(); renderChips(); render();
+  };
+  $("pulse").onclick = (e) => {
+    if (e.target.closest("#clearHour")){ hour = null; render(); return; }
+    const b = e.target.closest(".b"); if (!b) return;
+    const k = +b.dataset.h; hour = hour === k ? null : k; render();
+  };
+  $("hideRead").onchange = (e) => { prefs.hideRead = e.target.checked; save(); render(); };
+  $("q").oninput = () => render();
+  $("markAll").onclick = () => { const t = Date.now(); for (const i of visible()) read[i.id] = t; save(); render(); };
+  $("unhide").onclick = () => { for (const k in hidden) delete hidden[k]; save(); renderTabs(); render(); };
+  function markRead(el){ const a = el.closest(".item"); if (!a) return; read[a.dataset.id] = Date.now(); save(); a.classList.add("read"); a.classList.remove("new", "imp"); }
+  $("feed").addEventListener("click", (e) => {
+    const x = e.target.closest(".x");
+    if (x){ hidden[x.closest(".item").dataset.id] = Date.now(); save(); renderTabs(); render(); return; }
+    const a = e.target.closest(".title, .tnews a"); if (a) markRead(a);
+  });
+  $("feed").addEventListener("auxclick", (e) => { const a = e.target.closest(".title"); if (a) markRead(a); });
+
+  // ---------- значок вкладки: «MR» шрифтом сторінки + блимаюча точка ----------
+  (function favicon(){
+    const link = $("favicon"), S = 64, cv = document.createElement("canvas");
+    cv.width = cv.height = S;
+    const ctx = cv.getContext("2d"), dark = matchMedia("(prefers-color-scheme: dark)"), frames = [];
+    function draw(alpha){
+      ctx.clearRect(0, 0, S, S);
+      ctx.fillStyle = dark.matches ? "#e9e7e2" : "#1b1d1f";
+      ctx.font = '800 41px "Golos Text", Arial, sans-serif';
+      ctx.textAlign = "center"; ctx.textBaseline = "alphabetic";
+      if ("letterSpacing" in ctx) ctx.letterSpacing = "-2.5px";
+      ctx.fillText("MR", 32, 61);
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--signal").trim() || "#c62a1f";
+      ctx.beginPath(); ctx.arc(53, 12, 10, 0, Math.PI * 2); ctx.fill();
+      ctx.globalAlpha = 1;
+      return cv.toDataURL("image/png");
+    }
+    const build = () => { frames.length = 0; frames.push(draw(1), draw(0.15)); };
+    let k = 0;
+    (document.fonts ? document.fonts.load('800 41px "Golos Text"') : Promise.resolve()).catch(() => {}).then(() => {
+      build(); link.type = "image/png"; link.href = frames[0];
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches) setInterval(() => { k ^= 1; link.href = frames[k]; }, 900);
+    });
+    dark.addEventListener?.("change", build);
+  })();
 
   load(true);
   setInterval(() => load(false), POLL_MS);
-  setInterval(() => { if (data) $("meta").innerHTML = `Оновлено <b>${fmtTime.format(new Date(data.updated))}</b> · ${ago(data.updated)}`; }, 30_000);
+  setInterval(renderHead, 30_000);
   document.addEventListener("visibilitychange", () => { if (!document.hidden) load(false); });
 })();
 </script>
