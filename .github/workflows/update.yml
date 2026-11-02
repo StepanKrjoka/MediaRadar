@@ -2,8 +2,8 @@ name: Оновлення стрічки
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # кожні 10 хв (GitHub може запускати із затримкою)
-  workflow_dispatch:          # кнопка «Run workflow» для ручного запуску
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
   push:
     paths:
       - "config/**"
@@ -21,14 +21,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-          cache: pip
 
-      - run: pip install -r requirements.txt
+      - name: Встановити бібліотеки
+        run: pip install feedparser requests PyYAML deep-translator
 
       - name: Зібрати новини
         run: python scripts/fetch.py
