@@ -1,0 +1,151 @@
+# ===========================================================
+#  Radar — налаштування джерел
+#  Додати джерело: допишіть блок у feeds (name, url, tab).
+#  Будь-яке джерело можна вимкнути: enabled: false
+# ===========================================================
+
+# Скільки годин тримати новини у стрічці
+retention_hours: 72
+
+# Вкладки за джерелами. Порядок тут = порядок вкладок на сторінці.
+# Окрім них сторінка завжди має вкладки «Усі» та «Важливе».
+tabs:
+  - id: world
+    title: Світ
+  - id: ukraine
+    title: Україна
+  - id: mine
+    title: Мої джерела
+
+# Теми для фільтра «За темами».
+# Слово із * на кінці — це корінь: «нафт*» знайде «нафта», «нафтовий», «нафтогаз».
+# Слово без * шукається цілим словом: «oil» не спрацює на «soil».
+topics:
+  - id: oil
+    title: Нафта і пальне
+    keywords: [oil, crude, brent, wti, diesel, gasoline, petrol, jet fuel, fuel*, refin*, opec*, "нафт*", "пальн*", "паливн*", "бензин*", "дизел*", "азс", "нпз", "автогаз*", "скраплен*", "укрнафт*", "okko", "wog", "socar"]
+  - id: gas
+    title: Газ
+    keywords: [gas, lng, ttf, "henry hub", pipeline*, "газ", "газу", "газом", "газов*", "нафтогаз*", "гтс", "пхг", "оператор гтс", "зпг"]
+  - id: power
+    title: Електроенергія
+    keywords: [electricity, "power grid", "power price*", "power market", nuclear, coal, utility, utilities, blackout*, "електроенерг*", "енергосистем*", "укренерго", "аес", "тес", "тец", "енергоатом*", "відключен*", "генерац*", "ринок на добу наперед", "рдн", "енергетик*", "дтек", "центренерго", "укргідроенерго"]
+  - id: renewables
+    title: ВДЕ і накопичення
+    keywords: [solar, "wind farm*", "wind power", "offshore wind", renewable*, "battery storage", bess, hydrogen, biomethane, photovoltaic, "сонячн*", "вітров*", "вде", "накопичувач*", "водн*", "біометан*", "зелен* тариф*", "гарантован* покуп*", "епс", "epc"]
+  - id: logistics
+    title: Логістика
+    keywords: [shipping, freight, container*, tanker*, port, ports, rail*, trucking, logistics, "supply chain", "red sea", "suez", "black sea", "порт", "порти", "портів", "портах", "логіст*", "вантаж*", "залізниц*", "укрзалізниц*", "фрахт*", "контейнер*", "коридор*", "пункт* пропуску", "черг* на кордоні", "перевез*", "суден", "судна"]
+  - id: industry
+    title: Промисловість
+    keywords: [steel, metallurg*, "iron ore", mining, manufactur*, chemical*, fertili*, aluminium, aluminum, "металург*", "сталь", "сталі", "руд*", "гмк", "шахт*", "завод*", "виробництв*", "промислов*", "хімі*", "добрив*", "метінвест*", "арселор*", "фероспла*", "цемент*"]
+
+# Що позначати як «Важливе», крім новин, які одночасно дали 2+ джерела
+important:
+  min_sources: 2
+  keywords: [breaking, exclusive, urgent, "терміново", "блискавка", "ексклюзив*", "опек+ ухвал*", "opec+ agrees", "opec+ agreed", "масован* атак*", "удар* по енергетиц*", "графік* відключень", "аварійн* відключ*"]
+
+# -----------------------------------------------------------
+#  Джерела
+#  tab:    world | ukraine | mine
+#  lang:   en, de, pl тощо — заголовок перекладається українською; uk — без перекладу
+#  filter: true — брати лише новини, що потрапили хоча б в одну тему
+#          (для загальних видань, де багато нерелевантного)
+#  Google News: будь-який пошуковий запит перетворюється на RSS,
+#  так у стрічку потрапляють заголовки Reuters, Bloomberg, FT та ін.
+# -----------------------------------------------------------
+feeds:
+
+  # ---------- Світ: галузеві видання ----------
+  - name: OilPrice
+    url: https://oilprice.com/rss/main
+    tab: world
+    lang: en
+  - name: Rigzone
+    url: https://www.rigzone.com/news/rss/rigzone_latest.aspx
+    tab: world
+    lang: en
+  - name: Offshore Energy
+    url: https://www.offshore-energy.biz/feed/
+    tab: world
+    lang: en
+  - name: Energy Voice
+    url: https://www.energyvoice.com/feed/
+    tab: world
+    lang: en
+  - name: pv magazine
+    url: https://www.pv-magazine.com/feed/
+    tab: world
+    lang: en
+  - name: CleanTechnica
+    url: https://cleantechnica.com/feed/
+    tab: world
+    lang: en
+    filter: true
+  - name: gCaptain
+    url: https://gcaptain.com/feed/
+    tab: world
+    lang: en
+  - name: Splash247
+    url: https://splash247.com/feed/
+    tab: world
+    lang: en
+  - name: FreightWaves
+    url: https://www.freightwaves.com/news/feed
+    tab: world
+    lang: en
+
+  # ---------- Світ: Google News (Reuters, Bloomberg, FT, Argus тощо) ----------
+  - name: "Google News: нафта й пальне"
+    url: "https://news.google.com/rss/search?q=(oil+OR+crude+OR+diesel+OR+OPEC)+when:1d&hl=en-US&gl=US&ceid=US:en"
+    tab: world
+    lang: en
+  - name: "Google News: газ і LNG"
+    url: "https://news.google.com/rss/search?q=(LNG+OR+%22natural+gas%22+OR+TTF)+when:1d&hl=en-US&gl=US&ceid=US:en"
+    tab: world
+    lang: en
+  - name: "Google News: електроенергія й ВДЕ"
+    url: "https://news.google.com/rss/search?q=(%22power+prices%22+OR+%22power+grid%22+OR+solar+OR+%22wind+power%22)+when:1d&hl=en-US&gl=US&ceid=US:en"
+    tab: world
+    lang: en
+  - name: "Google News: судноплавство й фрахт"
+    url: "https://news.google.com/rss/search?q=(shipping+OR+freight+OR+tanker+OR+%22container+rates%22)+when:1d&hl=en-US&gl=US&ceid=US:en"
+    tab: world
+    lang: en
+  - name: "Google News: Україна — енергетика (англ.)"
+    url: "https://news.google.com/rss/search?q=Ukraine+(energy+OR+gas+OR+power+OR+fuel+OR+grain+corridor)+when:1d&hl=en-US&gl=US&ceid=US:en"
+    tab: world
+    lang: en
+
+  # ---------- Україна ----------
+  - name: Економічна правда
+    url: https://www.epravda.com.ua/rss/
+    tab: ukraine
+    lang: uk
+    filter: true
+  - name: GMK Center
+    url: https://gmk.center/ua/feed/
+    tab: ukraine
+    lang: uk
+  - name: "Google News: паливо"
+    url: "https://news.google.com/rss/search?q=(%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5+OR+%D0%90%D0%97%D0%A1+OR+%D0%B4%D0%B8%D0%B7%D0%B5%D0%BB%D1%8C+OR+%D0%B1%D0%B5%D0%BD%D0%B7%D0%B8%D0%BD)+when:1d&hl=uk&gl=UA&ceid=UA:uk"
+    tab: ukraine
+    lang: uk
+  - name: "Google News: енергетика"
+    url: "https://news.google.com/rss/search?q=(%D0%A3%D0%BA%D1%80%D0%B5%D0%BD%D0%B5%D1%80%D0%B3%D0%BE+OR+%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B5%D1%80%D0%B3%D1%96%D1%8F+OR+%D0%9D%D0%B0%D1%84%D1%82%D0%BE%D0%B3%D0%B0%D0%B7+OR+%D0%92%D0%94%D0%95)+when:1d&hl=uk&gl=UA&ceid=UA:uk"
+    tab: ukraine
+    lang: uk
+  - name: "Google News: логістика"
+    url: "https://news.google.com/rss/search?q=(%D0%A3%D0%BA%D1%80%D0%B7%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%B8%D1%86%D1%8F+OR+%D0%BF%D0%BE%D1%80%D1%82%D0%B8+OR+%D0%BB%D0%BE%D0%B3%D1%96%D1%81%D1%82%D0%B8%D0%BA%D0%B0+OR+%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%BE%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%B7%D0%B5%D0%BD%D0%BD%D1%8F)+when:1d&hl=uk&gl=UA&ceid=UA:uk"
+    tab: ukraine
+    lang: uk
+  - name: "Google News: промисловість"
+    url: "https://news.google.com/rss/search?q=(%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D1%83%D1%80%D0%B3%D1%96%D1%8F+OR+%D0%93%D0%9C%D0%9A+OR+%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D0%BB%D0%BE%D0%B2%D1%96%D1%81%D1%82%D1%8C+OR+%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4)+when:1d&hl=uk&gl=UA&ceid=UA:uk"
+    tab: ukraine
+    lang: uk
+
+  # ---------- Мої джерела (приклад — замініть на свій список) ----------
+  - name: Діло
+    url: "https://news.google.com/rss/search?q=site:dilo.ua+when:2d&hl=uk&gl=UA&ceid=UA:uk"
+    tab: mine
+    lang: uk

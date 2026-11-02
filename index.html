@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar — енергетика, паливо, логістика</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef; --panel:#ffffff; --ink:#1b1d1f; --muted:#6b6f75; --faint:#9aa0a6;
+  --line:#e4e0d6; --accent:#c2410c; --accent-soft:#fdeee5; --new:#2563eb;
+  --chip:#efece4; --chip-on:#1b1d1f; --chip-on-ink:#fff; --imp:#b91c1c; --imp-soft:#fde8e8;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#121315; --panel:#1a1c1f; --ink:#e9e7e2; --muted:#9a9ea5; --faint:#6c7077;
+    --line:#2a2d31; --accent:#fb923c; --accent-soft:#2d1d12; --new:#60a5fa;
+    --chip:#24272b; --chip-on:#e9e7e2; --chip-on-ink:#121315; --imp:#f87171; --imp-soft:#3a1717;
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:15px/1.45 "Golos Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:920px;margin:0 auto;padding:0 16px 64px}
+
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin:0 -16px;padding:14px 16px 0}
+.top{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:22px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:ping 2.4s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 60%,transparent)}80%,100%{box-shadow:0 0 0 9px transparent}}
+.sub{color:var(--muted);font-size:13px}
+.meta{margin-left:auto;font:12px "JetBrains Mono",monospace;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:500}
+
+.tabs{display:flex;gap:2px;margin-top:12px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:500 14px "Golos Text",sans-serif;padding:8px 12px 10px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap}
+.tab:hover{color:var(--ink)}
+.tab.on{color:var(--ink);border-bottom-color:var(--accent)}
+.tab .n{font:11px "JetBrains Mono",monospace;color:var(--faint);margin-left:4px}
+.tab.imp.on{border-bottom-color:var(--imp)}
+
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:14px 0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{appearance:none;border:1px solid transparent;background:var(--chip);color:var(--ink);font:13px "Golos Text",sans-serif;padding:5px 11px;border-radius:999px;cursor:pointer}
+.chip:hover{border-color:var(--line)}
+.chip.on{background:var(--chip-on);color:var(--chip-on-ink)}
+.tools{display:flex;gap:8px;align-items:center;margin-left:auto;flex-wrap:wrap}
+input[type=search]{font:14px "Golos Text",sans-serif;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 10px;width:190px}
+label.tg{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted);cursor:pointer;user-select:none}
+.btn{appearance:none;border:1px solid var(--line);background:var(--panel);color:var(--muted);font:13px "Golos Text",sans-serif;padding:5px 10px;border-radius:8px;cursor:pointer}
+.btn:hover{color:var(--ink)}
+
+.fresh{display:none;margin:10px 0;width:100%;border:0;border-radius:8px;background:var(--accent-soft);color:var(--accent);font:600 14px "Golos Text",sans-serif;padding:9px;cursor:pointer}
+.fresh.show{display:block}
+
+.day{font:600 12px "Golos Text",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:22px 0 6px}
+.list{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.item{position:relative;display:grid;grid-template-columns:52px 1fr auto;gap:4px 12px;padding:11px 12px 11px 16px;border-top:1px solid var(--line)}
+.item:first-child{border-top:0}
+.item.new::before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:3px;border-radius:0 3px 3px 0;background:var(--new)}
+.item.read .title{color:var(--muted)}
+.time{font:13px "JetBrains Mono",monospace;color:var(--muted);padding-top:2px}
+.body{min-width:0}
+.title{font-weight:500;font-size:15.5px;line-height:1.38;text-decoration:none;display:block}
+.title:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.info{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:4px;font-size:12.5px;color:var(--muted)}
+.src{font-weight:600;color:var(--ink);opacity:.8}
+.via{color:var(--faint)}
+.tag{color:var(--muted)}
+.tag::before{content:"#";opacity:.5}
+.badge{font:600 11px "Golos Text",sans-serif;text-transform:uppercase;letter-spacing:.05em;color:var(--imp);background:var(--imp-soft);padding:1px 6px;border-radius:4px}
+.multi{cursor:help;border-bottom:1px dotted var(--faint)}
+.tr{font-size:11px;color:var(--faint)}
+.x{appearance:none;border:0;background:none;color:var(--faint);cursor:pointer;font-size:15px;padding:2px 6px;border-radius:6px;opacity:0;transition:opacity .15s}
+.item:hover .x,.x:focus{opacity:1}
+@media (hover:none){.x{opacity:.6}}
+.x:hover{color:var(--ink);background:var(--chip)}
+.empty{padding:40px 16px;text-align:center;color:var(--muted)}
+
+footer{margin-top:28px;font-size:13px;color:var(--muted)}
+details summary{cursor:pointer}
+.st{display:grid;grid-template-columns:1fr auto;gap:2px 16px;margin-top:8px;font:12px "JetBrains Mono",monospace}
+.st .bad{color:var(--imp)}
+.help{margin-top:10px;line-height:1.6}
+
+@media (max-width:640px){
+  .meta{margin-left:0;width:100%}
+  .tools{margin-left:0;width:100%}
+  input[type=search]{flex:1;width:auto}
+  .item{grid-template-columns:44px 1fr auto;padding-left:12px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="top">
+      <div class="brand"><span class="dot"></span>Radar</div>
+      <div class="sub">енергетика · паливо · логістика · промисловість</div>
+      <div class="meta" id="meta">завантаження…</div>
+    </div>
+    <nav class="tabs" id="tabs"></nav>
+  </header>
+
+  <div class="controls">
+    <div class="chips" id="chips"></div>
+    <div class="tools">
+      <input type="search" id="q" placeholder="Пошук у заголовках">
+      <label class="tg"><input type="checkbox" id="hideRead"> Сховати прочитані</label>
+      <button class="btn" id="markAll" title="Позначити все видиме як прочитане">✓ Усе прочитано</button>
+    </div>
+  </div>
+
+  <button class="fresh" id="fresh"></button>
+  <main id="feed"></main>
+
+  <footer>
+    <details>
+      <summary id="stSum">Стан джерел</summary>
+      <div class="st" id="st"></div>
+    </details>
+    <div class="help">
+      Смужкою зліва позначено новини, яких ви ще не бачили. «Важливо» — подію дали кілька джерел одночасно
+      або заголовок містить маркери терміновості. ✕ — сховати новину. Наведіть мишку на перекладений
+      заголовок, щоб побачити оригінал. Сторінка сама перевіряє оновлення щохвилини.
+      <button class="btn" id="unhide" style="margin-left:6px">Повернути приховані</button>
+    </div>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const TZ = "Europe/Kyiv";
+  const POLL_MS = 60_000;
+  const KEEP_DAYS = 6;
+
+  // ---------- сховище (браузер) ----------
+  const store = {
+    get(k, d){ try{ const v = localStorage.getItem("radar."+k); return v ? JSON.parse(v) : d; }catch{ return d; } },
+    set(k, v){ try{ localStorage.setItem("radar."+k, JSON.stringify(v)); }catch{} }
+  };
+  const prune = (m) => { const lim = Date.now() - KEEP_DAYS*864e5; for (const k in m) if (m[k] < lim) delete m[k]; return m; };
+  const seen   = prune(store.get("seen", {}));
+  const read   = prune(store.get("read", {}));
+  const hidden = prune(store.get("hidden", {}));
+  const prefs  = Object.assign({ view:"all", topics:[], hideRead:false }, store.get("prefs", {}));
+  const save = () => { store.set("seen", seen); store.set("read", read); store.set("hidden", hidden); store.set("prefs", prefs); };
+
+  // ---------- стан ----------
+  let data = null, items = [], pending = null;
+  const newIds = new Set();      // нові для цієї сесії — смужка тримається до перезавантаження
+  const $ = (id) => document.getElementById(id);
+
+  const fmtTime = new Intl.DateTimeFormat("uk-UA", { timeZone:TZ, hour:"2-digit", minute:"2-digit" });
+  const fmtDay  = new Intl.DateTimeFormat("uk-UA", { timeZone:TZ, day:"numeric", month:"long", weekday:"long" });
+  const dayKey  = (d) => new Intl.DateTimeFormat("en-CA", { timeZone:TZ }).format(d);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+
+  function dayLabel(d){
+    const k = dayKey(d), today = dayKey(new Date()), yest = dayKey(new Date(Date.now()-864e5));
+    if (k === today) return "Сьогодні";
+    if (k === yest) return "Вчора";
+    return fmtDay.format(d);
+  }
+  function ago(iso){
+    const m = Math.round((Date.now() - new Date(iso)) / 6e4);
+    if (m < 1) return "щойно";
+    if (m < 60) return m + " хв тому";
+    const h = Math.floor(m/60);
+    return h + " год " + (m%60) + " хв тому";
+  }
+
+  // ---------- завантаження ----------
+  async function load(first){
+    try{
+      const r = await fetch("data/news.json?t=" + Date.now(), { cache:"no-store" });
+      if (!r.ok) throw new Error(r.status);
+      const d = await r.json();
+      if (first){ apply(d); }
+      else if (d.updated !== data?.updated){
+        const known = new Set(items.map(i => i.id));
+        const added = d.items.filter(i => !known.has(i.id) && !hidden[i.id]).length;
+        if (added > 0 && window.scrollY > 200){ pending = d; showFresh(added); }
+        else apply(d);
+      }
+    }catch(e){
+      if (first) $("feed").innerHTML = '<div class="list"><div class="empty">Даних ще немає. Запустіть оновлення в GitHub Actions — перша стрічка з’явиться за 1–2 хв.</div></div>';
+    }
+    loadStatus();
+  }
+  async function loadStatus(){
+    try{
+      const s = await (await fetch("data/status.json?t=" + Date.now(), { cache:"no-store" })).json();
+      const ok = s.feeds.filter(f => f.ok).length;
+      $("stSum").textContent = `Стан джерел: ${ok} з ${s.feeds.length} працюють`;
+      $("st").innerHTML = s.feeds.map(f =>
+        `<span class="${f.ok ? "" : "bad"}">${f.ok ? "✓" : "✗"} ${esc(f.name)}</span><span class="${f.ok ? "" : "bad"}">${f.ok ? f.items + " нов." : esc(f.error || "помилка")}</span>`
+      ).join("");
+    }catch{}
+  }
+  function showFresh(n){
+    const b = $("fresh");
+    b.textContent = `↑ ${n} ${plural(n, "нова новина", "нові новини", "нових новин")} — показати`;
+    b.classList.add("show");
+    document.title = `(${n}) Radar`;
+  }
+  $("fresh").onclick = () => { if (pending) apply(pending); window.scrollTo({ top:0, behavior:"smooth" }); };
+
+  function apply(d){
+    data = d; pending = null;
+    $("fresh").classList.remove("show");
+    document.title = "Radar — енергетика, паливо, логістика";
+    items = d.items;
+    const t = Date.now();
+    for (const i of items){
+      if (!seen[i.id]){ newIds.add(i.id); seen[i.id] = t; }
+    }
+    save();
+    renderNav(); render();
+  }
+
+  // ---------- навігація ----------
+  function views(){
+    const v = [{ id:"all", title:"Усі" }, ...(data.tabs || []), { id:"important", title:"Важливе" }];
+    return v;
+  }
+  function inView(i, v){
+    if (v === "all") return true;
+    if (v === "important") return i.important;
+    return i.tab === v;
+  }
+  function renderNav(){
+    const vis = items.filter(i => !hidden[i.id]);
+    if (!views().some(v => v.id === prefs.view)) prefs.view = "all";
+    $("tabs").innerHTML = views().map(v => {
+      const n = vis.filter(i => inView(i, v.id)).length;
+      return `<button class="tab ${v.id === "important" ? "imp" : ""} ${prefs.view === v.id ? "on" : ""}" data-v="${esc(v.id)}">${esc(v.title)}<span class="n">${n}</span></button>`;
+    }).join("");
+    const topics = data.topics || [];
+    prefs.topics = prefs.topics.filter(t => topics.some(x => x.id === t));
+    $("chips").innerHTML =
+      `<button class="chip ${prefs.topics.length ? "" : "on"}" data-t="">Усі теми</button>` +
+      topics.map(t => `<button class="chip ${prefs.topics.includes(t.id) ? "on" : ""}" data-t="${esc(t.id)}">${esc(t.title)}</button>`).join("");
+    $("hideRead").checked = prefs.hideRead;
+    const upd = new Date(data.updated);
+    $("meta").innerHTML = `Оновлено <b>${fmtTime.format(upd)}</b> · ${ago(data.updated)}`;
+  }
+  $("tabs").onclick = (e) => { const b = e.target.closest(".tab"); if (!b) return; prefs.view = b.dataset.v; save(); renderNav(); render(); };
+  $("chips").onclick = (e) => {
+    const b = e.target.closest(".chip"); if (!b) return;
+    const t = b.dataset.t;
+    if (!t) prefs.topics = [];
+    else prefs.topics = prefs.topics.includes(t) ? prefs.topics.filter(x => x !== t) : [...prefs.topics, t];
+    save(); renderNav(); render();
+  };
+  $("hideRead").onchange = (e) => { prefs.hideRead = e.target.checked; save(); render(); };
+  $("q").oninput = () => render();
+  $("markAll").onclick = () => { const t = Date.now(); for (const i of visible()) read[i.id] = t; save(); render(); };
+  $("unhide").onclick = () => { for (const k in hidden) delete hidden[k]; save(); renderNav(); render(); };
+
+  // ---------- стрічка ----------
+  function visible(){
+    const q = $("q").value.trim().toLowerCase();
+    const topicName = Object.fromEntries((data?.topics || []).map(t => [t.id, t.title]));
+    return items.filter(i =>
+      !hidden[i.id] &&
+      inView(i, prefs.view) &&
+      (!prefs.topics.length || i.topics.some(t => prefs.topics.includes(t))) &&
+      (!prefs.hideRead || !read[i.id]) &&
+      (!q || (i.title + " " + (i.title_orig || "") + " " + i.source).toLowerCase().includes(q))
+    );
+  }
+  function render(){
+    if (!data) return;
+    const list = visible();
+    const topicName = Object.fromEntries((data.topics || []).map(t => [t.id, t.title]));
+    if (!list.length){
+      $("feed").innerHTML = '<div class="list"><div class="empty">Немає новин за цими фільтрами.</div></div>';
+      return;
+    }
+    let html = "", cur = null;
+    for (const i of list){
+      const d = new Date(i.published);
+      const lbl = dayLabel(d);
+      if (lbl !== cur){
+        if (cur !== null) html += "</div>";
+        html += `<div class="day">${esc(lbl)}</div><div class="list">`;
+        cur = lbl;
+      }
+      const others = (i.sources || []).filter(s => s !== i.source);
+      html += `
+        <article class="item ${newIds.has(i.id) ? "new" : ""} ${read[i.id] ? "read" : ""}" data-id="${esc(i.id)}">
+          <div class="time">${fmtTime.format(d)}</div>
+          <div class="body">
+            <a class="title" href="${esc(i.url)}" target="_blank" rel="noopener" ${i.title_orig ? `title="${esc(i.title_orig)}"` : ""}>${esc(i.title)}</a>
+            <div class="info">
+              ${i.important ? '<span class="badge">Важливо</span>' : ""}
+              <span class="src">${esc(i.source)}</span>
+              ${others.length ? `<span class="multi" title="${esc(others.join(", "))}">+${others.length} ${plural(others.length, "джерело", "джерела", "джерел")}</span>` : ""}
+              ${i.title_orig ? '<span class="tr">переклад</span>' : ""}
+              ${i.topics.map(t => `<span class="tag">${esc(topicName[t] || t)}</span>`).join("")}
+            </div>
+          </div>
+          <button class="x" title="Сховати новину" aria-label="Сховати">✕</button>
+        </article>`;
+    }
+    html += "</div>";
+    $("feed").innerHTML = html;
+  }
+  $("feed").addEventListener("click", (e) => {
+    const art = e.target.closest(".item"); if (!art) return;
+    const id = art.dataset.id;
+    if (e.target.closest(".x")){ hidden[id] = Date.now(); save(); renderNav(); render(); return; }
+    if (e.target.closest(".title")){ read[id] = Date.now(); save(); art.classList.add("read"); }
+  });
+  $("feed").addEventListener("auxclick", (e) => {
+    const a = e.target.closest(".title"); if (!a) return;
+    const id = a.closest(".item").dataset.id; read[id] = Date.now(); save(); a.closest(".item").classList.add("read");
+  });
+
+  function plural(n, one, few, many){
+    const m10 = n % 10, m100 = n % 100;
+    if (m10 === 1 && m100 !== 11) return one;
+    if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return few;
+    return many;
+  }
+
+  load(true);
+  setInterval(() => load(false), POLL_MS);
+  setInterval(() => { if (data) $("meta").innerHTML = `Оновлено <b>${fmtTime.format(new Date(data.updated))}</b> · ${ago(data.updated)}`; }, 30_000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) load(false); });
+})();
+</script>
+</body>
+</html>
