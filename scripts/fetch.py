@@ -181,41 +181,89 @@ def raw_items(feed, entries, method, cutoff):
 
 # ---------- переклад ----------
 
+TR_STATS = {"asked": 0, "done": 0, "provider": {}, "errors": []}
+
+
+def _tr_deepl(chunk):
+    """DeepL API Free — якщо в налаштуваннях репозиторію є секрет DEEPL_KEY."""
+    key = os.environ.get("DEEPL_KEY", "").strip()
+    if not key:
+        return None
+    host = "api-free.deepl.com" if key.endswith(":fx") else "api.deepl.com"
+    r = requests.post(f"https://{host}/v2/translate", headers={"Authorization": f"DeepL-Auth-Key {key}"},
+                      data=[("target_lang", "UK")] + [("text", t) for t in chunk], timeout=30)
+    r.raise_for_status()
+    return [x["text"] for x in r.json()["translations"]]
+
+
+def _tr_gtx(chunk):
+    """Відкритий інтерфейс Google Translate (той, яким користуються браузерні розширення)."""
+    r = requests.post("https://translate.googleapis.com/translate_a/single",
+                      params={"client": "gtx", "sl": "auto", "tl": "uk", "dt": "t"},
+                      data={"q": "\n".join(chunk)}, headers={"User-Agent": UA}, timeout=30)
+    r.raise_for_status()
+    text = "".join(seg[0] for seg in r.json()[0] if seg and seg[0])
+    lines = [l.strip() for l in text.split("\n")]
+    if len(lines) != len(chunk):
+        raise ValueError("кількість рядків не збіглася")
+    return lines
+
+
+def _tr_deep_translator(chunk):
+    from deep_translator import GoogleTranslator
+    res = GoogleTranslator(source="auto", target="uk").translate("\n".join(chunk))
+    lines = [l.strip() for l in (res or "").split("\n")]
+    if len(lines) != len(chunk):
+        raise ValueError("кількість рядків не збіглася")
+    return lines
+
+
+PROVIDERS = [("DeepL", _tr_deepl), ("Google", _tr_gtx), ("Google (резерв)", _tr_deep_translator)]
+
+
 def translate_all(texts, cache):
-    todo = [t for t in dict.fromkeys(texts) if t not in cache]
+    todo = [t for t in dict.fromkeys(texts) if t and t not in cache]
     if not todo:
         return
-    try:
-        from deep_translator import GoogleTranslator
-        tr = GoogleTranslator(source="auto", target="uk")
-    except Exception as ex:
-        print(f"[переклад] недоступний: {ex}", file=sys.stderr)
-        return
+    TR_STATS["asked"] += len(todo)
+    dead, fails = set(), {}                             # сервіси, що відмовили в цьому прогоні
 
     def run(chunk):
         if not chunk:
             return
-        try:
-            res = tr.translate("\n".join(chunk))
-            lines = [l.strip() for l in (res or "").split("\n")]
-            if len(lines) == len(chunk):
-                for s, d in zip(chunk, lines):
-                    if d:
-                        cache[s] = d
+        for name, fn in PROVIDERS:
+            if name in dead:
+                continue
+            try:
+                out = fn(chunk)
+                if out is None:                         # сервіс не налаштований
+                    dead.add(name); continue
+                for src, dst in zip(chunk, out):
+                    if dst and dst.strip():
+                        cache[src] = dst.strip()
+                        TR_STATS["done"] += 1
+                TR_STATS["provider"][name] = TR_STATS["provider"].get(name, 0) + len(chunk)
                 return
-        except Exception:
-            pass
-        if len(chunk) == 1:
-            return
-        mid = len(chunk) // 2
-        run(chunk[:mid]); run(chunk[mid:])
+            except ValueError:
+                break                                   # рядки злиплися — пробуємо меншими шматками
+            except Exception as ex:
+                code = getattr(getattr(ex, "response", None), "status_code", None)
+                msg = f"{name}: " + (f"HTTP {code}" if code else type(ex).__name__)
+                if msg not in TR_STATS["errors"]:
+                    TR_STATS["errors"].append(msg)
+                fails[name] = fails.get(name, 0) + 1
+                if code in (401, 403, 429, 456) or fails[name] >= 3:
+                    dead.add(name)                      # ліміт, заборона або сервіс лежить — не мучимо далі
+        if len(chunk) > 1:
+            mid = len(chunk) // 2
+            run(chunk[:mid]); run(chunk[mid:])
 
     chunk, size, deadline = [], 0, time.time() + 240
     for t in todo:
         if time.time() > deadline:
-            print("[переклад] не встиг усе, решта в наступному прогоні", file=sys.stderr)
+            TR_STATS["errors"].append("не встиг перекласти все, решта — в наступному прогоні")
             break
-        if size + len(t) > 4000 or len(chunk) >= 50:
+        if size + len(t) > 3500 or len(chunk) >= 40:
             run(chunk); chunk, size = [], 0
         chunk.append(t); size += len(t) + 1
     if time.time() <= deadline:
@@ -389,12 +437,22 @@ def main():
         "google": google,
     }
     save_json(NEWS, out)
-    save_json(STATUS, {"updated": out["updated"], "feeds": status + gstatus})
+    untranslated = sum(1 for i in items if i["lang"] != "uk" and i["title"] == i["orig"])
+    used = ", ".join(f"{k}: {v}" for k, v in TR_STATS["provider"].items()) or \
+        ("сервіси перекладу не відповіли" if TR_STATS["asked"] else "нових заголовків не було")
+    tr_status = {"name": "Переклад заголовків", "ok": not (TR_STATS["asked"] and not TR_STATS["done"]),
+                 "method": "rss", "items": TR_STATS["done"],
+                 "error": "; ".join(TR_STATS["errors"])[:300] or None,
+                 "note": f"{used}; без перекладу у стрічці: {untranslated}"}
+    save_json(STATUS, {"updated": out["updated"], "feeds": [tr_status] + status + gstatus})
     save_json(TRCACHE, cache)
     save_json(STATE, state)
 
     ok = sum(1 for s in status if s["ok"])
     via_g = sum(1 for s in status if s.get("method") == "google")
+    print(f"Переклад: {TR_STATS['done']} з {TR_STATS['asked']} ({used}); без перекладу у стрічці: {untranslated}")
+    for e in TR_STATS["errors"]:
+        print(f"  ! переклад — {e}")
     print(f"Джерел: {ok}/{len(status)} працюють (з них через Google News: {via_g}) · новин: {len(items)} · "
           f"трендів: {len(google['trends'])} · топ Google: {len(google['news'])}")
     for s in status + gstatus:
