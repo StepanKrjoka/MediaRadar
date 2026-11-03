@@ -2,8 +2,8 @@ name: Оновлення стрічки
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
-  workflow_dispatch:
+    - cron: "*/10 * * * *"   # кожні 10 хв (GitHub може запускати із затримкою)
+  workflow_dispatch:          # кнопка «Run workflow» для ручного запуску
   push:
     paths:
       - "config/**"
@@ -31,6 +31,8 @@ jobs:
         run: pip install feedparser requests PyYAML deep-translator
 
       - name: Зібрати новини
+        env:
+          DEEPL_KEY: ${{ secrets.DEEPL_KEY }}   # необов'язково: ключ DeepL API Free
         run: python scripts/fetch.py
 
       - name: Зберегти дані
