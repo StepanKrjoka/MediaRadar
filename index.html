@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" id="favicon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <style>
 :root{
   --steel:#f6f4ef;      /* фон */
@@ -48,6 +50,10 @@ button{font:inherit;color:inherit}
 .upd{margin-left:auto;font-size:13px;color:var(--slate);text-align:right;line-height:1.3}
 .upd b{color:var(--ink);font-weight:600}
 .upd.stale b{color:var(--signal)}
+.app{display:flex;gap:14px;margin-left:18px}
+.app[hidden]{display:none}
+.app .link[hidden]{display:none}
+.link.on{color:var(--ink)}
 
 .tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin:0 -4px}
 .tabs::-webkit-scrollbar{display:none}
@@ -141,6 +147,7 @@ details summary{cursor:pointer;color:var(--ink)}
 /* ---------- мобільний: вкладки внизу, як у застосунку ---------- */
 @media (max-width:700px){
   body{font-size:15px}
+  .app{display:none}
   .head{padding:12px 0 10px}
   .tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;margin:0;gap:0;background:var(--plate);border-top:1px solid var(--rule);padding:0 0 env(safe-area-inset-bottom)}
   .tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;padding:9px 2px 10px;font-size:12.5px}
@@ -170,6 +177,10 @@ details summary{cursor:pointer;color:var(--ink)}
     <div class="head">
       <a class="logo" href="./"><span class="live" aria-hidden="true"></span>MediaRadar</a>
       <div class="upd" id="upd">Завантаження…</div>
+      <div class="app" id="app">
+        <button class="link" id="installBtn" hidden>Встановити програму</button>
+        <button class="link" id="notifyBtn" hidden>Сповіщення про важливе</button>
+      </div>
     </div>
     <nav class="tabs" id="tabs" aria-label="Розділи"></nav>
   </div>
@@ -257,6 +268,7 @@ details summary{cursor:pointer;color:var(--ink)}
       else if (d.updated !== data.updated){
         const known = new Set(items.map(i => i.id));
         const added = d.items.filter(i => !known.has(i.id) && !hidden[i.id]).length;
+        notifyNew(d.items.filter(i => !known.has(i.id) && !hidden[i.id]));
         if (added && window.scrollY > 240){ pending = d; showFresh(added); } else apply(d);
       }
     }catch{
@@ -270,7 +282,7 @@ details summary{cursor:pointer;color:var(--ink)}
       const ok = s.feeds.filter(f => f.ok).length;
       $("stSum").textContent = `Стан джерел: працюють ${ok} з ${s.feeds.length}`;
       $("st").innerHTML = s.feeds.map(f => {
-        const how = !f.ok ? esc(f.error || "не відповідає") : f.method === "google" ? `${f.items} · через Google News` : `${f.items}`;
+        const how = !f.ok ? esc(f.error || "не відповідає") : f.note ? `${f.items} · ${esc(f.note)}` : f.method === "google" ? `${f.items} · через Google News` : `${f.items}`;
         return `<span class="${f.ok ? "" : "bad"}">${f.ok ? "✓" : "✗"} ${esc(f.name)}</span><span class="${f.ok ? "via" : "bad"}">${how}</span>`;
       }).join("");
     }catch{}
@@ -482,6 +494,43 @@ details summary{cursor:pointer;color:var(--ink)}
     });
     dark.addEventListener?.("change", build);
   })();
+
+  // ---------- програма: встановлення, сповіщення, лічильник на панелі задач ----------
+  let installEvt = null, unseen = 0;
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+  window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); installEvt = e; $("installBtn").hidden = false; });
+  window.addEventListener("appinstalled", () => { installEvt = null; $("installBtn").hidden = true; });
+  $("installBtn").onclick = async () => { if (!installEvt) return; installEvt.prompt(); await installEvt.userChoice; installEvt = null; $("installBtn").hidden = true; };
+
+  const canNotify = "Notification" in window;
+  function paintNotify(){
+    const b = $("notifyBtn"); if (!canNotify) return;
+    b.hidden = false;
+    const on = Notification.permission === "granted" && prefs.notify !== false;
+    b.textContent = on ? "Сповіщення увімкнено" : Notification.permission === "denied" ? "Сповіщення заблоковано в браузері" : "Увімкнути сповіщення про важливе";
+    b.classList.toggle("on", on);
+    b.title = on ? "Натисніть, щоб вимкнути" : "";
+  }
+  $("notifyBtn").onclick = async () => {
+    if (Notification.permission === "default"){ await Notification.requestPermission(); prefs.notify = true; }
+    else if (Notification.permission === "granted") prefs.notify = prefs.notify === false;
+    save(); paintNotify();
+  };
+  paintNotify();
+
+  async function notifyNew(arrived){
+    if (document.hidden){ unseen += arrived.length; navigator.setAppBadge?.(unseen).catch?.(() => {}); }
+    if (!canNotify || Notification.permission !== "granted" || prefs.notify === false) return;
+    if (!document.hidden && document.hasFocus()) return;           // ви й так дивитесь на стрічку
+    const hot = arrived.filter(i => i.important).slice(0, 3);
+    if (!hot.length) return;
+    const reg = await navigator.serviceWorker?.getRegistration();
+    for (const i of hot){
+      const opts = { body: (i.sources || [i.source]).join(", "), tag: i.id, icon: "icons/icon-192.png", data: { url: i.url } };
+      try { reg ? reg.showNotification("Важливо: " + i.title, opts) : new Notification("Важливо: " + i.title, opts); } catch {}
+    }
+  }
+  document.addEventListener("visibilitychange", () => { if (!document.hidden){ unseen = 0; navigator.clearAppBadge?.().catch?.(() => {}); } });
 
   load(true);
   setInterval(() => load(false), POLL_MS);
